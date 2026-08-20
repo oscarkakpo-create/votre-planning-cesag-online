@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Cockpit d’administration — CESAG ONLINE</title>
+  <meta name="theme-color" content="#07301E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#0B4D2E;--green2:#0E5E39;--greenDark:#07301E;--greenSoft:#E9F2ED;
+      --greenLine:#CBDED3;--gold:#C9962A;--goldDark:#755513;--goldSoft:#F7EFDA;
+      --paper:#F6F8F6;--white:#fff;--text:#16241D;--muted:#586A60;--line:#E3E9E5;
+      --red:#B42318;--redSoft:#FFF0EE;--blue:#4052A8;--blueSoft:#EEF1FF;--orange:#D9822B;
+      --shadow:0 16px 40px rgba(11,77,46,.08);
+      --serif:"Spectral",Georgia,serif;--sans:"Inter","Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper)}
+    a{text-decoration:none;color:inherit} button{font:inherit;cursor:pointer}
+    .container{max-width:1200px;margin:auto;padding:0 20px}
+
+    .topbar{background:var(--greenDark);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+    .brand{font-weight:700;display:flex;align-items:center;gap:9px}
+    .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+    .topnav{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+    .topnav a{color:rgba(255,255,255,.9);font-weight:600}
+    .topnav a:hover{color:#fff}
+
+    .crumb{background:#fff;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--muted);padding:9px 0}
+    .crumb .container{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .crumb b{color:var(--green)}.crumb .sep{color:var(--greenLine)}
+
+    .warn{background:linear-gradient(180deg,#FFF7E9,#FFF1D6);border-bottom:1px solid #EBD9A8;color:#6b4e14;font-size:13px;line-height:1.55}
+    .warn .container{display:flex;gap:12px;align-items:flex-start;padding:14px 20px}
+    .warn .ico{flex:none;width:22px;height:22px;color:var(--goldDark);margin-top:1px}
+    .warn b{color:#5A4215}
+
+    header.head{padding:26px 0 6px}
+    header.head h1{font-family:var(--serif);font-weight:600;margin:0;color:var(--green);font-size:clamp(26px,4vw,40px)}
+    header.head p{margin:6px 0 0;color:var(--muted);font-size:14px;max-width:760px;line-height:1.6}
+
+    .controls{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-end;margin:20px 0 8px}
+    .field{display:flex;flex-direction:column;gap:5px}
+    .field label{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted)}
+    select,input,textarea{font:inherit;color:var(--text);background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 12px}
+    select:focus,input:focus,textarea:focus{outline:2px solid var(--greenLine);outline-offset:1px;border-color:var(--green)}
+    select{min-width:260px}
+    .btn{border:1px solid transparent;border-radius:11px;padding:10px 14px;font-weight:700;display:inline-flex;align-items:center;gap:8px}
+    .btn-green{background:var(--green);color:#fff}.btn-gold{background:var(--gold);color:#fff}
+    .btn-soft{background:var(--greenSoft);color:var(--green);border-color:var(--greenLine)}
+    .btn-ghost{background:#fff;color:var(--text);border-color:var(--line)}
+    .btn-danger{background:var(--redSoft);color:var(--red);border-color:#F3C7C2}
+    .btn:disabled{opacity:.5;cursor:not-allowed}
+    .btn-sm{padding:7px 11px;font-size:12.5px;border-radius:9px}
+
+    .draftbar{display:none;align-items:center;gap:10px;background:var(--goldSoft);border:1px solid #E6D3A2;color:var(--goldDark);border-radius:12px;padding:9px 13px;font-size:12.5px;font-weight:600;margin:6px 0}
+    .draftbar.show{display:flex}
+
+    .panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin:14px 0;box-shadow:var(--shadow)}
+    .panel h2{font-family:var(--serif);color:var(--green);font-size:19px;margin:0 0 12px;font-weight:600}
+    .panel details summary{cursor:pointer;font-weight:700;color:var(--green)}
+    .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .hint{font-size:12px;color:var(--muted);margin-top:8px;line-height:1.55}
+
+    .prog-group{margin-top:18px}
+    .prog-group h3{font-size:12.5px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;color:var(--green);margin:0 0 10px;display:flex;align-items:center;gap:10px}
+    .prog-group h3 .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--greenLine),transparent)}
+    .prog-group h3 .dirty{background:var(--gold);color:#fff;font-size:10px;padding:3px 8px;border-radius:999px;letter-spacing:.4px}
+
+    .srow{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;grid-template-columns:96px 1fr auto;gap:16px;align-items:center;margin-bottom:12px;position:relative;overflow:hidden}
+    .srow:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}
+    .srow.exam:before{background:var(--red)}
+    .srow.is-cancelled{opacity:.72}.srow.is-cancelled:before{background:var(--red)}.srow.is-cancelled .stitle{text-decoration:line-through}
+    .srow.is-rescheduled:before{background:var(--orange)}.srow.is-advanced:before{background:var(--blue)}.srow.is-confirmed:before{background:var(--green)}.srow.is-pending:before{background:var(--gold)}
+    .sdate{background:var(--paper);border-radius:12px;padding:10px;text-align:center}
+    .sdate .d{font-size:26px;font-weight:800;color:var(--green);line-height:1}.srow.exam .sdate .d{color:var(--red)}
+    .sdate .m{font-size:10.5px;text-transform:uppercase;letter-spacing:.6px;font-weight:800;color:var(--muted);margin-top:4px}.sdate .w{font-size:11px;color:var(--muted)}
+    .stags{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:7px;align-items:center}
+    .tag{padding:4px 9px;border-radius:999px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.4px}
+    .tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}
+    .tag-prog{background:var(--goldSoft);color:var(--goldDark)}
+    .status-badge{padding:4px 9px;border-radius:999px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;display:inline-flex;align-items:center;gap:5px}
+    .status-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+    .st-pending{background:var(--goldSoft);color:var(--goldDark)}.st-confirmed{background:#E4F3EA;color:#166534}
+    .st-advanced{background:var(--blueSoft);color:var(--blue)}.st-rescheduled{background:#FCEDDD;color:#9A4A0F}.st-cancelled{background:var(--redSoft);color:var(--red)}
+    .stitle{margin:0;font-size:16px;font-weight:700;line-height:1.3}
+    .smeta{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px;color:var(--muted);font-size:12.5px}.smeta b{color:var(--text)}
+    .sobs{margin-top:6px;font-size:12px;color:var(--muted);font-style:italic}
+    .sactions{display:flex;flex-direction:column;gap:6px;min-width:130px}
+    .badge-updated{font-size:10.5px;color:var(--muted);margin-top:2px}
+
+    .empty{background:#fff;border:1px dashed #CBD5CF;border-radius:16px;padding:26px;text-align:center;color:var(--muted)}
+
+    /* Modal */
+    .modal-back{position:fixed;inset:0;background:rgba(7,48,30,.5);display:none;align-items:center;justify-content:center;padding:18px;z-index:60}
+    .modal-back.show{display:flex}
+    .modal{background:#fff;border-radius:18px;max-width:460px;width:100%;padding:22px;box-shadow:0 30px 70px rgba(7,48,30,.3)}
+    .modal h3{font-family:var(--serif);color:var(--green);margin:0 0 4px;font-size:20px}
+    .modal .sub{color:var(--muted);font-size:13px;margin:0 0 14px}
+    .modal .field{margin-bottom:12px}
+    .modal .field input,.modal .field textarea{width:100%}
+    .modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+
+    /* Toast */
+    .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:var(--greenDark);color:#fff;padding:12px 18px;border-radius:12px;font-size:13.5px;font-weight:600;box-shadow:0 16px 40px rgba(7,48,30,.3);opacity:0;pointer-events:none;transition:.25s;z-index:80;max-width:90vw}
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+    .toast.err{background:var(--red)}
+
+    footer{margin-top:30px;background:var(--greenDark);color:rgba(255,255,255,.75);padding:22px 0;font-size:12.5px}
+    footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+    @media(max-width:820px){
+      .srow{grid-template-columns:72px 1fr}.sactions{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
+      .grid2,.grid3{grid-template-columns:1fr}select{min-width:0;width:100%}
+      .controls{gap:10px}.controls .field{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand"><span class="dot"></span> CESAG ONLINE · Cockpit d’administration</div>
+      <nav class="topnav" aria-label="Navigation cockpit">
+        <a href="../">← Accueil</a>
+        <a id="navProgram" href="../">Retour au programme</a>
+        <a id="navPublic" href="../" target="_blank" rel="noopener">Voir le site public ↗</a>
+        <a href="#changer">Changer de programme</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="crumb">
+    <div class="container">
+      <a href="../">Accueil</a><span class="sep">›</span><b>Cockpit</b><span class="sep">›</span><span id="crumbProgram">Tous les programmes</span>
+    </div>
+  </div>
+
+  <div class="warn">
+    <div class="container">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg>
+      <div>
+        <b>Espace réservé à l’administration.</b> Cette page n’est pas destinée aux étudiants et n’est pas référencée.
+        Les modifications sont d’abord locales (brouillon dans ce navigateur). Pour qu’elles apparaissent sur le site public,
+        il faut <b>publier le JSON</b> (téléchargement + commit, ou publication GitHub avec un jeton personnel).
+        <b>À sécuriser avant mise en production</b> (voir la note en bas de page).
+      </div>
+    </div>
+  </div>
+
+  <header class="head">
+    <div class="container">
+      <h1>Gestion des séances</h1>
+      <p>Publiez un planning, confirmez une séance le jour J, annulez, reportez ou avancez une séance —
+        sans éditer les fichiers JSON à la main. Le site public continue de lire les mêmes JSON.</p>
+
+      <div class="controls" id="changer">
+        <div class="field">
+          <label for="progSelect">Choisir un programme</label>
+          <select id="progSelect" aria-label="Choisir un programme"></select>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="reloadBtn" title="Recharger depuis les fichiers JSON">↻ Recharger</button>
+        <button class="btn btn-soft btn-sm" id="addBtn">+ Ajouter une séance</button>
+        <button class="btn btn-gold btn-sm" id="downloadBtn">⬇ Télécharger le(s) JSON</button>
+        <button class="btn btn-green btn-sm" id="publishBtn">⬆ Publier sur GitHub…</button>
+      </div>
+
+      <div class="draftbar" id="draftbar">
+        <span id="draftText">Brouillon local restauré.</span>
+        <button class="btn btn-ghost btn-sm" id="discardDraft">Repartir des fichiers</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- Infos semaine (par programme sélectionné) -->
+      <section class="panel" id="weekPanel" style="display:none">
+        <h2>Semaine & publication — <span id="weekPanelProg"></span></h2>
+        <div class="grid3">
+          <div class="field"><label>Période affichée (week_label)</label><input id="wkLabel" placeholder="24 → 30 août 2026"></div>
+          <div class="field"><label>Nom de fichier ICS (week_file_label)</label><input id="wkFile" placeholder="24-30_aout_2026"></div>
+          <div class="field"><label>Mise à jour (updated_label)</label><input id="wkUpdated" placeholder="20 août 2026"></div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px">
+          <label style="display:flex;gap:8px;align-items:center;font-size:13.5px;font-weight:600">
+            <input type="checkbox" id="wkIsNew" style="width:auto"> Marquer comme <b>nouveau planning</b> (badge NOUVEAU)
+          </label>
+          <button class="btn btn-soft btn-sm" id="wkApply">Appliquer</button>
+        </div>
+        <p class="hint">« Nouveau planning » ajoute <code>is_new:true</code> et enregistre <code>published_at</code>. Le badge NOUVEAU apparaît sur la page programme et sur l’accueil.</p>
+      </section>
+
+      <div id="list"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div><b>CESAG ONLINE</b> · Cockpit d’administration</div>
+      <div>Accès à protéger avant production</div>
+    </div>
+  </footer>
+
+  <!-- Modal générique -->
+  <div class="modal-back" id="modalBack">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">Titre</h3>
+      <p class="sub" id="modalSub"></p>
+      <div id="modalFields"></div>
+      <div class="modal-actions">
+        <button class="btn btn-ghost" id="modalCancel">Annuler</button>
+        <button class="btn btn-green" id="modalOk">Valider</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+<script>
+/* ====================== Données & état ====================== */
+const PROGRAMS = [
+  {slug:"gestion-entreprises",     label:"MBA AG — Gestion des entreprises"},
+  {slug:"administration-publique", label:"MBA AG — Administration publique"},
+  {slug:"mba-ag-auf",              label:"MBA AG AUF"},
+  {slug:"mba-gp",                  label:"MBA GP"},
+  {slug:"mba-gp-auf",              label:"MBA GP AUF"},
+  {slug:"mba-msch",                label:"MBA MSCH"},
+];
+const LABEL = Object.fromEntries(PROGRAMS.map(p=>[p.slug,p.label]));
+const STATUS_LABELS={pending:"À confirmer",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
+const STATUS_CLASS={pending:"st-pending",confirmed:"st-confirmed",advanced:"st-advanced",rescheduled:"st-rescheduled",cancelled:"st-cancelled"};
+const DRAFT_KEY="cesag_cockpit_v1";
+const TOKEN_KEY="cesag_cockpit_gh";     // sessionStorage seulement
+const months=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+const weekdays=["dim.","lun.","mar.","mer.","jeu.","ven.","sam."];
+
+const state = { programs:{}, scope:"all" }; // programs[slug] = {data, dirty}
+
+function nowISO(){ return new Date().toISOString(); }
+function esc(v=""){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function normStatus(s){const v=String(s&&s.status||"pending").toLowerCase();return STATUS_LABELS[v]?v:"pending";}
+function newId(){return "n"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
+function sortSessions(arr){return arr.slice().sort((a,b)=>((a.date||"")+(a.start||"")).localeCompare((b.date||"")+(b.start||"")));}
+
+function toast(msg,isErr){const t=document.getElementById("toast");t.textContent=msg;t.className="toast show"+(isErr?" err":"");setTimeout(()=>t.className="toast",2600);}
+
+/* ====================== Chargement ====================== */
+async function loadAll(){
+  const results = await Promise.all(PROGRAMS.map(async p=>{
+    try{
+      const res=await fetch(`../data/${p.slug}.json`,{cache:"no-store"});
+      if(!res.ok) throw new Error(res.status);
+      return [p.slug,{data:await res.json(),dirty:false}];
+    }catch(e){
+      return [p.slug,{data:{slug:p.slug,program_name:p.label,program_short:p.label,week_label:"—",sessions:[]},dirty:false,error:true}];
+    }
+  }));
+  state.programs = Object.fromEntries(results);
+  // brouillon local ?
+  const draft = readDraft();
+  if(draft){ document.getElementById("draftbar").classList.add("show");
+    document.getElementById("draftText").textContent=`Brouillon local restauré (${new Date(draft.savedAt).toLocaleString("fr-FR")}).`;
+    for(const slug in draft.programs){ if(state.programs[slug]){ state.programs[slug].data=draft.programs[slug]; state.programs[slug].dirty=true; } }
+  }
+}
+
+/* ====================== Brouillon local ====================== */
+function saveDraft(){
+  const progs={}; for(const slug in state.programs){ if(state.programs[slug].dirty) progs[slug]=state.programs[slug].data; }
+  if(Object.keys(progs).length){ localStorage.setItem(DRAFT_KEY,JSON.stringify({savedAt:nowISO(),programs:progs})); }
+  else localStorage.removeItem(DRAFT_KEY);
+}
+function readDraft(){ try{const r=localStorage.getItem(DRAFT_KEY);return r?JSON.parse(r):null;}catch(e){return null;} }
+
+/* ====================== Actions statut ====================== */
+function findSession(slug,id){ return (state.programs[slug].data.sessions||[]).find(s=>s.id===id); }
+function markDirty(slug){ state.programs[slug].dirty=true; saveDraft(); render(); }
+
+function setStatus(slug,id,status){
+  const s=findSession(slug,id); if(!s)return;
+  s.status=status; s.updated_at=nowISO(); markDirty(slug);
+  toast(`Séance ${STATUS_LABELS[status].toLowerCase()}.`);
+}
+function confirmSession(slug,id){ setStatus(slug,id,"confirmed"); }
+function pendingSession(slug,id){ setStatus(slug,id,"pending"); }
+function cancelSession(slug,id){
+  openModal({
+    title:"Annuler la séance", sub:"La séance restera visible comme ANNULÉE et sera exclue des ICS.",
+    fields:[{key:"obs",label:"Observation (facultative)",type:"textarea",placeholder:"Motif communiqué aux étudiants…"}],
+    onOk:(vals)=>{ const s=findSession(slug,id); if(!s)return; s.status="cancelled"; s.updated_at=nowISO();
+      if(vals.obs && vals.obs.trim()) s.notes=vals.obs.trim(); markDirty(slug); toast("Séance annulée."); }
+  });
+}
+function moveSession(slug,id,mode){ // mode: rescheduled | advanced
+  const s=findSession(slug,id); if(!s)return;
+  const isResched = mode==="rescheduled";
+  openModal({
+    title: isResched?"Reporter la séance":"Avancer la séance",
+    sub: isResched?"La séance d’origine restera REPORTÉE ; une nouvelle occurrence est créée."
+                  :"La séance d’origine restera AVANCÉE ; la nouvelle occurrence est ajoutée au planning.",
+    fields:[
+      {key:"date",label:"Nouvelle date",type:"date",value:s.date,required:true},
+      {key:"start",label:"Nouvelle heure de début",type:"time",value:s.start,required:true},
+      {key:"end",label:"Nouvelle heure de fin",type:"time",value:s.end,required:true},
+      {key:"obs",label:"Observation (facultative)",type:"textarea",placeholder:"Précision éventuelle…"}
+    ],
+    onOk:(vals)=>{
+      if(!vals.date||!vals.start||!vals.end){toast("Date et horaires requis.",true);return false;}
+      s.status=mode; s.updated_at=nowISO();
+      const copy=JSON.parse(JSON.stringify(s));
+      copy.id=newId(); copy.date=vals.date; copy.start=vals.start; copy.end=vals.end;
+      copy.status="pending"; copy.updated_at=nowISO(); copy.moved_from=s.id;
+      if(vals.obs && vals.obs.trim()) copy.notes=vals.obs.trim();
+      delete copy.moved_to;
+      s.moved_to=copy.id;
+      state.programs[slug].data.sessions.push(copy);
+      markDirty(slug);
+      toast(isResched?"Séance reportée — nouvelle occurrence créée.":"Séance avancée — nouvelle occurrence créée.");
+    }
+  });
+}
+function deleteSession(slug,id){
+  const s=findSession(slug,id); if(!s)return;
+  openModal({title:"Supprimer la séance",sub:`« ${s.title} » du ${s.date}. Cette action retire la séance du planning.`,
+    fields:[], okLabel:"Supprimer", danger:true,
+    onOk:()=>{ const arr=state.programs[slug].data.sessions; const i=arr.findIndex(x=>x.id===id); if(i>=0)arr.splice(i,1); markDirty(slug); toast("Séance supprimée."); }});
+}
+
+/* ====================== Ajout de séance ====================== */
+function addSession(){
+  const slug = state.scope==="all" ? PROGRAMS[0].slug : state.scope;
+  const targetSlug = state.scope==="all" ? null : slug;
+  openModal({
+    title:"Ajouter une séance", sub:"La séance est créée avec le statut « À confirmer ».",
+    fields:[
+      ...(targetSlug?[]:[{key:"prog",label:"Programme",type:"select",options:PROGRAMS.map(p=>({v:p.slug,t:p.label})),required:true}]),
+      {key:"date",label:"Date",type:"date",required:true},
+      {key:"title",label:"Module",type:"text",required:true,placeholder:"Nom du module"},
+      {key:"type",label:"Type",type:"select",options:[{v:"Cours",t:"Cours"},{v:"Examen",t:"Examen"}],value:"Cours"},
+      {key:"teacher",label:"Enseignant",type:"text",placeholder:"M. NOM"},
+      {key:"start",label:"Heure de début",type:"time",required:true},
+      {key:"end",label:"Heure de fin",type:"time",required:true},
+      {key:"duration",label:"Durée (examen, facultatif)",type:"text",placeholder:"120 minutes"},
+      {key:"moodle",label:"Lien Moodle (facultatif)",type:"text",placeholder:"https://…"},
+      {key:"room",label:"Salle virtuelle BBB (facultatif)",type:"text",placeholder:"https://…"},
+      {key:"teams",label:"Teams surveillance (facultatif)",type:"text",placeholder:"https://…"},
+      {key:"notes",label:"Observation (facultative)",type:"textarea"}
+    ],
+    okLabel:"Ajouter",
+    onOk:(v)=>{
+      const dest = targetSlug || v.prog;
+      if(!dest||!v.date||!v.title||!v.start||!v.end){toast("Champs obligatoires manquants.",true);return false;}
+      const s={id:newId(),date:v.date,title:v.title.trim(),type:v.type||"Cours",teacher:(v.teacher||"").trim(),
+        start:v.start,end:v.end,status:"pending",updated_at:nowISO()};
+      if(v.duration&&v.duration.trim())s.duration=v.duration.trim();
+      if(v.moodle&&v.moodle.trim())s.moodle=v.moodle.trim();
+      if(v.room&&v.room.trim())s.room=v.room.trim();
+      if(v.teams&&v.teams.trim())s.teams=v.teams.trim();
+      if(v.notes&&v.notes.trim())s.notes=v.notes.trim();
+      (state.programs[dest].data.sessions=state.programs[dest].data.sessions||[]).push(s);
+      markDirty(dest); toast("Séance ajoutée.");
+    }
+  });
+}
+
+/* ====================== Rendu ====================== */
+function scopeSlugs(){ return state.scope==="all" ? PROGRAMS.map(p=>p.slug) : [state.scope]; }
+
+function sessionRow(slug,s){
+  const d=new Date((s.date||"1970-01-01")+"T00:00:00Z");
+  const exam=String(s.type).toLowerCase()==="examen";
+  const st=normStatus(s);
+  const upd = s.updated_at ? `<div class="badge-updated">Modifiée : ${new Date(s.updated_at).toLocaleString("fr-FR")}</div>`:"";
+  return `<div class="srow ${exam?"exam":""} is-${st}">
+    <div class="sdate">
+      <div class="d">${String(d.getUTCDate()).padStart(2,"0")}</div>
+      <div class="m">${months[d.getUTCMonth()]||""}</div>
+      <div class="w">${weekdays[d.getUTCDay()]||""}</div>
+    </div>
+    <div>
+      <div class="stags">
+        <span class="tag ${exam?"tag-exam":"tag-course"}">${esc(s.type||"")}</span>
+        ${state.scope==="all"?`<span class="tag tag-prog">${esc(LABEL[slug]||slug)}</span>`:""}
+        <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
+        ${s.moved_from?`<span class="tag tag-prog">Nouvelle occurrence</span>`:""}
+      </div>
+      <p class="stitle">${esc(s.title||"—")}</p>
+      <div class="smeta">
+        <span><b>Horaire :</b> ${esc(s.start||"?")}–${esc(s.end||"?")} GMT</span>
+        ${s.duration?`<span><b>Durée :</b> ${esc(s.duration)}</span>`:""}
+        <span><b>Enseignant :</b> ${esc(s.teacher||"—")}</span>
+      </div>
+      ${s.notes?`<div class="sobs">Observation : ${esc(s.notes)}</div>`:""}
+      ${upd}
+    </div>
+    <div class="sactions">
+      <button class="btn btn-green btn-sm" onclick="confirmSession('${slug}','${s.id}')" ${st==="confirmed"?"disabled":""}>Confirmer</button>
+      <button class="btn btn-soft btn-sm" onclick="pendingSession('${slug}','${s.id}')" ${st==="pending"?"disabled":""}>À confirmer</button>
+      <button class="btn btn-ghost btn-sm" onclick="moveSession('${slug}','${s.id}','advanced')">Avancer</button>
+      <button class="btn btn-ghost btn-sm" onclick="moveSession('${slug}','${s.id}','rescheduled')">Reporter</button>
+      <button class="btn btn-danger btn-sm" onclick="cancelSession('${slug}','${s.id}')" ${st==="cancelled"?"disabled":""}>Annuler</button>
+      <button class="btn btn-ghost btn-sm" onclick="deleteSession('${slug}','${s.id}')" title="Retirer du planning">Supprimer</button>
+    </div>
+  </div>`;
+}
+
+function render(){
+  // Assurer un id sur chaque séance
+  for(const slug in state.programs){ (state.programs[slug].data.sessions||[]).forEach(s=>{ if(!s.id)s.id=newId(); }); }
+
+  const list=document.getElementById("list");
+  const slugs=scopeSlugs();
+  let html="";
+  let total=0;
+  slugs.forEach(slug=>{
+    const prog=state.programs[slug]; if(!prog)return;
+    const sessions=sortSessions(prog.data.sessions||[]);
+    total+=sessions.length;
+    if(state.scope==="all"){
+      html+=`<div class="prog-group"><h3>${esc(LABEL[slug]||slug)} <span class="rule"></span>${prog.dirty?'<span class="dirty">modifié</span>':''}<span style="font-weight:600;color:var(--muted);font-size:11px">${sessions.length} séance(s)</span></h3>`;
+    }
+    if(!sessions.length){ html+=`<div class="empty">Aucune séance pour ce programme.</div>`; }
+    else { html+=sessions.map(s=>sessionRow(slug,s)).join(""); }
+    if(state.scope==="all") html+=`</div>`;
+  });
+  if(!total && state.scope!=="all"){ html=`<div class="empty">Aucune séance pour ce programme.</div>`; }
+  list.innerHTML=html;
+
+  // Panneau semaine (mono-programme)
+  const wp=document.getElementById("weekPanel");
+  if(state.scope==="all"){ wp.style.display="none"; }
+  else{
+    wp.style.display="block";
+    const data=state.programs[state.scope].data;
+    document.getElementById("weekPanelProg").textContent=LABEL[state.scope]||state.scope;
+    document.getElementById("wkLabel").value=data.week_label||"";
+    document.getElementById("wkFile").value=data.week_file_label||"";
+    document.getElementById("wkUpdated").value=data.updated_label||"";
+    document.getElementById("wkIsNew").checked=!!data.is_new;
+  }
+
+  // Nav contextuelle
+  const progHref = state.scope==="all" ? "../" : `../${state.scope}/`;
+  document.getElementById("navProgram").href=progHref;
+  document.getElementById("navPublic").href=progHref;
+  document.getElementById("crumbProgram").textContent = state.scope==="all" ? "Tous les programmes" : (LABEL[state.scope]||state.scope);
+
+  // Boutons publication : actifs seulement s'il y a des programmes modifiés
+  const anyDirty=Object.values(state.programs).some(p=>p.dirty);
+  document.getElementById("downloadBtn").disabled=!anyDirty;
+  document.getElementById("publishBtn").disabled=!anyDirty;
+}
+
+/* ====================== Panneau semaine ====================== */
+function applyWeekInfo(){
+  if(state.scope==="all")return;
+  const data=state.programs[state.scope].data;
+  data.week_label=document.getElementById("wkLabel").value.trim()||data.week_label;
+  data.week_file_label=document.getElementById("wkFile").value.trim()||data.week_file_label;
+  data.updated_label=document.getElementById("wkUpdated").value.trim()||data.updated_label;
+  const isNew=document.getElementById("wkIsNew").checked;
+  if(isNew){ data.is_new=true; data.published_at=nowISO(); }
+  else { delete data.is_new; }
+  markDirty(state.scope);
+  toast("Informations de semaine appliquées.");
+}
+
+/* ====================== Modal ====================== */
+let modalOnOk=null;
+function openModal({title,sub,fields,onOk,okLabel,danger}){
+  document.getElementById("modalTitle").textContent=title;
+  document.getElementById("modalSub").textContent=sub||"";
+  const wrap=document.getElementById("modalFields"); wrap.innerHTML="";
+  (fields||[]).forEach(f=>{
+    const div=document.createElement("div"); div.className="field";
+    const lab=document.createElement("label"); lab.textContent=f.label+(f.required?" *":""); lab.setAttribute("for","mf_"+f.key);
+    let el;
+    if(f.type==="textarea"){ el=document.createElement("textarea"); el.rows=3; }
+    else if(f.type==="select"){ el=document.createElement("select"); (f.options||[]).forEach(o=>{const op=document.createElement("option");op.value=o.v;op.textContent=o.t;el.appendChild(op);}); }
+    else { el=document.createElement("input"); el.type=f.type||"text"; }
+    el.id="mf_"+f.key; el.dataset.key=f.key;
+    if(f.placeholder)el.placeholder=f.placeholder;
+    if(f.value!=null)el.value=f.value;
+    wrap.appendChild(lab); wrap.appendChild(el);
+  });
+  const ok=document.getElementById("modalOk"); ok.textContent=okLabel||"Valider";
+  ok.className="btn "+(danger?"btn-danger":"btn-green");
+  modalOnOk=onOk;
+  document.getElementById("modalBack").classList.add("show");
+  const first=wrap.querySelector("input,select,textarea"); if(first)first.focus();
+}
+function closeModal(){ document.getElementById("modalBack").classList.remove("show"); modalOnOk=null; }
+document.getElementById("modalCancel").onclick=closeModal;
+document.getElementById("modalBack").onclick=(e)=>{ if(e.target.id==="modalBack")closeModal(); };
+document.getElementById("modalOk").onclick=()=>{
+  const vals={}; document.querySelectorAll("#modalFields [data-key]").forEach(el=>vals[el.dataset.key]=el.value);
+  if(modalOnOk){ const r=modalOnOk(vals); if(r===false)return; }
+  closeModal();
+};
+
+/* ====================== Publication : téléchargement ====================== */
+function jsonFor(slug){ return JSON.stringify(state.programs[slug].data,null,2)+"\n"; }
+function downloadDirty(){
+  const dirty=Object.keys(state.programs).filter(s=>state.programs[s].dirty);
+  if(!dirty.length){toast("Aucune modification à enregistrer.",true);return;}
+  dirty.forEach(slug=>{
+    const blob=new Blob([jsonFor(slug)],{type:"application/json;charset=utf-8"});
+    const url=URL.createObjectURL(blob); const a=document.createElement("a");
+    a.href=url; a.download=`${slug}.json`; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),400);
+  });
+  toast(`JSON téléchargé (${dirty.length}). À placer dans /data/ puis committer.`);
+}
+
+/* ====================== Publication : GitHub API ====================== */
+function b64(str){ return btoa(unescape(encodeURIComponent(str))); }
+function openPublish(){
+  const dirty=Object.keys(state.programs).filter(s=>state.programs[s].dirty);
+  if(!dirty.length){toast("Aucune modification à publier.",true);return;}
+  const cfg=JSON.parse(sessionStorage.getItem(TOKEN_KEY)||"{}");
+  openModal({
+    title:"Publier sur GitHub",
+    sub:"Écrit directement les JSON modifiés dans le dépôt via l’API GitHub. Le jeton reste dans cet onglet uniquement (sessionStorage), jamais dans le code.",
+    fields:[
+      {key:"owner",label:"Propriétaire",type:"text",value:cfg.owner||"oscarkakpo-create",required:true},
+      {key:"repo",label:"Dépôt",type:"text",value:cfg.repo||"votre-planning-cesag-online",required:true},
+      {key:"branch",label:"Branche",type:"text",value:cfg.branch||"main",required:true},
+      {key:"token",label:"Jeton d’accès (fine-grained, Contents: write)",type:"password",value:cfg.token||"",required:true}
+    ],
+    okLabel:"Publier "+dirty.length+" fichier(s)",
+    onOk:(v)=>{
+      if(!v.owner||!v.repo||!v.branch||!v.token){toast("Tous les champs sont requis.",true);return false;}
+      sessionStorage.setItem(TOKEN_KEY,JSON.stringify({owner:v.owner,repo:v.repo,branch:v.branch,token:v.token}));
+      publishToGitHub(v,dirty);
+    }
+  });
+}
+async function ghApi(url,opts,token){
+  const res=await fetch(url,{...opts,headers:{Authorization:"Bearer "+token,Accept:"application/vnd.github+json","Content-Type":"application/json",...(opts.headers||{})}});
+  return res;
+}
+async function publishToGitHub(cfg,dirty){
+  toast("Publication en cours…");
+  let okCount=0, errCount=0;
+  for(const slug of dirty){
+    const path=`data/${slug}.json`;
+    const base=`https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}`;
+    try{
+      let sha=null;
+      const getRes=await ghApi(`${base}?ref=${encodeURIComponent(cfg.branch)}`,{method:"GET"},cfg.token);
+      if(getRes.status===200){ sha=(await getRes.json()).sha; }
+      else if(getRes.status!==404){ throw new Error("GET "+getRes.status); }
+      const body={message:`cockpit: mise à jour statuts ${slug}`,content:b64(jsonFor(slug)),branch:cfg.branch};
+      if(sha)body.sha=sha;
+      const putRes=await ghApi(base,{method:"PUT",body:JSON.stringify(body)},cfg.token);
+      if(putRes.ok){ okCount++; state.programs[slug].dirty=false; }
+      else { errCount++; console.error("PUT",slug,putRes.status,await putRes.text()); }
+    }catch(e){ errCount++; console.error(slug,e); }
+  }
+  saveDraft(); render();
+  if(errCount) toast(`Publié : ${okCount} · Échecs : ${errCount} (voir console).`,true);
+  else toast(`Publié sur GitHub (${okCount} fichier(s)). Le site public se met à jour après le build Pages.`);
+}
+
+/* ====================== Init ====================== */
+function buildSelect(){
+  const sel=document.getElementById("progSelect");
+  sel.innerHTML=`<option value="all">Tous les programmes</option>`+PROGRAMS.map(p=>`<option value="${p.slug}">${esc(p.label)}</option>`).join("");
+  sel.onchange=()=>{ state.scope=sel.value; render(); location.hash="changer"; };
+}
+document.getElementById("reloadBtn").onclick=async()=>{ localStorage.removeItem(DRAFT_KEY); document.getElementById("draftbar").classList.remove("show"); await loadAll(); render(); toast("Rechargé depuis les fichiers."); };
+document.getElementById("discardDraft").onclick=async()=>{ localStorage.removeItem(DRAFT_KEY); document.getElementById("draftbar").classList.remove("show"); await loadAll(); render(); toast("Brouillon local supprimé."); };
+document.getElementById("addBtn").onclick=addSession;
+document.getElementById("downloadBtn").onclick=downloadDirty;
+document.getElementById("publishBtn").onclick=openPublish;
+document.getElementById("wkApply").onclick=applyWeekInfo;
+document.addEventListener("keydown",e=>{ if(e.key==="Escape")closeModal(); });
+
+(async()=>{ buildSelect(); await loadAll(); render(); })();
+</script>
+</body>
+</html>
