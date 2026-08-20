@@ -2,8 +2,44 @@
   "slug": "mba-gp-auf",
   "program_name": "MBA GP AUF",
   "program_short": "MBA GP AUF",
-  "week_label": "17 → 23 août 2026",
-  "week_file_label": "17-23_aout_2026",
+  "week_label": "24 → 30 août 2026",
+  "week_file_label": "24-30_aout_2026",
   "updated_label": "20 août 2026",
-  "sessions": []
+  "sessions": [
+    {
+      "date": "2026-08-25",
+      "title": "Analyse financière de projet",
+      "type": "Cours",
+      "teacher": "M. IBRAHIMA FALL",
+      "start": "18:00",
+      "end": "20:00",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=999",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29999",
+      "notes": "Séance de consolidation. Merci de relire le support du module avant la connexion et de rejoindre la salle quelques minutes à l’avance."
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Planification et pilotage des projets",
+      "type": "Cours",
+      "teacher": "M. MOUSSA DIOP",
+      "start": "18:00",
+      "end": "20:00",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=998",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29998",
+      "notes": "Prévoir une calculatrice et le support de cours pour les exercices d’application."
+    },
+    {
+      "date": "2026-08-29",
+      "title": "Évaluation des projets et gestion des risques",
+      "type": "Examen",
+      "teacher": "Mme AMINATA NDIAYE",
+      "start": "09:00",
+      "end": "11:00",
+      "duration": "120 minutes",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=997",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29997",
+      "teams": "https://teams.microsoft.com/l/meetup-join/TEST",
+      "notes": "Examen test pour validation du portail. Respecter strictement la durée affichée et les consignes communiquées sur Moodle."
+    }
+  ]
 }
