@@ -364,6 +364,14 @@
       *{transition:none !important;animation:none !important;scroll-behavior:auto !important}
       .program-card{opacity:1;transform:none}
     }
+
+    /* Badge « Nouveau planning » ajouté dynamiquement selon les JSON */
+    .new-badge{
+      position:absolute;top:14px;right:14px;z-index:3;
+      background:var(--gold);color:#fff;font-size:10px;font-weight:800;
+      letter-spacing:.6px;text-transform:uppercase;padding:5px 10px;border-radius:999px;
+      box-shadow:0 4px 12px rgba(201,150,42,.35);
+    }
   </style>
 </head>
 
@@ -629,5 +637,28 @@
       <div>Année académique 2025–2026</div>
     </div>
   </footer>
+
+  <script>
+    /* Signale les programmes dont le planning est marqué "is_new" dans son JSON.
+       Lecture seule : aucune donnée n'est modifiée depuis cette page. */
+    (async () => {
+      const cards = document.querySelectorAll(".program-card");
+      await Promise.all([...cards].map(async (card) => {
+        const slug = (card.getAttribute("href") || "").replace(/^\.\//, "").replace(/\/$/, "");
+        if (!slug) return;
+        try {
+          const res = await fetch(`./data/${slug}.json`, { cache: "no-store" });
+          if (!res.ok) return;
+          const d = await res.json();
+          if (d && d.is_new) {
+            const b = document.createElement("span");
+            b.className = "new-badge";
+            b.textContent = "Nouveau";
+            card.appendChild(b);
+          }
+        } catch (e) { /* accueil statique : on ignore silencieusement */ }
+      }));
+    })();
+  </script>
 </body>
 </html>

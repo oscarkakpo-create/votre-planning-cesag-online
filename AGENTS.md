@@ -64,12 +64,14 @@ Pour un examen, il peut également fournir :
 ## Structure standard d’une séance de cours
 ```json
 {
+  "id": "s1",
   "date": "2026-08-24",
   "title": "Nom du module",
   "type": "Cours",
   "teacher": "M. NOM",
   "start": "18:00",
   "end": "20:00",
+  "status": "pending",
   "moodle": "https://...",
   "room": "https://..."
 }
@@ -78,12 +80,14 @@ Pour un examen, il peut également fournir :
 ## Structure standard d’un examen
 ```json
 {
+  "id": "s3",
   "date": "2026-08-26",
   "title": "Nom du module",
   "type": "Examen",
   "teacher": "M. NOM",
   "start": "18:00",
   "end": "20:00",
+  "status": "pending",
   "duration": "120 minutes",
   "moodle": "https://...",
   "room": "https://...",
@@ -91,6 +95,16 @@ Pour un examen, il peut également fournir :
   "notes": "Consignes particulières"
 }
 ```
+
+Champs de gestion (ajoutés/maintenus par le cockpit, à ne pas inventer manuellement) :
+- `id` : identifiant stable de la séance (généré par le cockpit s’il manque).
+- `status` : statut de la séance (voir plus bas). Par défaut `pending` pour toute nouvelle séance.
+- `updated_at` : horodatage ISO du dernier changement de statut (écrit par le cockpit).
+- `moved_from` / `moved_to` : liens entre une séance d’origine reportée/avancée et sa nouvelle occurrence.
+
+Au niveau du programme, deux champs facultatifs pilotent le badge « nouveau » :
+- `is_new` : `true` quand une nouvelle semaine vient d’être publiée.
+- `published_at` : horodatage ISO de la publication.
 
 ## Comportement du site à préserver
 Les pages HTML lisent automatiquement les JSON et doivent continuer à :
@@ -129,6 +143,60 @@ Avant de valider une mise à jour :
 - vérifier que les liens sont copiés sans modification ;
 - vérifier que chaque JSON est syntaxiquement valide ;
 - confirmer que seuls les fichiers JSON nécessaires ont été modifiés.
+
+## Cockpit d’administration (`/cockpit/`)
+Le dépôt fournit un cockpit d’administration à l’adresse `/cockpit/`. Il permet de :
+- voir les séances de tous les programmes ou de filtrer par programme ;
+- publier un nouveau planning (badge NOUVEAU) ;
+- confirmer une séance le jour J ;
+- l’annuler, la reporter ou l’avancer ;
+- ajouter une séance ;
+- revenir à l’accueil, au programme concerné ou au site public.
+
+Le cockpit **ne fait que produire du JSON** : il ne modifie ni le design ni le HTML. Le site public continue de lire les mêmes fichiers `/data/*.json`. Les changements faits dans le cockpit sont d’abord un **brouillon local** (localStorage du navigateur) ; pour qu’ils apparaissent en ligne, il faut **publier** :
+- soit **Télécharger le(s) JSON** puis committer le fichier dans `/data/` ;
+- soit **Publier sur GitHub** (API Contents) avec un jeton personnel saisi au moment de l’usage.
+
+## Statuts des séances
+Valeurs possibles du champ `status` :
+- `pending` → **À confirmer** (badge doré) — statut par défaut de toute nouvelle séance ;
+- `confirmed` → **Confirmée** (badge vert) ;
+- `advanced` → **Avancée** (badge bleu) ;
+- `rescheduled` → **Reportée** (badge orange) ;
+- `cancelled` → **Annulée** (badge rouge).
+
+Si `status` est absent, la séance est traitée comme `pending`.
+
+Répercussion sur le site public :
+- le badge de statut s’affiche sur la carte de séance ;
+- une séance `cancelled` masque les boutons Moodle / BBB / Teams et affiche « Séance annulée » ;
+- les séances `cancelled`, `rescheduled` et `advanced` sont **exclues des ICS** (semaine et séance unique), ce qui évite tout doublon avec la nouvelle occurrence.
+
+## Publication d’une nouvelle semaine
+Lorsqu’une nouvelle semaine est publiée :
+- chaque nouvelle séance est créée avec `"status": "pending"` (elle apparaît comme **À confirmer**) ;
+- au niveau du programme, `"is_new": true` et `"published_at": "<ISO>"` sont ajoutés → badge **NOUVEAU** sur la page programme et sur l’accueil.
+
+## Le jour J (confirmation manuelle)
+Le jour de la séance, l’administrateur ouvre le cockpit et clique **Confirmer** :
+- `status` passe à `confirmed` ;
+- `updated_at` est enregistré automatiquement ;
+- l’affichage public reflète le nouveau statut après publication du JSON.
+Le bouton **À confirmer** permet de revenir à `pending` (correction d’une confirmation faite par erreur).
+
+## Report / Avancement / Annulation
+- **Reporter** : la séance d’origine passe à `rescheduled` (reste visible comme REPORTÉE, exclue des ICS) ; une **nouvelle occurrence** `pending` est créée avec le nouveau créneau (`moved_from` pointant l’origine).
+- **Avancer** : idem avec `advanced` sur l’origine ; la nouvelle occurrence est intégrée normalement au planning.
+- **Annuler** : la séance passe à `cancelled`, une observation courte peut être saisie, les liens Moodle/BBB/Teams sont masqués et la séance est exclue des ICS.
+Ne jamais dupliquer une séance à la main : la nouvelle occurrence est créée par le cockpit et l’origine conserve son statut.
+
+## Sécurité du cockpit
+- Le cockpit n’est pas destiné aux étudiants (`noindex`), mais rien n’empêche techniquement d’ouvrir son URL : **prévoir une vraie protection d’accès avant mise en production** (hébergement protégé, Basic Auth, Cloudflare Access, Netlify password, etc.).
+- Ne jamais écrire de mot de passe, secret ou jeton dans le code. Le jeton GitHub est saisi au moment de l’usage et conservé uniquement dans le `sessionStorage` de l’onglet.
+- Ne pas exposer de fonction d’écriture publique sur les JSON sans protection : l’écriture réelle nécessite le jeton personnel de l’administrateur.
+
+## Design
+Lors des mises à jour normales (planning, statuts), **ne pas modifier le design ni la structure** des pages. Le cockpit et les pages programmes partagent la charte existante (vert `#0B4D2E`, or `#C9962A`). Les évolutions de design ne se font que sur demande explicite.
 
 ## Consigne à retenir
 Lors d’une mise à jour hebdomadaire, l’utilisateur ne doit pas avoir à parler de JSON ou de HTML. Il colle simplement son planning. Le dépôt doit absorber ce contenu en modifiant uniquement les données nécessaires, sans toucher à l’apparence du site.

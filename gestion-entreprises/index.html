@@ -24,6 +24,7 @@
     .topbar{background:var(--green);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
     .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
     .brand{font-weight:700}.back{font-weight:600;color:rgba(255,255,255,.9)}
+    .topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
     .hero{padding:34px 0 18px}
     .hero-panel{background:linear-gradient(150deg,var(--green2),var(--green) 45%,var(--greenDark));color:#fff;border-radius:30px;padding:44px 46px 38px;box-shadow:var(--shadow);position:relative;overflow:hidden}
     .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
@@ -33,6 +34,7 @@
     .hero p{margin:14px 0 0;color:rgba(255,255,255,.88);line-height:1.6}
     .weekbox{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:20px}
     .weekbox small{display:block;color:#F1D291;font-weight:700;margin-bottom:6px}.weekbox strong{display:block;font-size:20px}.weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.74)}
+    .newflag{display:inline-block;margin-top:10px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:5px 11px;border-radius:999px}
     .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;position:relative;z-index:1}
     .btn{border:none;border-radius:13px;padding:12px 15px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
     .btn-gold{background:var(--gold);color:#fff}.btn-light{background:#fff;color:var(--green)}.btn-soft{background:var(--greenSoft);color:var(--green)}
@@ -43,15 +45,25 @@
     .agenda{display:grid;gap:16px}
     .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;grid-template-columns:130px 1fr 195px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(11,77,46,.04)}
     .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}.session.exam:before{background:var(--red)}
+    .session.is-cancelled{opacity:.72}.session.is-cancelled:before{background:var(--red)}.session.is-cancelled h3{text-decoration:line-through;text-decoration-color:rgba(180,35,24,.6)}
+    .session.is-rescheduled:before{background:#D9822B}.session.is-advanced:before{background:var(--blue)}.session.is-confirmed:before{background:var(--green)}
     .datebox{background:var(--paper);border-radius:15px;padding:14px;text-align:center}.datebox .day{font-size:32px;font-weight:800;color:var(--green);line-height:1}.exam .datebox .day{color:var(--red)}.datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}.datebox .weekday{font-size:12px;color:var(--muted);margin-top:3px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}.tag{padding:5px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}.tag-program{background:var(--goldSoft);color:var(--goldDark)}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}.tag{padding:5px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}.tag-program{background:var(--goldSoft);color:var(--goldDark)}
+    .status-badge{padding:5px 10px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
+    .status-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+    .st-pending{background:var(--goldSoft);color:var(--goldDark)}
+    .st-confirmed{background:#E4F3EA;color:#166534}
+    .st-advanced{background:var(--blueSoft);color:var(--blue)}
+    .st-rescheduled{background:#FCEDDD;color:#9A4A0F}
+    .st-cancelled{background:var(--redSoft);color:var(--red)}
     .session h3{margin:0;font-size:18px;line-height:1.35}.meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}.meta b{color:var(--text)}
     .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
+    .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
     .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
     .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
     footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
     @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){.container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}}
+    @media(max-width:620px){.container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}.topnav{gap:12px}}
     @media print{body{background:#fff}.topbar,.toolbar,.actions,.notice,footer{display:none!important}.container{max-width:none;padding:0}.hero{padding:0 0 16px}.hero-panel{box-shadow:none;border-radius:0;padding:18px 0;background:#fff!important;color:#000;border-bottom:2px solid var(--green)}.hero p,.weekbox span,.weekbox small{color:#555}.weekbox{border:1px solid #ddd;background:#fff}.quick{grid-template-columns:repeat(3,1fr)}.session{box-shadow:none;break-inside:avoid}}
   </style>
 </head>
@@ -59,7 +71,11 @@
   <div class="topbar">
     <div class="container">
       <div class="brand">CESAG ONLINE · Agenda FOAD</div>
-      <a class="back" href="../">← Retour aux programmes</a>
+      <nav class="topnav" aria-label="Navigation principale">
+        <a class="back" href="../">← Accueil</a>
+        <a class="back" href="../">Retour aux programmes</a>
+        <a class="back" href="../#toolbox-title">Boîte à outils</a>
+      </nav>
     </div>
   </div>
 
@@ -76,6 +92,7 @@
             <small>SEMAINE AFFICHÉE</small>
             <strong id="weekLabel">—</strong>
             <span id="updatedLabel">Horaires en GMT</span>
+            <span id="newFlag" class="newflag" style="display:none">Nouveau planning</span>
           </div>
         </div>
         <div class="toolbar">
@@ -104,7 +121,8 @@
       <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
 
       <div class="notice">
-        <b>À retenir :</b> l’ICS global contient uniquement les séances affichées pour cette semaine.
+        <b>À retenir :</b> l’ICS global contient uniquement les séances maintenues cette semaine
+        (les séances annulées, reportées ou avancées sont exclues du calendrier).
         Chaque événement comprend trois rappels : la veille à 20h00 GMT, deux heures avant et quinze minutes avant.
       </div>
     </div>
@@ -124,6 +142,12 @@ let pageData = null;
 const months = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 const weekdays = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
 
+const STATUS_LABELS={pending:"À confirmer",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
+const STATUS_CLASS={pending:"st-pending",confirmed:"st-confirmed",advanced:"st-advanced",rescheduled:"st-rescheduled",cancelled:"st-cancelled"};
+const ICS_EXCLUDED=["cancelled","rescheduled","advanced"];
+function normStatus(s){const v=String(s&&s.status||"pending").toLowerCase();return STATUS_LABELS[v]?v:"pending";}
+function icsIncluded(s){return !ICS_EXCLUDED.includes(normStatus(s));}
+
 function escHtml(v=""){
   return String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
@@ -137,6 +161,8 @@ function previousDayAt20(date){
   return d.toISOString().replace(/[-:]/g,"").replace(".000","");
 }
 function makeICS(items, filename){
+  items = (items||[]).filter(icsIncluded);
+  if(!items.length) return;
   const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//CESAG ONLINE//Agenda FOAD//FR","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-TIMEZONE:UTC"];
   items.forEach((s,i)=>{
     const desc=[
@@ -151,7 +177,7 @@ function makeICS(items, filename){
     ].filter(Boolean).join("\n");
     lines.push(
       "BEGIN:VEVENT",
-      `UID:${pageData.slug}-${s.date}-${s.start.replace(":","")}-${i}@cesag-online`,
+      `UID:${pageData.slug}-${s.date}-${s.start.replace(":","")}-${s.id||i}@cesag-online`,
       `DTSTAMP:${utcStamp(s.date,"00:00")}`,
       `DTSTART:${utcStamp(s.date,s.start)}`,
       `DTEND:${utcStamp(s.date,s.end)}`,
@@ -172,8 +198,12 @@ function makeICS(items, filename){
 function card(s, index){
   const d = new Date(s.date+"T00:00:00Z");
   const exam = String(s.type).toLowerCase()==="examen";
+  const st = normStatus(s);
+  const cancelled = st==="cancelled";
+  const showLinks = !cancelled;
+  const inIcs = icsIncluded(s);
   return `
-    <article class="session ${exam?"exam":""}">
+    <article class="session ${exam?"exam":""} is-${st}">
       <div class="datebox">
         <div class="day">${String(d.getUTCDate()).padStart(2,"0")}</div>
         <div class="month">${months[d.getUTCMonth()]}</div>
@@ -183,6 +213,7 @@ function card(s, index){
         <div class="tags">
           <span class="tag ${exam?"tag-exam":"tag-course"}">${escHtml(s.type)}</span>
           <span class="tag tag-program">${escHtml(pageData.program_short)}</span>
+          <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
         </div>
         <h3>${escHtml(s.title)}</h3>
         <div class="meta">
@@ -193,15 +224,17 @@ function card(s, index){
         ${s.notes?`<div class="meta"><span><b>Information :</b> ${escHtml(s.notes)}</span></div>`:""}
       </div>
       <div class="actions">
-        ${s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
-        ${s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">Rejoindre la salle virtuelle</a>`:""}
-        ${s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Surveillance Teams</a>`:""}
-        <button class="action ics" onclick="downloadSingle(${index})">Ajouter cette séance</button>
+        ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
+        ${showLinks && s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">Rejoindre la salle virtuelle</a>`:""}
+        ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Surveillance Teams</a>`:""}
+        ${inIcs?`<button class="action ics" onclick="downloadSingle(${index})">Ajouter cette séance</button>`:""}
+        ${cancelled?`<div class="cancel-note">Séance annulée</div>`:""}
       </div>
     </article>`;
 }
 function downloadSingle(i){
   const s=pageData.sessions[i];
+  if(!s || !icsIncluded(s)) return;
   makeICS([s],`CESAG_${pageData.slug}_${s.date}_${s.type}.ics`);
 }
 async function load(){
@@ -214,11 +247,15 @@ async function load(){
   document.getElementById("footerProgram").textContent=pageData.program_name;
   document.getElementById("weekLabel").textContent=pageData.week_label || "—";
   document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
+  document.getElementById("newFlag").style.display=pageData.is_new?"inline-block":"none";
   document.getElementById("countSessions").textContent=pageData.sessions.length;
   document.getElementById("countExams").textContent=pageData.sessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
   document.getElementById("agenda").innerHTML=pageData.sessions.map(card).join("");
   document.getElementById("empty").style.display=pageData.sessions.length?"none":"block";
-  document.getElementById("downloadWeek").onclick=()=>pageData.sessions.length && makeICS(pageData.sessions,`Agenda_${pageData.slug}_${pageData.week_file_label || "semaine"}.ics`);
+  document.getElementById("downloadWeek").onclick=()=>{
+    const items=pageData.sessions.filter(icsIncluded);
+    if(items.length) makeICS(items,`Agenda_${pageData.slug}_${pageData.week_file_label || "semaine"}.ics`);
+  };
 }
 load().catch(err=>{
   console.error(err);
