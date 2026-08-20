@@ -1,0 +1,33 @@
+{
+  "slug": "mba-gp",
+  "program_name": "MBA Gestion de Projets",
+  "program_short": "MBA GP",
+  "week_label": "17 → 23 août 2026",
+  "week_file_label": "17-23_aout_2026",
+  "updated_label": "20 août 2026",
+  "sessions": [
+    {
+      "date": "2026-08-18",
+      "title": "Partenariat public-privé (PPP)",
+      "type": "Cours",
+      "teacher": "M. BRICE GAEL SOUBEIGA",
+      "start": "18:00",
+      "end": "20:00",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=996",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13788"
+    },
+    {
+      "date": "2026-08-19",
+      "title": "Intégration et gestion de projets, programmes et portefeuille",
+      "type": "Examen",
+      "teacher": "M. CLOVIS TOUGMA",
+      "start": "18:00",
+      "end": "20:00",
+      "duration": "120 minutes",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=994",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27390",
+      "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt",
+      "notes": "Durée officielle : 2 heures. L’IA est interdite. Le dépôt doit être effectué dans le délai prévu ; aucune copie par e-mail."
+    }
+  ]
+}

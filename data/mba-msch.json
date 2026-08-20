@@ -1,0 +1,20 @@
+{
+  "slug": "mba-msch",
+  "program_name": "Management Stratégique du Capital Humain",
+  "program_short": "MBA MSCH",
+  "week_label": "17 → 23 août 2026",
+  "week_file_label": "17-23_aout_2026",
+  "updated_label": "20 août 2026",
+  "sessions": [
+    {
+      "date": "2026-08-18",
+      "title": "Audit social et audit de la RSE",
+      "type": "Cours",
+      "teacher": "Dr MAMADOU SANE",
+      "start": "18:00",
+      "end": "20:00",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1259",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390"
+    }
+  ]
+}

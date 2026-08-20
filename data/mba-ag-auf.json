@@ -1,0 +1,30 @@
+{
+  "slug": "mba-ag-auf",
+  "program_name": "MBA AG AUF",
+  "program_short": "MBA AG AUF",
+  "week_label": "17 → 23 août 2026",
+  "week_file_label": "17-23_aout_2026",
+  "updated_label": "20 août 2026",
+  "sessions": [
+    {
+      "date": "2026-08-18",
+      "title": "Marchés financiers",
+      "type": "Cours",
+      "teacher": "M. AHMAD KONATE",
+      "start": "18:00",
+      "end": "20:00",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1330",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29343"
+    },
+    {
+      "date": "2026-08-20",
+      "title": "Contrôle de gestion",
+      "type": "Cours",
+      "teacher": "M. SINIMBOU DUROTIMI",
+      "start": "18:00",
+      "end": "20:00",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1329",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28952"
+    }
+  ]
+}

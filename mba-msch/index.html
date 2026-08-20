@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="pageTitle">Agenda FOAD — CESAG ONLINE</title>
+  <meta name="theme-color" content="#0B4D2E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#0B4D2E;--green2:#0E5E39;--greenDark:#07301E;--greenSoft:#E9F2ED;
+      --greenLine:#CBDED3;--gold:#C9962A;--goldDark:#755513;--goldSoft:#F7EFDA;
+      --paper:#F6F8F6;--white:#fff;--text:#16241D;--muted:#586A60;--line:#E3E9E5;
+      --red:#B42318;--redSoft:#FFF0EE;--blue:#4052A8;--blueSoft:#EEF1FF;
+      --shadow:0 16px 40px rgba(11,77,46,.08);
+      --serif:"Spectral",Georgia,serif;--sans:"Inter","Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper)}
+    a{text-decoration:none;color:inherit} button{font:inherit}
+    .container{max-width:1160px;margin:auto;padding:0 20px}
+    .topbar{background:var(--green);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+    .brand{font-weight:700}.back{font-weight:600;color:rgba(255,255,255,.9)}
+    .hero{padding:34px 0 18px}
+    .hero-panel{background:linear-gradient(150deg,var(--green2),var(--green) 45%,var(--greenDark));color:#fff;border-radius:30px;padding:44px 46px 38px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center;position:relative;z-index:1}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:#F1D291;margin-bottom:12px}
+    h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(34px,5vw,56px);line-height:1.04}
+    .hero p{margin:14px 0 0;color:rgba(255,255,255,.88);line-height:1.6}
+    .weekbox{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:20px}
+    .weekbox small{display:block;color:#F1D291;font-weight:700;margin-bottom:6px}.weekbox strong{display:block;font-size:20px}.weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.74)}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;position:relative;z-index:1}
+    .btn{border:none;border-radius:13px;padding:12px 15px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+    .btn-gold{background:var(--gold);color:#fff}.btn-light{background:#fff;color:var(--green)}.btn-soft{background:var(--greenSoft);color:var(--green)}
+    main{padding:10px 0 48px}
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 26px}
+    .quick-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px}.quick-card small{display:block;color:var(--muted);margin-bottom:4px}.quick-card strong{font-size:20px;color:var(--green)}
+    .section-head{margin:8px 0 14px}.section-head h2{font-family:var(--serif);margin:0;color:var(--green);font-size:29px;font-weight:600}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13.5px}
+    .agenda{display:grid;gap:16px}
+    .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;grid-template-columns:130px 1fr 195px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(11,77,46,.04)}
+    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}.session.exam:before{background:var(--red)}
+    .datebox{background:var(--paper);border-radius:15px;padding:14px;text-align:center}.datebox .day{font-size:32px;font-weight:800;color:var(--green);line-height:1}.exam .datebox .day{color:var(--red)}.datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}.datebox .weekday{font-size:12px;color:var(--muted);margin-top:3px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}.tag{padding:5px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}.tag-program{background:var(--goldSoft);color:var(--goldDark)}
+    .session h3{margin:0;font-size:18px;line-height:1.35}.meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}.meta b{color:var(--text)}
+    .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
+    .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
+    .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
+    footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
+    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}}
+    @media print{body{background:#fff}.topbar,.toolbar,.actions,.notice,footer{display:none!important}.container{max-width:none;padding:0}.hero{padding:0 0 16px}.hero-panel{box-shadow:none;border-radius:0;padding:18px 0;background:#fff!important;color:#000;border-bottom:2px solid var(--green)}.hero p,.weekbox span,.weekbox small{color:#555}.weekbox{border:1px solid #ddd;background:#fff}.quick{grid-template-columns:repeat(3,1fr)}.session{box-shadow:none;break-inside:avoid}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">CESAG ONLINE · Agenda FOAD</div>
+      <a class="back" href="../">← Retour aux programmes</a>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container">
+      <section class="hero-panel">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow" id="programEyebrow"></div>
+            <h1>Agenda de la semaine</h1>
+            <p>Consultez vos cours et examens, rejoignez directement vos espaces de formation et ajoutez la semaine à votre calendrier.</p>
+          </div>
+          <div class="weekbox">
+            <small>SEMAINE AFFICHÉE</small>
+            <strong id="weekLabel">—</strong>
+            <span id="updatedLabel">Horaires en GMT</span>
+          </div>
+        </div>
+        <div class="toolbar">
+          <button class="btn btn-gold" id="downloadWeek">Télécharger l’ICS de la semaine</button>
+          <button class="btn btn-light" onclick="window.print()">Exporter le planning en PDF</button>
+          <a class="btn btn-soft" id="moodleHome" href="https://formations.cesagonline.com/" target="_blank" rel="noopener">Ouvrir Moodle</a>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="quick">
+        <div class="quick-card"><small>Séances cette semaine</small><strong id="countSessions">0</strong></div>
+        <div class="quick-card"><small>Examens</small><strong id="countExams">0</strong></div>
+        <div class="quick-card"><small>Programme</small><strong id="programShort" style="font-size:16px">—</strong></div>
+      </section>
+
+      <div class="section-head">
+        <h2>Planning hebdomadaire</h2>
+        <p>Les séances sont présentées par ordre chronologique.</p>
+      </div>
+
+      <section class="agenda" id="agenda"></section>
+      <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
+
+      <div class="notice">
+        <b>À retenir :</b> l’ICS global contient uniquement les séances affichées pour cette semaine.
+        Chaque événement comprend trois rappels : la veille à 20h00 GMT, deux heures avant et quinze minutes avant.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div><b>CESAG ONLINE</b> · <span id="footerProgram"></span></div>
+      <div>Année académique 2025–2026</div>
+    </div>
+  </footer>
+
+<script>
+const DATA_FILE = "../data/mba-msch.json";
+let pageData = null;
+
+const months = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+const weekdays = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+
+function escHtml(v=""){
+  return String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function escICS(v=""){
+  return String(v).replace(/\\/g,"\\\\").replace(/\n/g,"\\n").replace(/,/g,"\\,").replace(/;/g,"\\;");
+}
+function utcStamp(date,time){ return date.replaceAll("-","")+"T"+time.replace(":","")+"00Z"; }
+function previousDayAt20(date){
+  const d = new Date(date+"T00:00:00Z");
+  d.setUTCDate(d.getUTCDate()-1); d.setUTCHours(20,0,0,0);
+  return d.toISOString().replace(/[-:]/g,"").replace(".000","");
+}
+function makeICS(items, filename){
+  const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//CESAG ONLINE//Agenda FOAD//FR","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-TIMEZONE:UTC"];
+  items.forEach((s,i)=>{
+    const desc=[
+      `Programme : ${pageData.program_name}`,
+      `Type : ${s.type}`,
+      `Enseignant : ${s.teacher}`,
+      s.duration?`Durée : ${s.duration}`:"",
+      s.moodle?`Moodle : ${s.moodle}`:"",
+      s.room?`Salle virtuelle : ${s.room}`:"",
+      s.teams?`Surveillance Teams : ${s.teams}`:"",
+      s.notes?`Information : ${s.notes}`:""
+    ].filter(Boolean).join("\n");
+    lines.push(
+      "BEGIN:VEVENT",
+      `UID:${pageData.slug}-${s.date}-${s.start.replace(":","")}-${i}@cesag-online`,
+      `DTSTAMP:${utcStamp(s.date,"00:00")}`,
+      `DTSTART:${utcStamp(s.date,s.start)}`,
+      `DTEND:${utcStamp(s.date,s.end)}`,
+      `SUMMARY:${escICS(s.type.toUpperCase()+" - "+s.title)}`,
+      `DESCRIPTION:${escICS(desc)}`,
+      "BEGIN:VALARM","TRIGGER:-PT15M","ACTION:DISPLAY","DESCRIPTION:Rappel CESAG ONLINE - 15 minutes","END:VALARM",
+      "BEGIN:VALARM","TRIGGER:-PT2H","ACTION:DISPLAY","DESCRIPTION:Rappel CESAG ONLINE - 2 heures","END:VALARM",
+      "BEGIN:VALARM",`TRIGGER;VALUE=DATE-TIME:${previousDayAt20(s.date)}`,"ACTION:DISPLAY","DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT","END:VALARM",
+      "END:VEVENT"
+    );
+  });
+  lines.push("END:VCALENDAR");
+  const blob=new Blob([lines.join("\r\n")],{type:"text/calendar;charset=utf-8"});
+  const url=URL.createObjectURL(blob);
+  const a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),500);
+}
+function card(s, index){
+  const d = new Date(s.date+"T00:00:00Z");
+  const exam = String(s.type).toLowerCase()==="examen";
+  return `
+    <article class="session ${exam?"exam":""}">
+      <div class="datebox">
+        <div class="day">${String(d.getUTCDate()).padStart(2,"0")}</div>
+        <div class="month">${months[d.getUTCMonth()]}</div>
+        <div class="weekday">${weekdays[d.getUTCDay()]}</div>
+      </div>
+      <div>
+        <div class="tags">
+          <span class="tag ${exam?"tag-exam":"tag-course"}">${escHtml(s.type)}</span>
+          <span class="tag tag-program">${escHtml(pageData.program_short)}</span>
+        </div>
+        <h3>${escHtml(s.title)}</h3>
+        <div class="meta">
+          <span><b>Horaire :</b> ${escHtml(s.start)}–${escHtml(s.end)} GMT</span>
+          ${s.duration?`<span><b>Durée :</b> ${escHtml(s.duration)}</span>`:""}
+          <span><b>Enseignant :</b> ${escHtml(s.teacher)}</span>
+        </div>
+        ${s.notes?`<div class="meta"><span><b>Information :</b> ${escHtml(s.notes)}</span></div>`:""}
+      </div>
+      <div class="actions">
+        ${s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
+        ${s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">Rejoindre la salle virtuelle</a>`:""}
+        ${s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Surveillance Teams</a>`:""}
+        <button class="action ics" onclick="downloadSingle(${index})">Ajouter cette séance</button>
+      </div>
+    </article>`;
+}
+function downloadSingle(i){
+  const s=pageData.sessions[i];
+  makeICS([s],`CESAG_${pageData.slug}_${s.date}_${s.type}.ics`);
+}
+async function load(){
+  const res = await fetch(DATA_FILE,{cache:"no-store"});
+  pageData = await res.json();
+  pageData.sessions = (pageData.sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
+  document.title = `${pageData.program_name} — Agenda FOAD CESAG ONLINE`;
+  document.getElementById("programEyebrow").textContent=pageData.program_name;
+  document.getElementById("programShort").textContent=pageData.program_short;
+  document.getElementById("footerProgram").textContent=pageData.program_name;
+  document.getElementById("weekLabel").textContent=pageData.week_label || "—";
+  document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
+  document.getElementById("countSessions").textContent=pageData.sessions.length;
+  document.getElementById("countExams").textContent=pageData.sessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
+  document.getElementById("agenda").innerHTML=pageData.sessions.map(card).join("");
+  document.getElementById("empty").style.display=pageData.sessions.length?"none":"block";
+  document.getElementById("downloadWeek").onclick=()=>pageData.sessions.length && makeICS(pageData.sessions,`Agenda_${pageData.slug}_${pageData.week_file_label || "semaine"}.ics`);
+}
+load().catch(err=>{
+  console.error(err);
+  document.getElementById("empty").style.display="block";
+  document.getElementById("empty").textContent="Le planning n’a pas pu être chargé.";
+});
+</script>
+</body>
+</html>
