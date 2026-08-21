@@ -15,7 +15,7 @@
       "teacher": "DR MAMADOU SANE",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1259",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390"
     },
@@ -26,7 +26,7 @@
       "teacher": "MME FELICIENNE KOUESSI",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
       "notes": "Nouveau module"
@@ -38,7 +38,7 @@
       "teacher": "M. SOULEYMANE BOUSSO",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063"
     },
@@ -49,7 +49,7 @@
       "teacher": "M. AKIM PARAISO",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "confirmed",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1252",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18271"
     }
