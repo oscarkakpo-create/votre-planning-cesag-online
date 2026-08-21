@@ -2,19 +2,56 @@
   "slug": "mba-msch",
   "program_name": "Management Stratégique du Capital Humain",
   "program_short": "MBA MSCH",
-  "week_label": "17 → 23 août 2026",
-  "week_file_label": "17-23_aout_2026",
-  "updated_label": "20 août 2026",
+  "week_label": "24 → 30 août 2026",
+  "week_file_label": "24-30_aout_2026",
+  "updated_label": "21 août 2026",
+  "is_new": true,
+  "published_at": "2026-08-21T11:02:58+01:00",
   "sessions": [
     {
-      "date": "2026-08-18",
-      "title": "Audit social et audit de la RSE",
+      "date": "2026-08-24",
+      "title": "MBA MSCH – Audit social et audit de la RSE (MBAGRH142)",
       "type": "Cours",
-      "teacher": "Dr MAMADOU SANE",
+      "teacher": "DR MAMADOU SANE",
       "start": "18:00",
       "end": "20:00",
+      "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1259",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390"
+    },
+    {
+      "date": "2026-08-25",
+      "title": "MBA MSCH – Appréciation des performances du personnel (MBAGRH153)",
+      "type": "Cours",
+      "teacher": "MME FELICIENNE KOUESSI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
+      "notes": "Nouveau module"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "MBA MSCH – Théorie des organisations (MBAGRH152)",
+      "type": "Cours",
+      "teacher": "M. SOULEYMANE BOUSSO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "MBA MSCH – Gestion des compétences (MBAGRH125)",
+      "type": "Cours",
+      "teacher": "M. AKIM PARAISO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1252",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18271"
     }
   ]
 }
