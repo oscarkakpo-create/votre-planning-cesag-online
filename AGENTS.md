@@ -194,6 +194,7 @@ Ne jamais dupliquer une séance à la main : la nouvelle occurrence est créée 
 - Le cockpit n’est pas destiné aux étudiants (`noindex`), mais rien n’empêche techniquement d’ouvrir son URL : **prévoir une vraie protection d’accès avant mise en production** (hébergement protégé, Basic Auth, Cloudflare Access, Netlify password, etc.).
 - Ne jamais écrire de mot de passe, secret ou jeton dans le code. Le jeton GitHub est saisi au moment de l’usage et conservé uniquement dans le `sessionStorage` de l’onglet.
 - Ne pas exposer de fonction d’écriture publique sur les JSON sans protection : l’écriture réelle nécessite le jeton personnel de l’administrateur.
+- **Enregistrement sécurisé (recommandé)** : un backend `cockpit-backend/worker.js` (Cloudflare Worker) conserve le jeton GitHub côté serveur et exige un mot de passe admin. Le cockpit l’appelle via **« 🔒 Publier (sécurisé) »** ; aucun secret n’est dans le navigateur. Déploiement : voir `cockpit-backend/README.md`. Le Worker doit écrire sur la branche servie par Pages (`BRANCH`).
 
 ## Design
 Lors des mises à jour normales (planning, statuts), **ne pas modifier le design ni la structure** des pages. Le cockpit et les pages programmes partagent la charte existante (vert `#0B4D2E`, or `#C9962A`). Les évolutions de design ne se font que sur demande explicite.

@@ -167,7 +167,8 @@
         <button class="btn btn-ghost btn-sm" id="reloadBtn" title="Recharger depuis les fichiers JSON">↻ Recharger</button>
         <button class="btn btn-soft btn-sm" id="addBtn">+ Ajouter une séance</button>
         <button class="btn btn-gold btn-sm" id="downloadBtn">⬇ Télécharger le(s) JSON</button>
-        <button class="btn btn-green btn-sm" id="publishBtn">⬆ Publier sur GitHub…</button>
+        <button class="btn btn-green btn-sm" id="secureBtn">🔒 Publier (sécurisé)</button>
+        <button class="btn btn-ghost btn-sm" id="publishBtn">Publier via jeton (avancé)</button>
       </div>
 
       <div class="draftbar" id="draftbar">
@@ -455,6 +456,7 @@ function render(){
   // Boutons publication : actifs seulement s'il y a des programmes modifiés
   const anyDirty=Object.values(state.programs).some(p=>p.dirty);
   document.getElementById("downloadBtn").disabled=!anyDirty;
+  document.getElementById("secureBtn").disabled=!anyDirty;
   document.getElementById("publishBtn").disabled=!anyDirty;
 }
 
@@ -521,6 +523,40 @@ function downloadDirty(){
 
 /* ====================== Publication : GitHub API ====================== */
 function b64(str){ return btoa(unescape(encodeURIComponent(str))); }
+/* ====== Publication : backend sécurisé (Cloudflare Worker) — aucun secret dans le code ====== */
+function openSecurePublish(){
+  const dirty=Object.keys(state.programs).filter(s=>state.programs[s].dirty);
+  if(!dirty.length){toast("Aucune modification à publier.",true);return;}
+  const cfg=JSON.parse(sessionStorage.getItem("cesag_cockpit_backend")||"{}");
+  openModal({
+    title:"Publier (backend sécurisé)",
+    sub:"Envoie les modifications à votre fonction serveur (Cloudflare Worker). Le jeton GitHub reste côté serveur — jamais dans le navigateur. URL et mot de passe restent en mémoire de session.",
+    fields:[
+      {key:"url",label:"URL du backend (Worker)",type:"text",value:cfg.url||"",required:true,placeholder:"https://cockpit-cesag.xxx.workers.dev"},
+      {key:"password",label:"Mot de passe admin",type:"password",value:cfg.password||"",required:true}
+    ],
+    okLabel:"Publier "+dirty.length+" fichier(s)",
+    onOk:(v)=>{
+      if(!v.url||!v.password){toast("URL et mot de passe requis.",true);return false;}
+      sessionStorage.setItem("cesag_cockpit_backend",JSON.stringify({url:v.url.trim(),password:v.password}));
+      securePublish({url:v.url.trim(),password:v.password},dirty);
+    }
+  });
+}
+async function securePublish(cfg,dirty){
+  toast("Publication sécurisée en cours…");
+  const files=dirty.map(slug=>({slug,content:jsonFor(slug)}));
+  try{
+    const res=await fetch(cfg.url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({password:cfg.password,files})});
+    let data={}; try{ data=await res.json(); }catch(e){}
+    if(res.ok && data.ok){
+      dirty.forEach(s=>state.programs[s].dirty=false); saveDraft(); render();
+      toast(`Publié via le backend (${dirty.length}). Le site se met à jour après le build.`);
+    } else if(res.status===401){ toast("Mot de passe refusé par le backend.",true); }
+    else { toast("Échec de la publication : "+(data.error||("HTTP "+res.status)),true); console.error("secure publish",res.status,data); }
+  }catch(e){ toast("Backend injoignable (URL/CORS ?).",true); console.error(e); }
+}
+
 function openPublish(){
   const dirty=Object.keys(state.programs).filter(s=>state.programs[s].dirty);
   if(!dirty.length){toast("Aucune modification à publier.",true);return;}
@@ -579,6 +615,7 @@ document.getElementById("reloadBtn").onclick=async()=>{ localStorage.removeItem(
 document.getElementById("discardDraft").onclick=async()=>{ localStorage.removeItem(DRAFT_KEY); document.getElementById("draftbar").classList.remove("show"); await loadAll(); render(); toast("Brouillon local supprimé."); };
 document.getElementById("addBtn").onclick=addSession;
 document.getElementById("downloadBtn").onclick=downloadDirty;
+document.getElementById("secureBtn").onclick=openSecurePublish;
 document.getElementById("publishBtn").onclick=openPublish;
 document.getElementById("wkApply").onclick=applyWeekInfo;
 document.addEventListener("keydown",e=>{ if(e.key==="Escape")closeModal(); });
