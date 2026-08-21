@@ -2,8 +2,23 @@
   "slug": "gestion-entreprises",
   "program_name": "MBA AG — Gestion des entreprises",
   "program_short": "MBA AG",
-  "week_label": "17 → 23 août 2026",
-  "week_file_label": "17-23_aout_2026",
-  "updated_label": "20 août 2026",
-  "sessions": []
+  "week_label": "24 → 30 août 2026",
+  "week_file_label": "24-30_aout_2026",
+  "updated_label": "21 août 2026",
+  "is_new": true,
+  "published_at": "2026-08-21T11:45:00Z",
+  "sessions": [
+    {
+      "id": "s1",
+      "date": "2026-08-24",
+      "title": "MBAAG234 – Systèmes d'information",
+      "type": "Cours",
+      "teacher": "M. JILDAS NOUMONZOUNDE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1044",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14667"
+    }
+  ]
 }
