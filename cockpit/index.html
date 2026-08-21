@@ -128,7 +128,7 @@
       <div class="brand"><span class="dot"></span> CESAG ONLINE · Cockpit d’administration</div>
       <nav class="topnav" aria-label="Navigation cockpit">
         <a href="../">← Accueil</a>
-        <a id="navProgram" href="../">Retour au programme</a>
+        <a id="navProgram" href="../">Retour au planning</a>
         <a id="navPublic" href="../" target="_blank" rel="noopener">Voir le site public ↗</a>
         <a href="#changer">Changer de programme</a>
       </nav>
@@ -387,7 +387,7 @@ function sessionRow(slug,s){
     <div>
       <div class="stags">
         <span class="tag ${exam?"tag-exam":"tag-course"}">${esc(s.type||"")}</span>
-        ${state.scope==="all"?`<span class="tag tag-prog">${esc(LABEL[slug]||slug)}</span>`:""}
+        <span class="tag tag-prog">${esc(LABEL[slug]||slug)}</span>
         <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
         ${s.moved_from?`<span class="tag tag-prog">Nouvelle occurrence</span>`:""}
       </div>
