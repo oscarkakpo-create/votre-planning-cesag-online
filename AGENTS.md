@@ -99,7 +99,7 @@ Pour un examen, il peut également fournir :
 Champs de gestion (ajoutés/maintenus par le cockpit, à ne pas inventer manuellement) :
 - `id` : identifiant stable de la séance (généré par le cockpit s’il manque).
 - `status` : statut de la séance (voir plus bas). Par défaut `pending` pour toute nouvelle séance.
-- `updated_at` : horodatage ISO du dernier changement de statut (écrit par le cockpit).
+- `updated_at` : date/heure du dernier changement de statut. Si présent, la page programme affiche discrètement « Dernière mise à jour : … » sous la séance. Accepte une chaîne lisible (« 21 août 2026 à 09h30 ») ou un horodatage ISO (formaté automatiquement).
 - `moved_from` / `moved_to` : liens entre une séance d’origine reportée/avancée et sa nouvelle occurrence.
 
 Au niveau du programme, deux champs facultatifs pilotent le badge « nouveau » :

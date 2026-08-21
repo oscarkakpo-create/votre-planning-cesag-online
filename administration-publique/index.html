@@ -57,6 +57,7 @@
     .st-rescheduled{background:#FCEDDD;color:#9A4A0F}
     .st-cancelled{background:var(--redSoft);color:var(--red)}
     .session h3{margin:0;font-size:18px;line-height:1.35}.meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}.meta b{color:var(--text)}
+    .updated-line{margin-top:7px;color:var(--muted);font-size:11.5px;display:flex;align-items:center;gap:6px}.updated-line::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--greenLine);flex:none}
     .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
     .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
     .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
@@ -147,6 +148,13 @@ const STATUS_CLASS={pending:"st-pending",confirmed:"st-confirmed",advanced:"st-a
 const ICS_EXCLUDED=["cancelled","rescheduled","advanced"];
 function normStatus(s){const v=String(s&&s.status||"pending").toLowerCase();return STATUS_LABELS[v]?v:"pending";}
 function icsIncluded(s){return !ICS_EXCLUDED.includes(normStatus(s));}
+function fmtUpdated(v){
+  if(!v) return "";
+  if(/^\d{4}-\d{2}-\d{2}T/.test(v)){ const d=new Date(v);
+    if(!isNaN(d)) return `${d.getUTCDate()} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()} à ${String(d.getUTCHours()).padStart(2,"0")}h${String(d.getUTCMinutes()).padStart(2,"0")} GMT`;
+  }
+  return String(v); // chaîne déjà lisible (ex. « 21 août 2026 à 09h30 »)
+}
 
 function escHtml(v=""){
   return String(v).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -222,6 +230,7 @@ function card(s, index){
           <span><b>Enseignant :</b> ${escHtml(s.teacher)}</span>
         </div>
         ${s.notes?`<div class="meta"><span><b>Information :</b> ${escHtml(s.notes)}</span></div>`:""}
+        ${s.updated_at?`<div class="updated-line">Dernière mise à jour : ${escHtml(fmtUpdated(s.updated_at))}</div>`:""}
       </div>
       <div class="actions">
         ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
