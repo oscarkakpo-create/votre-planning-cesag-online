@@ -2,29 +2,61 @@
   "slug": "mba-ag-auf",
   "program_name": "MBA AG AUF",
   "program_short": "MBA AG AUF",
-  "week_label": "17 → 23 août 2026",
-  "week_file_label": "17-23_aout_2026",
-  "updated_label": "20 août 2026",
+  "week_label": "24 → 30 août 2026",
+  "week_file_label": "24-30_aout_2026",
+  "updated_label": "21 août 2026",
+  "is_new": true,
+  "published_at": "2026-08-21T12:00:00Z",
   "sessions": [
     {
-      "date": "2026-08-18",
-      "title": "Marchés financiers",
+      "id": "s1",
+      "date": "2026-08-25",
+      "title": "MBA AG AUF Marchés financiers",
       "type": "Cours",
       "teacher": "M. AHMAD KONATE",
       "start": "18:00",
       "end": "20:00",
+      "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1330",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29343"
     },
     {
-      "date": "2026-08-20",
-      "title": "Contrôle de gestion",
+      "id": "s2",
+      "date": "2026-08-26",
+      "title": "MBA (AG, ACG, GP, MCID, IGF) UE 4 ECUE 1 METHODOLOGIE DE REDACTION DE MEMOIRE",
+      "type": "Cours",
+      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
+    },
+    {
+      "id": "s3",
+      "date": "2026-08-27",
+      "title": "MBA AG AUF Contrôle de gestion",
       "type": "Cours",
       "teacher": "M. SINIMBOU DUROTIMI",
       "start": "18:00",
       "end": "20:00",
+      "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1329",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28952"
+    },
+    {
+      "id": "s4",
+      "date": "2026-08-28",
+      "title": "MBA AG AUF Gestion des projets et suivi évaluation",
+      "type": "Examen",
+      "teacher": "M. KOBA BAMIDELE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 minutes",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1325",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28869",
+      "teams": "https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp"
     }
   ]
 }
