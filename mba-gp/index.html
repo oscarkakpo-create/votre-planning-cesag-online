@@ -61,6 +61,7 @@
     .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
     .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
     .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
+    .weekmsg{margin:0 0 18px;background:linear-gradient(180deg,#FFFCF3,#FFF9EC);border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:16px;padding:14px 18px;color:#5F4B20;font-size:14px;line-height:1.55;font-weight:600}
     .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
     footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
     @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
@@ -118,6 +119,7 @@
         <p>Les séances sont présentées par ordre chronologique.</p>
       </div>
 
+      <div class="weekmsg" id="weekMsg" style="display:none"></div>
       <section class="agenda" id="agenda"></section>
       <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
 
@@ -257,6 +259,7 @@ async function load(){
   document.getElementById("weekLabel").textContent=pageData.week_label || "—";
   document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
   document.getElementById("newFlag").style.display=pageData.is_new?"inline-block":"none";
+  const wm=document.getElementById("weekMsg"); if(pageData.week_message){ wm.textContent=pageData.week_message; wm.style.display="block"; } else { wm.style.display="none"; }
   document.getElementById("countSessions").textContent=pageData.sessions.length;
   document.getElementById("countExams").textContent=pageData.sessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
   document.getElementById("agenda").innerHTML=pageData.sessions.map(card).join("");
