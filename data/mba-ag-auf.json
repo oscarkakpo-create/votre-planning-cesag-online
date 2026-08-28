@@ -2,15 +2,28 @@
   "slug": "mba-ag-auf",
   "program_name": "MBA AG AUF",
   "program_short": "MBA AG AUF",
-  "week_label": "24 → 30 août 2026",
-  "week_file_label": "24-30_aout_2026",
-  "updated_label": "21 août 2026",
+  "week_label": "31 août → 6 septembre 2026",
+  "week_file_label": "31_aout-6_septembre_2026",
+  "updated_label": "28 août 2026",
   "is_new": true,
-  "published_at": "2026-08-21T12:00:00Z",
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-08-25",
+      "date": "2026-08-31",
+      "title": "MBA AG AUF Finance",
+      "type": "Examen",
+      "teacher": "M. BABACAR DIOP",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1327",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28250",
+      "teams": "https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp"
+    },
+    {
+      "id": "s2",
+      "date": "2026-09-01",
       "title": "MBA AG AUF Marchés financiers",
       "type": "Cours",
       "teacher": "M. AHMAD KONATE",
@@ -21,8 +34,8 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29343"
     },
     {
-      "id": "s2",
-      "date": "2026-08-26",
+      "id": "s3",
+      "date": "2026-09-02",
       "title": "MBA (AG, ACG, GP, MCID, IGF) UE 4 ECUE 1 METHODOLOGIE DE REDACTION DE MEMOIRE",
       "type": "Cours",
       "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
@@ -33,8 +46,8 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
     },
     {
-      "id": "s3",
-      "date": "2026-08-27",
+      "id": "s4",
+      "date": "2026-09-03",
       "title": "MBA AG AUF Contrôle de gestion",
       "type": "Cours",
       "teacher": "M. SINIMBOU DUROTIMI",
@@ -43,20 +56,6 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1329",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28952"
-    },
-    {
-      "id": "s4",
-      "date": "2026-08-28",
-      "title": "MBA AG AUF Gestion des projets et suivi évaluation",
-      "type": "Examen",
-      "teacher": "M. KOBA BAMIDELE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "duration": "120 minutes",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1325",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28869",
-      "teams": "https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp"
     }
   ]
 }
