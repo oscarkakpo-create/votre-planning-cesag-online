@@ -1,0 +1,25 @@
+{
+  "slug": "mba-ag-classique",
+  "program_name": "MBA AG Classique",
+  "program_short": "MBA AG Classique",
+  "week_label": "31 août → 6 septembre 2026",
+  "week_file_label": "31_aout-6_septembre_2026",
+  "updated_label": "28 août 2026",
+  "is_new": true,
+  "sessions": [
+    {
+      "id": "s1",
+      "date": "2026-09-04",
+      "title": "Marchés financiers 25-26",
+      "type": "Examen",
+      "teacher": "M. AHMAD KONATE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1035",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27793",
+      "teams": "https://teams.microsoft.com/meet/33565071820894?p=AWdAwZaupMlzzNtduH"
+    }
+  ]
+}

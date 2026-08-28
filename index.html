@@ -195,6 +195,7 @@
     }
     .program-card:hover::before{width:6px}
     .program-card.gold::before{background:linear-gradient(var(--gold),var(--gold-2))}
+    .program-card.classic::before{background:linear-gradient(#315B8A,#4778AD)}
 
     /* Voile vert au survol */
     .program-card::after{
@@ -204,6 +205,7 @@
     }
     .program-card:hover::after{opacity:1}
     .program-card.gold::after{background:radial-gradient(140% 120% at 100% 0%,rgba(201,150,42,.09),transparent 55%)}
+    .program-card.classic::after{background:radial-gradient(140% 120% at 100% 0%,rgba(49,91,138,.10),transparent 55%)}
 
     /* Filigrane éditorial */
     .program-card .wm{
@@ -213,6 +215,7 @@
       pointer-events:none;user-select:none;
     }
     .program-card.gold .wm{color:var(--gold)}
+    .program-card.classic .wm{color:#315B8A}
 
     .pc-top{position:relative;z-index:1}
     .pill{
@@ -221,6 +224,7 @@
       font-size:11px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;margin-bottom:14px;
     }
     .gold .pill{background:var(--gold-soft);color:var(--gold-dark)}
+    .classic .pill{background:#EAF1F8;color:#315B8A}
     .program-card h4{margin:0;font-size:20px;line-height:1.24;color:var(--text);font-weight:700}
     .program-card p{margin:10px 0 0;color:var(--muted);line-height:1.52;font-size:13.5px}
 
@@ -234,6 +238,7 @@
       transition:box-shadow .28s var(--ease),transform .28s var(--ease);
     }
     .gold .program-action{background:var(--gold)}
+    .classic .program-action{background:#315B8A}
     .program-card:hover .program-action{box-shadow:0 12px 26px rgba(11,77,46,.24)}
     .gold .program-card:hover .program-action{box-shadow:0 12px 26px rgba(201,150,42,.30)}
     .program-action .arrow{
@@ -449,7 +454,7 @@
         <div class="family-head">
           <h3 id="fam-ag">MBA Administration et Gestion</h3>
           <span class="rule"></span>
-          <span class="count">3 espaces</span>
+          <span class="count">4 espaces</span>
         </div>
         <div class="program-grid">
           <a class="program-card" style="--i:0" href="./gestion-entreprises/" aria-label="Accéder au programme MBA AG — Gestion des entreprises">
@@ -476,7 +481,19 @@
             </div>
           </a>
 
-          <a class="program-card gold" style="--i:2" href="./mba-ag-auf/" aria-label="Accéder au programme MBA AG AUF">
+          <a class="program-card classic" style="--i:2" href="./mba-ag-classique/" aria-label="Accéder au programme MBA AG Classique">
+            <span class="wm" aria-hidden="true">AG</span>
+            <div class="pc-top">
+              <div class="pill">MBA AG</div>
+              <h4>MBA AG Classique</h4>
+              <p>Planning hebdomadaire, cours et examens, accès Moodle et salles virtuelles, calendrier ICS et export PDF.</p>
+            </div>
+            <div class="program-action">Accéder à mon planning
+              <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            </div>
+          </a>
+
+          <a class="program-card gold" style="--i:3" href="./mba-ag-auf/" aria-label="Accéder au programme MBA AG AUF">
             <span class="wm" aria-hidden="true">AUF</span>
             <div class="pc-top">
               <div class="pill">MBA AG AUF</div>
