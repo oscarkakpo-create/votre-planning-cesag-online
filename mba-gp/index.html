@@ -62,6 +62,15 @@
     .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
     .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
     .weekmsg{margin:0 0 18px;background:linear-gradient(180deg,#FFFCF3,#FFF9EC);border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:16px;padding:14px 18px;color:#5F4B20;font-size:14px;line-height:1.55;font-weight:600}
+    .hero-panel:after{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(255,255,255,.12);border-radius:42% 58% 64% 36%;right:-62px;bottom:-78px;transform:rotate(18deg);pointer-events:none}
+    .quick-card,.session,.action{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+    .quick-card{position:relative;overflow:hidden}.quick-card:after{content:"";position:absolute;right:-20px;bottom:-24px;width:62px;height:62px;border-radius:50%;background:rgba(201,150,42,.08)}
+    .quick-card:hover{transform:translateY(-2px);border-color:#C9D9CF;box-shadow:0 9px 24px rgba(11,77,46,.07)}
+    .session:hover{transform:translateY(-2px);border-color:#C5D8CB;box-shadow:0 12px 30px rgba(11,77,46,.09)}
+    .datebox{border:1px solid #E4ECE7;box-shadow:inset 0 1px 0 #fff}.exam .datebox{background:linear-gradient(180deg,#FFF8F6,#FFF1EE);border-color:#F1D5D0}
+    .action:hover{transform:translateY(-1px);box-shadow:0 6px 15px rgba(11,77,46,.12)}
+    .info-kicker{display:inline-flex;margin-bottom:8px;padding:4px 9px;border-radius:999px;background:rgba(201,150,42,.13);color:var(--goldDark);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.65px}
+    @media(prefers-reduced-motion:reduce){.quick-card,.session,.action{transition:none}.quick-card:hover,.session:hover,.action:hover{transform:none}}
     .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
     footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
     @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
@@ -263,6 +272,7 @@ async function load(){
   const wm=document.getElementById("weekMsg"); if(pageData.week_message){ wm.textContent=pageData.week_message; wm.style.display="block"; } else { wm.style.display="none"; }
   document.getElementById("informationBlocks").innerHTML=(pageData.information_blocks||[]).map(info=>`
     <div class="weekmsg">
+      <span class="info-kicker">Information importante</span><br>
       <b>${escHtml(info.title)}</b><br>
       <span style="white-space:pre-line">${escHtml(info.text)}</span>
       ${info.link?`<a class="action moodle" style="margin-top:12px" href="${escHtml(info.link)}" target="_blank" rel="noopener">${escHtml(info.link_label||"Accéder au lien")}</a>`:""}
