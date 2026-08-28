@@ -2,29 +2,28 @@
   "slug": "mba-gp-auf",
   "program_name": "MBA GP AUF",
   "program_short": "MBA GP AUF",
-  "week_label": "24 → 30 août 2026",
-  "week_file_label": "24-30_aout_2026",
-  "updated_label": "21 août 2026",
-  "is_new": true,
-  "published_at": "2026-08-21T11:30:00Z",
+  "week_label": "31 août → 6 septembre 2026",
+  "week_file_label": "31_aout-6_septembre_2026",
+  "updated_label": "28 août 2026",
+  "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-08-25",
-      "title": "Analyse économique des projets",
+      "date": "2026-09-01",
+      "title": "Passation des marchés publics",
       "type": "Examen",
-      "teacher": "DR BAFFA KEITA",
+      "teacher": "DR CHABI MOUGNAN",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "duration": "122 minutes",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1352",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=26434",
+      "duration": "120 minutes",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1360",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28971",
       "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk"
     },
     {
       "id": "s2",
-      "date": "2026-08-26",
+      "date": "2026-09-02",
       "title": "Méthodologie de rédaction du TFE",
       "type": "Cours",
       "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
@@ -36,7 +35,7 @@
     },
     {
       "id": "s3",
-      "date": "2026-08-27",
+      "date": "2026-09-03",
       "title": "Planification opérationnelle et budgétisation des projets et programmes",
       "type": "Cours",
       "teacher": "M. PAPA FELOU DIALLO",
@@ -48,7 +47,7 @@
     },
     {
       "id": "s4",
-      "date": "2026-08-28",
+      "date": "2026-09-04",
       "title": "Planification opérationnelle et budgétisation des projets et programmes",
       "type": "Cours",
       "teacher": "M. PAPA FELOU DIALLO",
@@ -57,6 +56,21 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1354",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873"
+    },
+    {
+      "id": "s5",
+      "date": "2026-09-05",
+      "title": "Analyse financière de projet",
+      "type": "Examen",
+      "teacher": "M. MBOULE FALL",
+      "start": "11:00",
+      "end": "14:00",
+      "status": "pending",
+      "duration": "120 minutes",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1351",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=26454",
+      "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk",
+      "notes": "Le créneau actuellement prévu est le samedi 5 septembre 2026. L’enseignant reste disponible pour examiner un éventuel ajustement si cette programmation pose une difficulté à la cohorte. Toute modification éventuelle sera communiquée officiellement."
     }
   ]
 }

@@ -120,6 +120,7 @@
       </div>
 
       <div class="weekmsg" id="weekMsg" style="display:none"></div>
+      <div id="informationBlocks"></div>
       <section class="agenda" id="agenda"></section>
       <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
 
@@ -260,6 +261,12 @@ async function load(){
   document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
   document.getElementById("newFlag").style.display=pageData.is_new?"inline-block":"none";
   const wm=document.getElementById("weekMsg"); if(pageData.week_message){ wm.textContent=pageData.week_message; wm.style.display="block"; } else { wm.style.display="none"; }
+  document.getElementById("informationBlocks").innerHTML=(pageData.information_blocks||[]).map(info=>`
+    <div class="weekmsg">
+      <b>${escHtml(info.title)}</b><br>
+      <span style="white-space:pre-line">${escHtml(info.text)}</span>
+      ${info.link?`<a class="action moodle" style="margin-top:12px" href="${escHtml(info.link)}" target="_blank" rel="noopener">${escHtml(info.link_label||"Accéder au lien")}</a>`:""}
+    </div>`).join("");
   document.getElementById("countSessions").textContent=pageData.sessions.length;
   document.getElementById("countExams").textContent=pageData.sessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
   document.getElementById("agenda").innerHTML=pageData.sessions.map(card).join("");

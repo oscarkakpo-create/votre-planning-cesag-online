@@ -2,75 +2,59 @@
   "slug": "mba-gp",
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
-  "week_label": "24 → 30 août 2026",
-  "week_file_label": "24-30_aout_2026",
-  "updated_label": "21 août 2026",
-  "week_message": "Une semaine particulièrement chargée vous attend. Bon courage à toutes et à tous dans la poursuite de vos enseignements et évaluations.",
+  "week_label": "31 août → 6 septembre 2026",
+  "week_file_label": "31_aout-6_septembre_2026",
+  "updated_label": "28 août 2026",
+  "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
+  "information_blocks": [
+    {
+      "title": "Logistique et gestion des ressources matérielles",
+      "text": "Une pause temporaire est observée dans le déroulement du module Logistique et gestion des ressources matérielles. Cette période permettra à la coordination d’échanger avec l’enseignant afin d’organiser la poursuite du cours dans de bonnes conditions pédagogiques. Nous vous prions de bien vouloir nous excuser pour les désagréments occasionnés. Les modalités de reprise seront communiquées ultérieurement."
+    },
+    {
+      "title": "Examen final – Partenariats public-privé",
+      "text": "Comme indiqué dans le communiqué relatif à l’examen final du module Partenariats public-privé, l’accès à l’espace de dépôt est conditionné par la réalisation préalable de l’évaluation de l’enseignement.\n\nL’examen final prend la forme du dossier individuel “Le dossier de Zamandé”, à déposer au plus tard le 10 septembre 2026 à 23h59.",
+      "link": "https://formations.cesagonline.com/mod/assign/view.php?id=26960",
+      "link_label": "Accéder à l’espace de dépôt"
+    }
+  ],
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-08-24",
-      "title": "Logistique et gestion des ressources matérielles",
-      "type": "Cours",
-      "teacher": "M. BADARA MBAYE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=998",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115"
-    },
-    {
-      "id": "s2",
-      "date": "2026-08-25",
+      "date": "2026-09-01",
       "title": "Management de la qualité",
       "type": "Cours",
       "teacher": "M. JEROME DANDJINOU",
       "start": "18:00",
       "end": "20:00",
-      "status": "confirmed",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1000",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13856",
-      "notes": "Nouveau module. Dates prévisionnelles : 25 août, 1er, 8, 15, 22 et 29 septembre 2026. Ces dates sont prévisionnelles et restent susceptibles de modification."
-    },
-    {
-      "id": "s3",
-      "date": "2026-08-26",
-      "title": "Logistique et gestion des ressources matérielles",
-      "type": "Cours",
-      "teacher": "M. BADARA MBAYE",
-      "start": "18:00",
-      "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=998",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115",
-      "notes": "Séance à confirmer."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1000",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13856"
     },
     {
-      "id": "s4",
-      "date": "2026-08-27",
+      "id": "s2",
+      "date": "2026-09-03",
       "title": "Approches innovantes de gestion de projet et méthodologie agile",
       "type": "Cours",
       "teacher": "M. TADAGBE HOUNKPEVI",
       "start": "18:00",
       "end": "20:00",
-      "status": "confirmed",
+      "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=995",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28821"
     },
     {
-      "id": "s5",
-      "date": "2026-08-28",
-      "title": "Planification opérationnelle et budgétisation des projets et programmes",
-      "type": "Examen",
-      "teacher": "M. PAPA FELOU DIALLO",
+      "id": "s3",
+      "date": "2026-09-04",
+      "title": "Codes éthiques et déontologie",
+      "type": "Cours",
+      "teacher": "M. JUDICAEL OLANIKPEKOU",
       "start": "18:00",
       "end": "20:00",
-      "status": "confirmed",
-      "duration": "120 minutes",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=993",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27341",
-      "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt",
-      "notes": "La caméra doit rester activée du début de la composition jusqu’à la validation définitive de la copie. Toute composition réalisée sans caméra pourra ne pas être validée."
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890",
+      "notes": "L’accès aux espaces pédagogiques sera activé dans la semaine. Quelques réglages sont encore en cours."
     }
   ]
 }
