@@ -6,6 +6,14 @@
   "week_file_label": "31_aout-6_septembre_2026",
   "updated_label": "28 août 2026",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
+  "information_blocks": [
+    {
+      "title": "Examen final – Partenariats public-privé",
+      "text": "Comme indiqué dans le communiqué relatif à l’examen final du module Partenariats public-privé, l’accès à l’espace de dépôt est conditionné par la réalisation préalable de l’évaluation de l’enseignement.\n\nL’examen final prend la forme du dossier individuel “Le dossier de Zamandé”, à déposer au plus tard le 10 septembre 2026 à 23h59.",
+      "link": "https://formations.cesagonline.com/mod/assign/view.php?id=26960",
+      "link_label": "Accéder à l’espace de dépôt"
+    }
+  ],
   "sessions": [
     {
       "id": "s1",
