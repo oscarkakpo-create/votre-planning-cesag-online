@@ -61,10 +61,11 @@
     .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
     .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
     .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
+    .livebar{display:grid;grid-template-columns:190px 1fr;gap:12px;margin:14px 0 4px}.live-item{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 3px 12px rgba(11,77,46,.04)}.live-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:16px;flex:none}.live-item small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.live-item strong{display:block;margin-top:2px;color:var(--green);font-size:13.5px}.live-clock strong{font-variant-numeric:tabular-nums;font-size:18px}.today-badge{padding:5px 9px;border-radius:999px;background:#E8F1FF;color:#245B9E;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.session.is-today{border-color:#9BBCE0;box-shadow:0 8px 24px rgba(36,91,158,.10)}.session.is-today:before{background:#315B8A}
     .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
     footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
     @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){.container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}.topnav{gap:12px}}
+    @media(max-width:620px){.container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.livebar{grid-template-columns:1fr}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}.topnav{gap:12px}}
     @media print{body{background:#fff}.topbar,.toolbar,.actions,.notice,footer{display:none!important}.container{max-width:none;padding:0}.hero{padding:0 0 16px}.hero-panel{box-shadow:none;border-radius:0;padding:18px 0;background:#fff!important;color:#000;border-bottom:2px solid var(--green)}.hero p,.weekbox span,.weekbox small{color:#555}.weekbox{border:1px solid #ddd;background:#fff}.quick{grid-template-columns:repeat(3,1fr)}.session{box-shadow:none;break-inside:avoid}}
   </style>
 </head>
@@ -107,6 +108,11 @@
 
   <main>
     <div class="container">
+      <section class="livebar" aria-label="Informations en temps réel">
+        <div class="live-item live-clock"><span class="live-icon" aria-hidden="true">◷</span><div><small>Heure GMT</small><strong id="gmtClock">--:--:--</strong></div></div>
+        <div class="live-item"><span class="live-icon" aria-hidden="true">→</span><div><small>Prochaine activité</small><strong id="nextSession">Chargement du planning…</strong></div></div>
+      </section>
+
       <section class="quick">
         <div class="quick-card"><small>Séances cette semaine</small><strong id="countSessions">0</strong></div>
         <div class="quick-card"><small>Examens</small><strong id="countExams">0</strong></div>
@@ -203,6 +209,18 @@ function makeICS(items, filename){
   const a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),500);
 }
+function gmtDateKey(d=new Date()){return d.toISOString().slice(0,10);}
+function updateLiveStatus(){
+  const now=new Date();
+  document.getElementById("gmtClock").textContent=now.toLocaleTimeString("fr-FR",{timeZone:"UTC",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false});
+  if(!pageData) return;
+  const next=(pageData.sessions||[]).filter(icsIncluded).map(s=>({s,at:new Date(`${s.date}T${s.start}:00Z`)})).filter(x=>x.at>now).sort((a,b)=>a.at-b.at)[0];
+  document.getElementById("nextSession").textContent=next
+    ? `${weekdays[next.at.getUTCDay()]} ${next.at.getUTCDate()} ${months[next.at.getUTCMonth()]} à ${next.s.start} GMT — ${next.s.title}`
+    : "Aucune activité à venir dans ce planning";
+}
+setInterval(updateLiveStatus,1000);
+
 function card(s, index){
   const d = new Date(s.date+"T00:00:00Z");
   const exam = String(s.type).toLowerCase()==="examen";
@@ -211,7 +229,7 @@ function card(s, index){
   const showLinks = !cancelled;
   const inIcs = icsIncluded(s);
   return `
-    <article class="session ${exam?"exam":""} is-${st}">
+    <article class="session ${exam?"exam":""} is-${st} ${s.date===gmtDateKey()?"is-today":""}">
       <div class="datebox">
         <div class="day">${String(d.getUTCDate()).padStart(2,"0")}</div>
         <div class="month">${months[d.getUTCMonth()]}</div>
@@ -222,6 +240,7 @@ function card(s, index){
           <span class="tag ${exam?"tag-exam":"tag-course"}">${escHtml(s.type)}</span>
           <span class="tag tag-program">${escHtml(pageData.program_short)}</span>
           <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
+          ${s.date===gmtDateKey()?'<span class="today-badge">Aujourd’hui</span>':""}
         </div>
         <h3>${escHtml(s.title)}</h3>
         <div class="meta">
@@ -260,6 +279,7 @@ async function load(){
   document.getElementById("countSessions").textContent=pageData.sessions.length;
   document.getElementById("countExams").textContent=pageData.sessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
   document.getElementById("agenda").innerHTML=pageData.sessions.map(card).join("");
+  updateLiveStatus();
   document.getElementById("empty").style.display=pageData.sessions.length?"none":"block";
   document.getElementById("downloadWeek").onclick=()=>{
     const items=pageData.sessions.filter(icsIncluded);
