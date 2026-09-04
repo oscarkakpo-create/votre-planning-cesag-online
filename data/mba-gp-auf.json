@@ -18,7 +18,7 @@
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-07",
+      "date": "2026-09-08",
       "title": "MBA GP AUF Intégration et gestion de projets, programmes et portefeuille",
       "type": "Cours",
       "teacher": "M. CLOVIS TOUGMA",
@@ -31,7 +31,20 @@
     },
     {
       "id": "s2",
-      "date": "2026-09-08",
+      "date": "2026-09-09",
+      "title": "MBA GP AUF Méthodologie de rédaction du TFE",
+      "type": "Cours",
+      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1366",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21077",
+      "notes": "Module de nouveau entièrement accessible : S1 à S4 et Boîte à outils ouvertes. Les cinq devoirs notés sont à déposer au plus tard le lundi 30 novembre 2026 à 23h55 GMT. Les quiz H5P S2, S3 et S4 restent accessibles en permanence comme autoévaluations. Les espaces de dépôt libres restent ouverts. L’examen final sera annoncé séparément. Une progression régulière est attendue sans attendre l’échéance de novembre."
+    },
+    {
+      "id": "s3",
+      "date": "2026-09-10",
       "title": "MBA GP AUF Analyse financière de projet",
       "type": "Examen",
       "teacher": "M. MBOULÉ FALL",
@@ -43,19 +56,6 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=26454",
       "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt",
       "notes": "Surveillance obligatoire ; caméra activée du début de la composition jusqu’à la validation définitive de la copie."
-    },
-    {
-      "id": "s3",
-      "date": "2026-09-09",
-      "title": "MBA GP AUF Méthodologie de rédaction du TFE",
-      "type": "Cours",
-      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1366",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21077",
-      "notes": "Module de nouveau entièrement accessible : S1 à S4 et Boîte à outils ouvertes. Les cinq devoirs notés sont à déposer au plus tard le lundi 30 novembre 2026 à 23h55 GMT. Les quiz H5P S2, S3 et S4 restent accessibles en permanence comme autoévaluations. Les espaces de dépôt libres restent ouverts. L’examen final sera annoncé séparément. Une progression régulière est attendue sans attendre l’échéance de novembre."
     },
     {
       "id": "s4",
