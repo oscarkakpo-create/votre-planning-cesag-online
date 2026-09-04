@@ -332,6 +332,18 @@
     .tool-card.gold .tool-link{color:var(--gold-dark)}
     .tool-link svg{width:15px;height:15px}
 
+    /* ---------- Tableau de bord en temps réel ---------- */
+    .site-live{margin:22px 0 4px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:var(--shadow-sm)}
+    .site-live-head{display:flex;align-items:center;gap:9px;margin-bottom:12px;color:var(--green);font-size:13px;font-weight:800}
+    .live-pulse{width:9px;height:9px;border-radius:50%;background:#28A060;box-shadow:0 0 0 5px rgba(40,160,96,.12)}
+    .site-live-grid{display:grid;grid-template-columns:180px 180px 1fr;gap:10px}
+    .site-live-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+    .site-live-card small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
+    .site-live-card strong{display:block;margin-top:4px;color:var(--green);font-size:14px;line-height:1.4}
+    .site-live-card.clock strong{font-size:20px;font-variant-numeric:tabular-nums}
+    .site-live-card.alert-hot{background:#FFF7E8;border-color:#E9C66F}.site-live-card.alert-hot strong{color:#805D0B}
+    .site-live-card.alert-live{background:#EAF6EF;border-color:#9BC6AA}.site-live-card.alert-live strong{color:#166534}
+
 
     /* ---------- Encart info ---------- */
     .info-box{
@@ -367,6 +379,7 @@
       .section-head p{margin-left:0}
       .program-card{min-height:auto;padding:22px 20px 18px}
       .program-card .wm{font-size:100px}
+      .site-live-grid{grid-template-columns:1fr}
       .family-head .count{display:none}
     }
 
@@ -413,7 +426,7 @@
           </p>
         </div>
         <div class="hero-meta" aria-hidden="true">
-          <span>6 espaces FOAD</span>
+          <span>7 espaces FOAD</span>
           <span>Planning hebdomadaire</span>
           <span>ICS &amp; PDF</span>
         </div>
@@ -434,6 +447,15 @@
           <span class="num">3</span>
           <b>Ajoutez votre agenda</b>
           <p>Téléchargez l’ICS global de la semaine ou exportez le planning en PDF.</p>
+        </div>
+      </section>
+
+      <section class="site-live" aria-label="Tableau de bord CESAG ONLINE">
+        <div class="site-live-head"><span class="live-pulse" aria-hidden="true"></span> Informations en temps réel · tous les espaces</div>
+        <div class="site-live-grid">
+          <div class="site-live-card clock"><small>Heure GMT</small><strong id="homeGmtClock">--:--:--</strong></div>
+          <div class="site-live-card"><small>Activités aujourd’hui</small><strong id="homeTodayCount">Chargement…</strong></div>
+          <div class="site-live-card" id="homeAlertBox"><small>Alerte générale</small><strong id="homeAlert">Analyse des plannings…</strong></div>
         </div>
       </section>
     </div>
@@ -662,6 +684,46 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    /* Synthèse en temps réel des agendas publiés. */
+    let homeSessions = [];
+    const homeMonths=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+    function updateHomeDashboard(){
+      const now=new Date();
+      document.getElementById("homeGmtClock").textContent=now.toLocaleTimeString("fr-FR",{timeZone:"UTC",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false});
+      const today=now.toISOString().slice(0,10);
+      const todayItems=homeSessions.filter(x=>x.s.date===today);
+      document.getElementById("homeTodayCount").textContent=homeSessions.length ? `${todayItems.length} activité${todayItems.length>1?"s":""}` : "Aucune activité";
+      const active=homeSessions.filter(x=>x.at<=now&&x.end>now);
+      const soon=homeSessions.filter(x=>x.at>now&&x.at-now<=7200000);
+      const next=homeSessions.find(x=>x.at>now);
+      const box=document.getElementById("homeAlertBox");
+      box.classList.remove("alert-hot","alert-live");
+      if(active.length){
+        box.classList.add("alert-live");
+        document.getElementById("homeAlert").textContent=`${active.length} activité${active.length>1?"s":""} en cours maintenant`;
+      }else if(soon.length){
+        box.classList.add("alert-hot");
+        document.getElementById("homeAlert").textContent=`${soon.length} activité${soon.length>1?"s":""} commence${soon.length>1?"nt":""} dans moins de 2 heures`;
+      }else if(next){
+        document.getElementById("homeAlert").textContent=`Prochaine : ${next.at.getUTCDate()} ${homeMonths[next.at.getUTCMonth()]} à ${next.s.start} GMT · ${next.program}`;
+      }else{
+        document.getElementById("homeAlert").textContent="Aucune alerte urgente";
+      }
+    }
+    async function loadHomeDashboard(){
+      const cards=[...document.querySelectorAll(".program-card")];
+      const data=await Promise.all(cards.map(async card=>{
+        const slug=(card.getAttribute("href")||"").replace(/^\.\//,"").replace(/\/$/,"");
+        try{const res=await fetch(`./data/${slug}.json`,{cache:"no-store"});return res.ok?await res.json():null}catch(e){return null}
+      }));
+      homeSessions=data.filter(Boolean).flatMap(d=>(d.sessions||[]).map(s=>({s,program:d.program_short||d.program_name,at:new Date(`${s.date}T${s.start}:00Z`),end:new Date(`${s.date}T${s.end}:00Z`)}))).sort((a,b)=>a.at-b.at);
+      updateHomeDashboard();
+    }
+    setInterval(updateHomeDashboard,1000);
+    loadHomeDashboard();
+  </script>
 
   <script>
     /* Accès admin discret : le bouton « Cockpit admin » n'apparaît QUE sur les
