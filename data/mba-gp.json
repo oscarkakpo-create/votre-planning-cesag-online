@@ -2,9 +2,9 @@
   "slug": "mba-gp",
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
-  "week_label": "31 août → 6 septembre 2026",
-  "week_file_label": "31_aout-6_septembre_2026",
-  "updated_label": "28 août 2026",
+  "week_label": "7 → 13 septembre 2026",
+  "week_file_label": "7-13_septembre_2026",
+  "updated_label": "4 septembre 2026",
   "is_new": true,
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "information_blocks": [
@@ -22,7 +22,7 @@
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-01",
+      "date": "2026-09-07",
       "title": "Management de la qualité",
       "type": "Cours",
       "teacher": "M. JEROME DANDJINOU",
@@ -34,28 +34,40 @@
     },
     {
       "id": "s2",
-      "date": "2026-09-03",
-      "title": "Approches innovantes de gestion de projet et méthodologie agile",
+      "date": "2026-09-08",
+      "title": "Codes éthiques et déontologie",
       "type": "Cours",
-      "teacher": "M. TADAGBE HOUNKPEVI",
+      "teacher": "M. JUDICAEL OLANIKPEKOUN",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=995",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28821"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890"
     },
     {
       "id": "s3",
-      "date": "2026-09-04",
+      "date": "2026-09-09",
+      "title": "Management de la qualité",
+      "type": "Cours",
+      "teacher": "M. JEROME DANDJINOU",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1000",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13856"
+    },
+    {
+      "id": "s4",
+      "date": "2026-09-11",
       "title": "Codes éthiques et déontologie",
       "type": "Cours",
-      "teacher": "M. JUDICAEL OLANIKPEKOU",
+      "teacher": "M. JUDICAEL OLANIKPEKOUN",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890",
-      "notes": "L’accès aux espaces pédagogiques sera activé dans la semaine. Quelques réglages sont encore en cours."
+      "notes": "Examen de Méthodes agiles prévu au cours de la semaine du 14 septembre 2026. Les étudiants sont invités à commencer leurs révisions."
     }
   ]
 }
