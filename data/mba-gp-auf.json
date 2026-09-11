@@ -2,73 +2,55 @@
   "slug": "mba-gp-auf",
   "program_name": "MBA GP AUF",
   "program_short": "MBA GP AUF",
-  "week_label": "7 → 13 septembre 2026",
-  "week_file_label": "7-13_septembre_2026",
-  "updated_label": "4 septembre 2026",
+  "week_label": "14 → 20 septembre 2026",
+  "week_file_label": "14-20_septembre_2026",
+  "updated_label": "11 septembre 2026",
   "is_new": true,
+  "published_at": "2026-09-11T00:00:00Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "information_blocks": [
     {
-      "title": "Examen final – Partenariats public-privé",
-      "text": "Comme indiqué dans le communiqué relatif à l’examen final du module Partenariats public-privé, l’accès à l’espace de dépôt est conditionné par la réalisation préalable de l’évaluation de l’enseignement.\n\nL’examen final prend la forme du dossier individuel “Le dossier de Zamandé”, à déposer au plus tard le 10 septembre 2026 à 23h59.",
-      "link": "https://formations.cesagonline.com/mod/assign/view.php?id=26960",
-      "link_label": "Accéder à l’espace de dépôt"
+      "title": "Observation de la semaine",
+      "text": "Semaine relax : profitez-en pour vous reposer. La semaine suivante est prévue avec l’examen de Planification opérationnelle et le démarrage du module Management de la Qualité."
     }
   ],
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-08",
+      "date": "2026-09-15",
       "title": "MBA GP AUF Intégration et gestion de projets, programmes et portefeuille",
       "type": "Cours",
       "teacher": "M. CLOVIS TOUGMA",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=994",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29777",
-      "notes": "Nouveau module."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1355",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20890"
     },
     {
       "id": "s2",
-      "date": "2026-09-09",
+      "date": "2026-09-16",
       "title": "MBA GP AUF Méthodologie de rédaction du TFE",
       "type": "Cours",
       "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1366",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21077",
-      "notes": "Module de nouveau entièrement accessible : S1 à S4 et Boîte à outils ouvertes. Les cinq devoirs notés sont à déposer au plus tard le lundi 30 novembre 2026 à 23h55 GMT. Les quiz H5P S2, S3 et S4 restent accessibles en permanence comme autoévaluations. Les espaces de dépôt libres restent ouverts. L’examen final sera annoncé séparément. Une progression régulière est attendue sans attendre l’échéance de novembre."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
     },
     {
       "id": "s3",
-      "date": "2026-09-10",
-      "title": "MBA GP AUF Analyse financière de projet",
-      "type": "Examen",
-      "teacher": "M. MBOULÉ FALL",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "duration": "118 minutes",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1351",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=26454",
-      "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt",
-      "notes": "Surveillance obligatoire ; caméra activée du début de la composition jusqu’à la validation définitive de la copie."
-    },
-    {
-      "id": "s4",
-      "date": "2026-09-11",
-      "title": "MBA GP AUF Intégration et gestion de projets, programmes et portefeuille",
+      "date": "2026-09-17",
+      "title": "MBA GP AUF Approches innovantes de gestion de projet et méthodologie agile",
       "type": "Cours",
-      "teacher": "M. CLOVIS TOUGMA",
+      "teacher": "M. TADAGBE HOUNKPEVI",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=994",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29777",
-      "notes": "Nouveau module."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1356",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29927",
+      "notes": "sur le js c"
     }
   ]
 }
