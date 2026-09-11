@@ -24,7 +24,7 @@
     .topbar{background:var(--green);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
     .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
     .brand{font-weight:700}.back{font-weight:600;color:rgba(255,255,255,.9)}
-    .topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+    .topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.topnav a{padding:6px 0;border-bottom:1px solid transparent}.topnav a:hover,.topnav a:focus-visible{border-bottom-color:var(--gold);outline:none}
     .hero{padding:34px 0 18px}
     .hero-panel{background:linear-gradient(150deg,var(--green2),var(--green) 45%,var(--greenDark));color:#fff;border-radius:30px;padding:44px 46px 38px;box-shadow:var(--shadow);position:relative;overflow:hidden}
     .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
@@ -44,21 +44,22 @@
     .section-head{margin:8px 0 14px}.section-head h2{font-family:var(--serif);margin:0;color:var(--green);font-size:29px;font-weight:600}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13.5px}
     .agenda{display:grid;gap:16px}
     .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;grid-template-columns:130px 1fr 195px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(11,77,46,.04)}
-    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}.session.exam:before{background:var(--red)}
+    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}.session.exam{border:2px solid #E2A7A1;background:linear-gradient(105deg,#FFF8F6 0,#fff 58%);box-shadow:0 12px 30px rgba(180,35,24,.12)}.session.exam:before{width:7px;background:var(--red)}
     .session.is-cancelled{opacity:.72}.session.is-cancelled:before{background:var(--red)}.session.is-cancelled h3{text-decoration:line-through;text-decoration-color:rgba(180,35,24,.6)}
     .session.is-rescheduled:before{background:#D9822B}.session.is-advanced:before{background:var(--blue)}.session.is-confirmed:before{background:var(--green)}
     .datebox{background:var(--paper);border-radius:15px;padding:14px;text-align:center}.datebox .day{font-size:32px;font-weight:800;color:var(--green);line-height:1}.exam .datebox .day{color:var(--red)}.datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}.datebox .weekday{font-size:12px;color:var(--muted);margin-top:3px}
     .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}.tag{padding:5px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}.tag-program{background:var(--goldSoft);color:var(--goldDark)}
     .status-badge{padding:5px 10px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
     .status-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
-    .st-pending{background:var(--goldSoft);color:var(--goldDark)}
+    .st-pending{background:#102A43;color:#EAF7EF;border:1px solid #294E68;border-radius:5px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;letter-spacing:1.15px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 2px 5px rgba(16,42,67,.18)}
+    .st-pending::before{color:#58D68D;box-shadow:0 0 0 3px rgba(88,214,141,.13)}
     .st-confirmed{background:#E4F3EA;color:#166534}
     .st-advanced{background:var(--blueSoft);color:var(--blue)}
     .st-rescheduled{background:#FCEDDD;color:#9A4A0F}
     .st-cancelled{background:var(--redSoft);color:var(--red)}
     .session h3{margin:0;font-size:18px;line-height:1.35}.meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}.meta b{color:var(--text)}
     .updated-line{margin-top:7px;color:var(--muted);font-size:11.5px;display:flex;align-items:center;gap:6px}.updated-line::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--greenLine);flex:none}
-    .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
+    .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.copy-room{background:#fff;color:#496158;border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
     .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
     .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
     .weekmsg{margin:0 0 18px;background:linear-gradient(180deg,#FFFCF3,#FFF9EC);border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:16px;padding:14px 18px;color:#5F4B20;font-size:14px;line-height:1.55;font-weight:600}
@@ -69,13 +70,13 @@
     .session:hover{transform:translateY(-2px);border-color:#C5D8CB;box-shadow:0 12px 30px rgba(11,77,46,.09)}
     .datebox{border:1px solid #E4ECE7;box-shadow:inset 0 1px 0 #fff}.exam .datebox{background:linear-gradient(180deg,#FFF8F6,#FFF1EE);border-color:#F1D5D0}
     .action:hover{transform:translateY(-1px);box-shadow:0 6px 15px rgba(11,77,46,.12)}
-    .info-kicker{display:inline-flex;margin-bottom:8px;padding:4px 9px;border-radius:999px;background:rgba(201,150,42,.13);color:var(--goldDark);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.65px}
+    .info-kicker{display:inline-flex;margin-bottom:8px;padding:4px 9px;border-radius:999px;background:rgba(201,150,42,.13);color:var(--goldDark);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.65px}.status-legend{display:flex;align-items:center;gap:10px;margin:10px 0 18px;color:var(--muted);font-size:12.5px}.status-legend .status-badge{flex:none}
     @media(prefers-reduced-motion:reduce){.quick-card,.session,.action{transition:none}.quick-card:hover,.session:hover,.action:hover{transform:none}}
     .livebar{display:grid;grid-template-columns:180px 1fr 1fr;gap:12px;margin:14px 0 4px}.live-item{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 3px 12px rgba(11,77,46,.04)}.live-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:16px;flex:none}.live-item small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.live-item strong{display:block;margin-top:2px;color:var(--green);font-size:13.5px}.live-clock strong{font-variant-numeric:tabular-nums;font-size:18px}.today-badge{padding:5px 9px;border-radius:999px;background:#E8F1FF;color:#245B9E;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.session.is-today{border-color:#9BBCE0;box-shadow:0 8px 24px rgba(36,91,158,.10)}.session.is-today:before{background:#315B8A}.live-item.alert-hot{background:#FFF7E8;border-color:#E9C66F}.live-item.alert-hot .live-icon{background:#FBE8B8;color:#805D0B}.live-item.alert-live{background:#EAF6EF;border-color:#9BC6AA}.live-item.alert-live .live-icon{background:#CFE9D9;color:#166534}
     .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
     footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
     @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){.container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.livebar{grid-template-columns:1fr}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}.topnav{gap:12px}}
+    @media(max-width:620px){.container{padding:0 16px}.topbar .container{flex-wrap:nowrap}.brand{font-size:12px;white-space:nowrap}.topnav{gap:10px;flex-wrap:nowrap}.topnav .back{font-size:11.5px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.livebar{grid-template-columns:1fr}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}.status-legend{align-items:flex-start}}
     @media print{body{background:#fff}.topbar,.toolbar,.actions,.notice,footer{display:none!important}.container{max-width:none;padding:0}.hero{padding:0 0 16px}.hero-panel{box-shadow:none;border-radius:0;padding:18px 0;background:#fff!important;color:#000;border-bottom:2px solid var(--green)}.hero p,.weekbox span,.weekbox small{color:#555}.weekbox{border:1px solid #ddd;background:#fff}.quick{grid-template-columns:repeat(3,1fr)}.session{box-shadow:none;break-inside:avoid}}
   </style>
 </head>
@@ -84,9 +85,8 @@
     <div class="container">
       <div class="brand">CESAG ONLINE · Agenda FOAD</div>
       <nav class="topnav" aria-label="Navigation principale">
-        <a class="back" href="../">← Accueil</a>
-        <a class="back" href="../">Retour aux programmes</a>
-        <a class="back" href="../#toolbox-title">Boîte à outils</a>
+        <a class="back" href="../">← Programmes</a>
+        <a class="back" href="../#toolbox-title">Outils</a>
       </nav>
     </div>
   </div>
@@ -134,6 +134,10 @@
         <h2>Planning hebdomadaire</h2>
         <p>Les séances sont présentées par ordre chronologique.</p>
       </div>
+      <div class="status-legend" aria-label="Signification du statut programmé">
+        <span class="status-badge st-pending">Programmé</span>
+        <span>La séance figure au planning et passe automatiquement à « Confirmée » à 15h00 GMT le jour J, sauf action manuelle.</span>
+      </div>
 
       <div class="weekmsg" id="weekMsg" style="display:none"></div>
       <div id="informationBlocks"></div>
@@ -162,10 +166,16 @@ let pageData = null;
 const months = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 const weekdays = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
 
-const STATUS_LABELS={pending:"À confirmer",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
+const STATUS_LABELS={pending:"Programmé",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
 const STATUS_CLASS={pending:"st-pending",confirmed:"st-confirmed",advanced:"st-advanced",rescheduled:"st-rescheduled",cancelled:"st-cancelled"};
 const ICS_EXCLUDED=["cancelled","rescheduled","advanced"];
 function normStatus(s){const v=String(s&&s.status||"pending").toLowerCase();return STATUS_LABELS[v]?v:"pending";}
+function displayStatus(s,now=new Date()){
+  const status=normStatus(s);
+  if(status!=="pending"||!s.date) return status;
+  const automaticConfirmation=new Date(`${s.date}T15:00:00Z`);
+  return now>=automaticConfirmation?"confirmed":"pending";
+}
 function icsIncluded(s){return !ICS_EXCLUDED.includes(normStatus(s));}
 function fmtUpdated(v){
   if(!v) return "";
@@ -252,7 +262,9 @@ setInterval(updateLiveStatus,1000);
 function card(s, index){
   const d = new Date(s.date+"T00:00:00Z");
   const exam = String(s.type).toLowerCase()==="examen";
-  const st = normStatus(s);
+  const rawStatus = normStatus(s);
+  const st = displayStatus(s);
+  const autoConfirmed = rawStatus==="pending"&&st==="confirmed";
   const cancelled = st==="cancelled";
   const showLinks = !cancelled;
   const inIcs = icsIncluded(s);
@@ -278,15 +290,30 @@ function card(s, index){
         </div>
         ${s.notes?`<div class="meta"><span><b>Information :</b> ${escHtml(s.notes)}</span></div>`:""}
         ${s.updated_at?`<div class="updated-line">Dernière mise à jour : ${escHtml(fmtUpdated(s.updated_at))}</div>`:""}
+        ${autoConfirmed?'<div class="updated-line">Confirmation automatique à 15h00 GMT le jour du cours</div>':""}
       </div>
       <div class="actions">
         ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
         ${showLinks && s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">Rejoindre la salle virtuelle</a>`:""}
+        ${showLinks && s.room?`<button class="action copy-room" type="button" onclick="copyRoom(${index},this)">Copier le lien de la salle</button>`:""}
         ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Surveillance Teams</a>`:""}
         ${inIcs?`<button class="action ics" onclick="downloadSingle(${index})">Ajouter cette séance</button>`:""}
         ${cancelled?`<div class="cancel-note">Séance annulée</div>`:""}
       </div>
     </article>`;
+}
+async function copyRoom(i,button){
+  const url=pageData&&pageData.sessions&&pageData.sessions[i]&&pageData.sessions[i].room;
+  if(!url) return;
+  const original=button.textContent;
+  try{
+    await navigator.clipboard.writeText(url);
+    button.textContent="Lien copié ✓";
+  }catch(err){
+    const area=document.createElement("textarea");area.value=url;area.style.position="fixed";area.style.opacity="0";document.body.appendChild(area);area.select();document.execCommand("copy");area.remove();
+    button.textContent="Lien copié ✓";
+  }
+  setTimeout(()=>button.textContent=original,1800);
 }
 function downloadSingle(i){
   const s=pageData.sessions[i];
