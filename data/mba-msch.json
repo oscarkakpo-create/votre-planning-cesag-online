@@ -2,18 +2,18 @@
   "slug": "mba-msch",
   "program_name": "Management Stratégique du Capital Humain",
   "program_short": "MBA MSCH",
-  "week_label": "7 → 13 septembre 2026",
-  "week_file_label": "7-13_septembre_2026",
-  "updated_label": "4 septembre 2026",
+  "week_label": "14 → 20 septembre 2026",
+  "week_file_label": "14-20_septembre_2026",
+  "updated_label": "11 septembre 2026",
   "is_new": true,
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-07",
+      "date": "2026-09-14",
       "title": "MBA MSCH – Théorie des organisations (MBAGRH152)",
       "type": "Cours",
-      "teacher": "M. SOULEYMANE BOUSSO",
+      "teacher": "DR SOULEYMANE BOUSSO",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
@@ -22,32 +22,7 @@
     },
     {
       "id": "s2",
-      "date": "2026-09-08",
-      "title": "MBA MSCH – Appréciation des performances du personnel (MBAGRH153)",
-      "type": "Travail personnel de l'étudiant",
-      "teacher": "MME FELICIENNE KOUESSI",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
-      "notes": "Quiz séquence 1. Cas pratique séquence 1. Pour préparer la séance du jeudi 10 septembre : lire la note de cours séquence 2, préparer le Quiz séquence 2 et l’étude de cas séquence 2."
-    },
-    {
-      "id": "s3",
-      "date": "2026-09-09",
-      "title": "MBA MSCH – Audit social et audit de la RSE (MBAGRH142)",
-      "type": "Cours",
-      "teacher": "DR MAMADOU SANE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1259",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390"
-    },
-    {
-      "id": "s4",
-      "date": "2026-09-10",
+      "date": "2026-09-15",
       "title": "MBA MSCH – Appréciation des performances du personnel (MBAGRH153)",
       "type": "Cours",
       "teacher": "MME FELICIENNE KOUESSI",
@@ -56,6 +31,50 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729"
+    },
+    {
+      "id": "s3",
+      "date": "2026-09-17",
+      "title": "MBA MSCH – Théorie des organisations (MBAGRH152)",
+      "type": "Cours",
+      "teacher": "DR SOULEYMANE BOUSSO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063"
+    },
+    {
+      "id": "s4",
+      "date": "2026-09-18",
+      "title": "MBA MSCH – Simulation d’entreprises (MBAGRH243)",
+      "type": "Cours",
+      "teacher": "DR HERVE FOYANG FOYANG",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "notes": "Module inter-cohortes MBA MSCH × MBA AG. Avant la première rencontre, lire les documents mis à disposition dans le cours et réaliser le premier travail demandé par l’enseignant. Le module repose fortement sur le travail en équipe. L’évaluation accorde une importance particulière à la participation effective aux séances, à l’implication dans les travaux collectifs et à la contribution individuelle de chaque participant."
+    }
+  ],
+  "published_at": "2026-09-11T14:29:48.501Z",
+  "information_blocks": [
+    {
+      "title": "Simulation d’entreprises / Jeu d’entreprise — MBA MSCH × MBA AG",
+      "text": "Ce module sera organisé conjointement avec les apprenants du MBA AG. Avant la première rencontre, les participants doivent impérativement lire les documents mis à disposition dans le cours et réaliser le premier travail demandé par l’enseignant. Le module repose fortement sur le travail en équipe. L’évaluation accordera une importance particulière à la participation effective aux séances, à l’implication dans les travaux collectifs et à la contribution individuelle de chaque participant."
+    },
+    {
+      "title": "EXAMEN À VENIR — GESTION DES COMPÉTENCES",
+      "text": "L’examen est prévu au cours de la semaine du lundi 21 septembre 2026. Les participants sont invités à commencer leurs révisions. La date précise, l’horaire et les accès seront communiqués ultérieurement."
+    },
+    {
+      "title": "Audit social et audit de la RSE",
+      "text": "Un espace Moodle sera mis à disposition pour le dépôt des travaux finaux du module. Le dépôt Moodle devra être effectué même si l’enseignant demande également une transmission du travail par courriel. Le lien de dépôt sera communiqué ultérieurement."
+    },
+    {
+      "title": "Quiz",
+      "text": "Pensez à finaliser les quiz encore en attente dans vos différents modules."
     }
   ]
 }
