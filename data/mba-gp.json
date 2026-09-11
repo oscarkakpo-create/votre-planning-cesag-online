@@ -2,39 +2,26 @@
   "slug": "mba-gp",
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
-  "week_label": "7 → 13 septembre 2026",
-  "week_file_label": "7-13_septembre_2026",
-  "updated_label": "4 septembre 2026",
+  "week_label": "14 → 20 septembre 2026",
+  "week_file_label": "14-20_septembre_2026",
+  "updated_label": "11 septembre 2026",
   "is_new": true,
+  "published_at": "2026-09-11T00:00:00Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "information_blocks": [
     {
-      "title": "Logistique et gestion des ressources matérielles",
-      "text": "Une pause temporaire est observée dans le déroulement du module Logistique et gestion des ressources matérielles. Cette période permettra à la coordination d’échanger avec l’enseignant afin d’organiser la poursuite du cours dans de bonnes conditions pédagogiques. Nous vous prions de bien vouloir nous excuser pour les désagréments occasionnés. Les modalités de reprise seront communiquées ultérieurement."
+      "title": "Logistique — reprise prochaine",
+      "text": "Le cours de Logistique reprendra la semaine suivante, dans de meilleures conditions d’organisation. La nouvelle programmation sera communiquée dès qu’elle sera confirmée. Il s’agit d’un report avec reprise prochaine, et non d’une annulation du module."
     },
     {
-      "title": "Examen final – Partenariats public-privé",
-      "text": "Comme indiqué dans le communiqué relatif à l’examen final du module Partenariats public-privé, l’accès à l’espace de dépôt est conditionné par la réalisation préalable de l’évaluation de l’enseignement.\n\nL’examen final prend la forme du dossier individuel “Le dossier de Zamandé”, à déposer au plus tard le 10 septembre 2026 à 23h59.",
-      "link": "https://formations.cesagonline.com/mod/assign/view.php?id=26960",
-      "link_label": "Accéder à l’espace de dépôt"
+      "title": "Nouveau module — Aspects juridiques et fiscaux des projets, programmes et portefeuille",
+      "text": "Les dates communiquées pour ce nouveau module sont prévisionnelles et susceptibles de modification : 17 septembre 2026, 24 septembre 2026, 1 octobre 2026, 8 octobre 2026 et 15 octobre 2026. Elles ne doivent pas être considérées comme définitivement arrêtées."
     }
   ],
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-07",
-      "title": "Management de la qualité",
-      "type": "Cours",
-      "teacher": "M. JEROME DANDJINOU",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1000",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13856"
-    },
-    {
-      "id": "s2",
-      "date": "2026-09-08",
+      "date": "2026-09-15",
       "title": "Codes éthiques et déontologie",
       "type": "Cours",
       "teacher": "M. JUDICAEL OLANIKPEKOUN",
@@ -45,8 +32,8 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890"
     },
     {
-      "id": "s3",
-      "date": "2026-09-09",
+      "id": "s2",
+      "date": "2026-09-16",
       "title": "Management de la qualité",
       "type": "Cours",
       "teacher": "M. JEROME DANDJINOU",
@@ -57,17 +44,31 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13856"
     },
     {
-      "id": "s4",
-      "date": "2026-09-11",
-      "title": "Codes éthiques et déontologie",
+      "id": "s3",
+      "date": "2026-09-17",
+      "title": "Aspects juridiques et fiscaux des projets, programmes et portefeuille",
       "type": "Cours",
-      "teacher": "M. JUDICAEL OLANIKPEKOUN",
+      "teacher": "M. DESIRE TAHO",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890",
-      "notes": "Examen de Méthodes agiles prévu au cours de la semaine du 14 septembre 2026. Les étudiants sont invités à commencer leurs révisions."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1001",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13873",
+      "notes": "Nouveau module. Les dates annoncées sont prévisionnelles et susceptibles de modification."
+    },
+    {
+      "id": "s4",
+      "date": "2026-09-18",
+      "title": "Approches innovantes de gestion de projet et méthodologie agile",
+      "type": "Examen",
+      "teacher": "M. TADAGBE HOUNKPEVI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 minutes",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=995",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28821",
+      "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt"
     }
   ]
 }
