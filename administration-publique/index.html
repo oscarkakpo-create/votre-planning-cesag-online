@@ -51,7 +51,9 @@
     .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}.tag{padding:5px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}.tag-program{background:var(--goldSoft);color:var(--goldDark)}
     .status-badge{padding:5px 10px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
     .status-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
-    .st-pending{background:var(--goldSoft);color:var(--goldDark)}
+    .st-pending{background:#102A43;color:#EAF7EF;border:1px solid #294E68;border-radius:5px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;letter-spacing:1.15px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 2px 5px rgba(16,42,67,.18)}
+    .st-pending::before{color:#58D68D;box-shadow:0 0 0 3px rgba(88,214,141,.13)}
+    .status-legend{display:flex;align-items:center;gap:10px;margin:10px 0 18px;color:var(--muted);font-size:12.5px}.status-legend .status-badge{flex:none}
     .st-confirmed{background:#E4F3EA;color:#166534}
     .st-advanced{background:var(--blueSoft);color:var(--blue)}
     .st-rescheduled{background:#FCEDDD;color:#9A4A0F}
@@ -124,6 +126,10 @@
         <h2>Planning hebdomadaire</h2>
         <p>Les séances sont présentées par ordre chronologique.</p>
       </div>
+      <div class="status-legend" aria-label="Signification du statut programmé">
+        <span class="status-badge st-pending">Programmé</span>
+        <span>La séance figure au planning et passe automatiquement à « Confirmée » à 15h00 GMT le jour J, sauf action manuelle.</span>
+      </div>
 
       <section class="agenda" id="agenda"></section>
       <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
@@ -150,10 +156,16 @@ let pageData = null;
 const months = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 const weekdays = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
 
-const STATUS_LABELS={pending:"À confirmer",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
+const STATUS_LABELS={pending:"Programmé",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
 const STATUS_CLASS={pending:"st-pending",confirmed:"st-confirmed",advanced:"st-advanced",rescheduled:"st-rescheduled",cancelled:"st-cancelled"};
 const ICS_EXCLUDED=["cancelled","rescheduled","advanced"];
 function normStatus(s){const v=String(s&&s.status||"pending").toLowerCase();return STATUS_LABELS[v]?v:"pending";}
+function displayStatus(s,now=new Date()){
+  const status=normStatus(s);
+  if(status!=="pending"||!s.date) return status;
+  const automaticConfirmation=new Date(`${s.date}T15:00:00Z`);
+  return now>=automaticConfirmation?"confirmed":"pending";
+}
 function icsIncluded(s){return !ICS_EXCLUDED.includes(normStatus(s));}
 function fmtUpdated(v){
   if(!v) return "";
@@ -240,7 +252,9 @@ setInterval(updateLiveStatus,1000);
 function card(s, index){
   const d = new Date(s.date+"T00:00:00Z");
   const exam = String(s.type).toLowerCase()==="examen";
-  const st = normStatus(s);
+  const rawStatus = normStatus(s);
+  const st = displayStatus(s);
+  const autoConfirmed = rawStatus==="pending"&&st==="confirmed";
   const cancelled = st==="cancelled";
   const showLinks = !cancelled;
   const inIcs = icsIncluded(s);
@@ -266,6 +280,7 @@ function card(s, index){
         </div>
         ${s.notes?`<div class="meta"><span><b>Information :</b> ${escHtml(s.notes)}</span></div>`:""}
         ${s.updated_at?`<div class="updated-line">Dernière mise à jour : ${escHtml(fmtUpdated(s.updated_at))}</div>`:""}
+        ${autoConfirmed?'<div class="updated-line">Confirmation automatique à 15h00 GMT le jour du cours</div>':""}
       </div>
       <div class="actions">
         ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
