@@ -2,14 +2,28 @@
   "slug": "mba-ag-auf",
   "program_name": "MBA AG AUF",
   "program_short": "MBA AG AUF",
-  "week_label": "7 → 13 septembre 2026",
-  "week_file_label": "7-13_septembre_2026",
-  "updated_label": "4 septembre 2026",
+  "week_label": "14 → 20 septembre 2026",
+  "week_file_label": "14-20_septembre_2026",
+  "updated_label": "11 septembre 2026",
   "is_new": true,
+  "published_at": "2026-09-11T15:03:21.756Z",
+  "week_message": "Nous arrivons bientôt à la fin du semestre 1. Félicitations à toutes et à tous pour votre résilience et les efforts fournis !",
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-08",
+      "date": "2026-09-14",
+      "title": "MBA AG AUF Jeu d'entreprise",
+      "type": "Cours",
+      "teacher": "DR HERVE FOYANG FOYANG",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730"
+    },
+    {
+      "id": "s2",
+      "date": "2026-09-15",
       "title": "MBA AG AUF Marchés financiers",
       "type": "Cours",
       "teacher": "M. AHMAD KONATE",
@@ -20,8 +34,8 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29343"
     },
     {
-      "id": "s2",
-      "date": "2026-09-09",
+      "id": "s3",
+      "date": "2026-09-16",
       "title": "MBA (AG, ACG, GP, MCID, IGF) UE 4 ECUE 1 METHODOLOGIE DE REDACTION DE MEMOIRE",
       "type": "Cours",
       "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
@@ -29,20 +43,19 @@
       "end": "20:00",
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482",
-      "notes": "Module de nouveau entièrement accessible : S1 à S4 et Boîte à outils ouvertes. Les cinq devoirs notés sont à déposer au plus tard le lundi 30 novembre 2026 à 23h55 GMT. Les quiz H5P S2, S3 et S4 restent accessibles en permanence comme autoévaluations. Les espaces de dépôt libres restent ouverts. L’examen final sera annoncé séparément. Une progression régulière est attendue sans attendre l’échéance de novembre."
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
     },
     {
-      "id": "s3",
-      "date": "2026-09-10",
-      "title": "MBA AG AUF Contrôle de gestion",
+      "id": "s4",
+      "date": "2026-09-17",
+      "title": "MBA AG AUF Contrôle Interne",
       "type": "Cours",
-      "teacher": "M. SINIMBOU DUROTIMI",
+      "teacher": "M. SEKOU NIANGUE",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1329",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28952"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1328",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
     }
   ]
 }
