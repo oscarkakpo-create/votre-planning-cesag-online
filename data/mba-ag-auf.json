@@ -6,7 +6,7 @@
   "week_file_label": "14-20_septembre_2026",
   "updated_label": "11 septembre 2026",
   "is_new": true,
-  "published_at": "2026-09-11T15:03:21.756Z",
+  "published_at": "2026-09-11T15:06:26.263Z",
   "week_message": "Nous arrivons bientôt à la fin du semestre 1. Félicitations à toutes et à tous pour votre résilience et les efforts fournis !",
   "sessions": [
     {
@@ -19,7 +19,8 @@
       "end": "20:00",
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730"
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "notes": "Séance de Simulation d’entreprises organisée conjointement avec le MBA MSCH."
     },
     {
       "id": "s2",
