@@ -4,7 +4,7 @@
   "program_short": "MBA MSCH",
   "week_label": "14 → 20 septembre 2026",
   "week_file_label": "14-20_septembre_2026",
-  "updated_label": "11 septembre 2026",
+  "updated_label": "14 septembre 2026",
   "is_new": true,
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [
@@ -16,7 +16,8 @@
       "teacher": "DR SOULEYMANE BOUSSO",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
+      "updated_at": "2026-09-14T16:37:15.4905729Z",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063"
     },
