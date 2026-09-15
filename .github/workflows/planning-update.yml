@@ -1,0 +1,85 @@
+name: Mise à jour du planning (via issue)
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  apply:
+    if: >-
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'planning-update')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: S'assurer que le label existe
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh label create "à-préciser" --color FBCA04 --description "Il manque une information pour appliquer la demande" --force
+
+      - name: Appliquer la modification demandée
+        id: apply
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          BOT_MESSAGE_FILE: ${{ runner.temp }}/message.txt
+        run: node .github/scripts/apply-planning-update.mjs
+
+      - name: Committer sur main
+        if: steps.apply.outputs.ok == 'true'
+        run: |
+          git config user.name "Planning Bot"
+          git config user.email "actions@github.com"
+          git add "${{ steps.apply.outputs.file }}"
+          git commit -m "fix(planning): mise a jour via issue #${{ github.event.issue.number }}"
+          git push origin HEAD:main
+
+      - name: Publier (branche GitHub Pages)
+        if: steps.apply.outputs.ok == 'true'
+        id: publish
+        run: |
+          if git push origin HEAD:claude/github-files-upload-k6evwl; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Confirmer sur l'issue
+        if: steps.apply.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ steps.publish.outputs.published }}" = "true" ]; then
+            FOOTER="Le site sera à jour dans une minute ou deux."
+          else
+            FOOTER="⚠️ Enregistré, mais la publication automatique du site a échoué (branche Pages non alignée). Signale-le à Claude pour un correctif manuel."
+          fi
+          {
+            echo "✅ $(cat "${{ runner.temp }}/message.txt")"
+            echo ""
+            echo "$FOOTER"
+          } > "${{ runner.temp }}/comment.txt"
+          gh issue comment ${{ github.event.issue.number }} --body-file "${{ runner.temp }}/comment.txt"
+          gh issue edit ${{ github.event.issue.number }} --remove-label "à-préciser" || true
+          gh issue close ${{ github.event.issue.number }}
+
+      - name: Demander une précision
+        if: steps.apply.outputs.ok != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            echo "⚠️ $(cat "${{ runner.temp }}/message.txt")"
+            echo ""
+            echo "Modifie la description de cette issue (bouton crayon ✏️ en haut) avec l'information manquante, puis enregistre : je réessaierai automatiquement."
+          } > "${{ runner.temp }}/comment.txt"
+          gh issue comment ${{ github.event.issue.number }} --body-file "${{ runner.temp }}/comment.txt"
+          gh issue edit ${{ github.event.issue.number }} --add-label "à-préciser"

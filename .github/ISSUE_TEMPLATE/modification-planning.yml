@@ -1,0 +1,109 @@
+name: "📅 Modifier le planning"
+description: "Reporter, déplacer, confirmer, annuler ou ajouter une séance — sans toucher au code"
+title: "[Planning] "
+labels: ["planning-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Remplis ce formulaire puis clique **« Submit new issue »** en bas de page.
+        La mise à jour du site se fait toute seule, en général en moins de 2 minutes.
+        Tu recevras un message de confirmation directement ici, sur cette page.
+
+  - type: dropdown
+    id: programme
+    attributes:
+      label: Programme
+      options:
+        - Gestion des entreprises
+        - Administration publique
+        - MBA AG AUF
+        - MBA AG Classique
+        - MBA GP
+        - MBA GP AUF
+        - MBA MSCH
+    validations:
+      required: true
+
+  - type: dropdown
+    id: action
+    attributes:
+      label: "Que veux-tu faire ?"
+      options:
+        - "Reporter une séance (nouvelle date pas encore connue)"
+        - "Déplacer une séance à une date/heure précise"
+        - "Confirmer une séance"
+        - "Annuler une séance"
+        - "Ajouter une nouvelle séance"
+    validations:
+      required: true
+
+  - type: input
+    id: date_actuelle
+    attributes:
+      label: "Date de la séance concernée (AAAA-MM-JJ)"
+      description: "Pour « Ajouter une nouvelle séance », indique ici la date de cette nouvelle séance."
+      placeholder: "2026-09-17"
+    validations:
+      required: true
+
+  - type: input
+    id: titre
+    attributes:
+      label: "Titre du cours"
+      description: "Aide à retrouver la bonne séance si plusieurs cours ont lieu le même jour. Pour un ajout, c'est le titre du nouveau cours."
+      placeholder: "Planification opérationnelle et budgétisation des projets et programmes"
+    validations:
+      required: true
+
+  - type: input
+    id: enseignant
+    attributes:
+      label: "Enseignant (optionnel)"
+      placeholder: "M. PAPA FELOU DIALLO"
+
+  - type: dropdown
+    id: type_seance
+    attributes:
+      label: "Type de séance (pour un ajout)"
+      options:
+        - Cours
+        - Examen
+      default: 0
+
+  - type: input
+    id: nouvelle_date
+    attributes:
+      label: "Nouvelle date, si déjà connue (AAAA-MM-JJ)"
+      description: "Utile seulement pour « Déplacer une séance »."
+      placeholder: "2026-09-18"
+
+  - type: input
+    id: heure_debut
+    attributes:
+      label: "Heure de début (HH:MM)"
+      placeholder: "18:00"
+
+  - type: input
+    id: heure_fin
+    attributes:
+      label: "Heure de fin (HH:MM)"
+      placeholder: "20:00"
+
+  - type: input
+    id: lien_moodle
+    attributes:
+      label: "Lien Moodle (optionnel)"
+      placeholder: "https://formations.cesagonline.com/course/view.php?id=…"
+
+  - type: input
+    id: lien_salle
+    attributes:
+      label: "Lien salle virtuelle BBB (optionnel)"
+      placeholder: "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=…"
+
+  - type: textarea
+    id: note
+    attributes:
+      label: "Observation ou note (optionnel)"
+      placeholder: "Ex. : nouvelle date à confirmer, motif de l'annulation…"
