@@ -248,6 +248,21 @@ const state = { programs:{}, scope:"all" }; // programs[slug] = {data, dirty}
 
 function nowISO(){ return new Date().toISOString(); }
 function esc(v=""){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+// Le badge programme affiche déjà "MBA GP AUF" etc. : on retire ce préfixe redondant à l'affichage
+// (même logique que le site public), sans toucher aux données JSON.
+function simplifyTitle(slug,title){
+  if(!title) return title;
+  const label=(state.programs[slug]&&state.programs[slug].data.program_short)||LABEL[slug]||"";
+  if(!label) return title;
+  const escaped=label.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+  const prefixRe=new RegExp("^"+escaped+"\\s*(?:[\u2013-]\\s*)?");
+  if(prefixRe.test(title)){
+    const stripped=title.replace(prefixRe,"").trim();
+    if(stripped) return stripped;
+  }
+  return title;
+}
 function normStatus(s){const v=String(s&&s.status||"pending").toLowerCase();return STATUS_LABELS[v]?v:"pending";}
 function newId(){return "n"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
 function sortSessions(arr){return arr.slice().sort((a,b)=>((a.date||"")+(a.start||"")).localeCompare((b.date||"")+(b.start||"")));}
@@ -394,7 +409,7 @@ function sessionRow(slug,s){
         <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
         ${s.moved_from?`<span class="tag tag-prog">Nouvelle occurrence</span>`:""}
       </div>
-      <p class="stitle">${esc(s.title||"—")}</p>
+      <p class="stitle">${esc(simplifyTitle(slug,s.title)||"—")}</p>
       <div class="smeta">
         <span><b>Horaire :</b> ${esc(s.start||"?")}–${esc(s.end||"?")} GMT</span>
         ${s.duration?`<span><b>Durée :</b> ${esc(s.duration)}</span>`:""}
