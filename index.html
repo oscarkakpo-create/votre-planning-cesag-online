@@ -680,6 +680,7 @@
       <div><b>CESAG ONLINE</b> · Agenda FOAD</div>
       <div style="display:flex;align-items:center;gap:14px">
         <a id="adminLink" href="./cockpit/" aria-label="Cockpit administration" style="display:none;align-items:center;justify-content:center;width:26px;height:26px;font-size:13px;color:#F1D291;border:1px solid rgba(241,210,145,.4);border-radius:999px">⚙︎</a>
+        <a id="demandeLink" href="./cockpit/demande.html" aria-label="Nouvelle demande de modification" style="display:none;align-items:center;justify-content:center;width:26px;height:26px;font-size:12px;color:#F1D291;border:1px solid rgba(241,210,145,.4);border-radius:999px">📅</a>
         <span>Année académique 2025–2026</span>
       </div>
     </div>
@@ -735,8 +736,10 @@
       if (p.get("admin") === "0") localStorage.removeItem("cesag_admin");
       if (p.has("admin")) history.replaceState(null, "", location.pathname); // nettoie l'URL
       if (localStorage.getItem("cesag_admin") === "1") {
-        const a = document.getElementById("adminLink");
-        if (a) a.style.display = "inline-flex";
+        ["adminLink", "demandeLink"].forEach((id) => {
+          const a = document.getElementById(id);
+          if (a) a.style.display = "inline-flex";
+        });
       }
     })();
   </script>
