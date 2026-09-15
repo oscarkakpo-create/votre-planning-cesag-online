@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Nouvelle demande — Cockpit CESAG ONLINE</title>
+  <meta name="theme-color" content="#07301E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --green:#0B4D2E;--greenDark:#07301E;--greenSoft:#E9F2ED;--greenLine:#CBDED3;
+      --gold:#C9962A;--goldDark:#755513;--goldSoft:#F7EFDA;
+      --paper:#F6F8F6;--text:#16241D;--muted:#586A60;--line:#E3E9E5;
+      --shadow:0 16px 40px rgba(11,77,46,.08);
+      --serif:"Spectral",Georgia,serif;--sans:"Inter","Segoe UI",Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper)}
+    a{color:var(--green)}
+    .container{max-width:720px;margin:auto;padding:0 20px}
+    .topbar{background:var(--greenDark);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+    .brand{font-weight:700;display:flex;align-items:center;gap:9px}
+    .brand .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
+    .topbar a{color:rgba(255,255,255,.9);font-weight:600;text-decoration:none}
+    .topbar a:hover{color:#fff}
+
+    header.head{padding:26px 0 6px}
+    header.head h1{font-family:var(--serif);font-weight:600;margin:0;color:var(--green);font-size:clamp(24px,4vw,34px)}
+    header.head p{margin:6px 0 0;color:var(--muted);font-size:14px;max-width:640px;line-height:1.6}
+
+    form{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:20px 0;box-shadow:var(--shadow)}
+    .field{display:flex;flex-direction:column;gap:5px;margin-bottom:16px}
+    .field label{font-size:12.5px;font-weight:700;color:var(--muted)}
+    .field .desc{font-size:11.5px;color:var(--muted);margin-top:-2px}
+    select,input,textarea{font:inherit;color:var(--text);background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 12px;width:100%}
+    select:focus,input:focus,textarea:focus{outline:2px solid var(--greenLine);outline-offset:1px;border-color:var(--green)}
+    textarea{resize:vertical;min-height:70px}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .divider{border:0;border-top:1px solid var(--line);margin:18px 0}
+    .hint{font-size:12px;color:var(--muted);margin:0 0 18px;line-height:1.55}
+
+    .btn{border:1px solid transparent;border-radius:11px;padding:12px 18px;font-weight:700;display:inline-flex;align-items:center;gap:8px;cursor:pointer;font-size:14.5px}
+    .btn-gold{background:var(--gold);color:#fff}
+    .btn-gold:hover{background:var(--goldDark)}
+
+    footer{margin-top:30px;background:var(--greenDark);color:rgba(255,255,255,.75);padding:22px 0;font-size:12.5px}
+    footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+    @media(max-width:600px){ .row2{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand"><span class="dot"></span> CESAG ONLINE · Cockpit d'administration</div>
+      <a href="./">← Retour au cockpit</a>
+    </div>
+  </div>
+
+  <header class="head">
+    <div class="container">
+      <h1>Nouvelle demande de modification</h1>
+      <p>Remplis ce formulaire avec un vrai calendrier et une vraie horloge cliquables. En validant, tu es redirigé·e
+        vers GitHub avec tout déjà pré-rempli — il ne reste qu'à cliquer « Submit new issue ».</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <form id="demandeForm">
+      <div class="field">
+        <label for="programme">Programme</label>
+        <select id="programme" required>
+          <option value="">— Choisir —</option>
+          <option>Gestion des entreprises</option>
+          <option>Administration publique</option>
+          <option>MBA AG AUF</option>
+          <option>MBA AG Classique</option>
+          <option>MBA GP</option>
+          <option>MBA GP AUF</option>
+          <option>MBA MSCH</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="action">Que veux-tu faire ?</label>
+        <select id="action" required>
+          <option value="">— Choisir —</option>
+          <option>Reporter une séance (nouvelle date pas encore connue)</option>
+          <option>Déplacer une séance à une date/heure précise</option>
+          <option>Confirmer une séance</option>
+          <option>Annuler une séance</option>
+          <option>Ajouter une nouvelle séance</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="date_actuelle">Date de la séance concernée</label>
+        <div class="desc">Pour « Ajouter une nouvelle séance », c'est la date de cette nouvelle séance.</div>
+        <input type="date" id="date_actuelle" required>
+      </div>
+
+      <div class="field">
+        <label for="titre">Titre du cours</label>
+        <div class="desc">Aide à retrouver la bonne séance si plusieurs cours ont lieu le même jour.</div>
+        <input type="text" id="titre" required placeholder="Ex. Planification opérationnelle et budgétisation des projets et programmes">
+      </div>
+
+      <div class="field">
+        <label for="enseignant">Enseignant (optionnel)</label>
+        <input type="text" id="enseignant" placeholder="M. NOM">
+      </div>
+
+      <div class="field">
+        <label for="type_seance">Type de séance (pour un ajout)</label>
+        <select id="type_seance">
+          <option>Cours</option>
+          <option>Examen</option>
+        </select>
+      </div>
+
+      <hr class="divider">
+      <p class="hint">La partie ci-dessous ne sert que pour « Déplacer une séance ».</p>
+
+      <div class="field">
+        <label for="nouvelle_date">Nouvelle date</label>
+        <input type="date" id="nouvelle_date">
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="heure_debut">Heure de début</label>
+          <input type="time" id="heure_debut" value="18:00">
+        </div>
+        <div class="field">
+          <label for="heure_fin">Heure de fin</label>
+          <input type="time" id="heure_fin" value="20:00">
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="field">
+        <label for="lien_moodle">Lien Moodle (optionnel)</label>
+        <input type="url" id="lien_moodle" placeholder="https://formations.cesagonline.com/course/view.php?id=…">
+      </div>
+
+      <div class="field">
+        <label for="lien_salle">Lien salle virtuelle BBB (optionnel)</label>
+        <input type="url" id="lien_salle" placeholder="https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=…">
+      </div>
+
+      <div class="field">
+        <label for="note">Observation ou note (optionnel)</label>
+        <textarea id="note" placeholder="Ex. : motif de l'annulation…"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-gold">Continuer sur GitHub ↗</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div><b>CESAG ONLINE</b> · Cockpit d'administration</div>
+      <div>Rien n'est envoyé avant que tu cliques « Submit new issue » sur GitHub</div>
+    </div>
+  </footer>
+
+<script>
+const REPO = "oscarkakpo-create/votre-planning-cesag-online";
+const TEMPLATE = "modification-planning.yml";
+
+document.getElementById("demandeForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const val = id => document.getElementById(id).value.trim();
+
+  const fields = {
+    programme: val("programme"),
+    action: val("action"),
+    date_actuelle: val("date_actuelle"),
+    titre: val("titre"),
+    enseignant: val("enseignant"),
+    type_seance: val("type_seance"),
+    nouvelle_date: val("nouvelle_date"),
+    heure_debut: val("heure_debut"),
+    heure_fin: val("heure_fin"),
+    lien_moodle: val("lien_moodle"),
+    lien_salle: val("lien_salle"),
+    note: val("note"),
+  };
+
+  if(!fields.programme || !fields.action || !fields.date_actuelle || !fields.titre){
+    alert("Programme, action, date et titre sont obligatoires.");
+    return;
+  }
+
+  const title = `[Planning] ${fields.programme} — ${fields.titre}`;
+  const params = new URLSearchParams({ template: TEMPLATE, title });
+  for(const [key, value] of Object.entries(fields)){
+    if(value) params.set(key, value);
+  }
+
+  window.open(`https://github.com/${REPO}/issues/new?${params.toString()}`, "_blank", "noopener");
+});
+</script>
+</body>
+</html>
