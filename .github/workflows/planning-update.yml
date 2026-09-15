@@ -12,7 +12,8 @@ jobs:
   apply:
     if: >-
       github.event.issue.state == 'open' &&
-      contains(github.event.issue.labels.*.name, 'planning-update')
+      contains(github.event.issue.labels.*.name, 'planning-update') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -83,3 +84,17 @@ jobs:
           } > "${{ runner.temp }}/comment.txt"
           gh issue comment ${{ github.event.issue.number }} --body-file "${{ runner.temp }}/comment.txt"
           gh issue edit ${{ github.event.issue.number }} --add-label "à-préciser"
+
+  reject-unauthorized:
+    if: >-
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'planning-update') &&
+      contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association) == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fermer la demande non autorisée
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --body "Merci pour ce message, mais seule la personne qui gère ce planning peut appliquer ce type de demande. Contacte-la directement si besoin."
+          gh issue close ${{ github.event.issue.number }}
