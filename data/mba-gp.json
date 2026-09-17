@@ -12,10 +12,6 @@
     {
       "title": "Logistique — reprise prochaine",
       "text": "Le cours de Logistique reprendra la semaine suivante, dans de meilleures conditions d’organisation. La nouvelle programmation sera communiquée dès qu’elle sera confirmée. Il s’agit d’un report avec reprise prochaine, et non d’une annulation du module."
-    },
-    {
-      "title": "Nouveau module — Aspects juridiques et fiscaux des projets, programmes et portefeuille",
-      "text": "DATES PRÉVISIONNELLES — SUSCEPTIBLES DE MODIFICATION\n\n• 17 septembre 2026\n• 24 septembre 2026\n• 1 octobre 2026\n• 8 octobre 2026\n• 15 octobre 2026\n\nCes dates ne sont pas définitivement arrêtées."
     }
   ],
   "sessions": [
@@ -24,7 +20,7 @@
       "date": "2026-09-15",
       "title": "Codes éthiques et déontologie",
       "type": "Cours",
-      "teacher": "M. JUDICAEL OLANIKPEKOUN",
+      "teacher": "M. JUDICAEL OLADIKPEKOUN",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
@@ -46,15 +42,16 @@
     {
       "id": "s3",
       "date": "2026-09-17",
-      "title": "Aspects juridiques et fiscaux des projets, programmes et portefeuille",
+      "title": "Éthique et déontologie",
       "type": "Cours",
-      "teacher": "M. DESIRE TAHO",
+      "teacher": "M. JUDICAEL OLADIKPEKOUN",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1001",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13873",
-      "notes": "Nouveau module. Les dates annoncées sont prévisionnelles et susceptibles de modification."
+      "updated_at": "2026-09-17T13:49:26.1436898Z",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890",
+      "notes": "Remplace la séance d’Aspects juridiques et fiscaux des projets, programmes et portefeuille initialement prévue ce jour."
     },
     {
       "id": "s4",
