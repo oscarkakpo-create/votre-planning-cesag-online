@@ -2,11 +2,11 @@
   "slug": "mba-gp",
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
-  "week_label": "14 → 20 septembre 2026",
-  "week_file_label": "14-20_septembre_2026",
-  "updated_label": "11 septembre 2026",
+  "week_label": "21 → 27 septembre 2026",
+  "week_file_label": "21-27_septembre_2026",
+  "updated_label": "18 septembre 2026",
   "is_new": true,
-  "published_at": "2026-09-11T00:00:00Z",
+  "published_at": "2026-09-18T16:59:51.415Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "information_blocks": [
     {
@@ -17,54 +17,28 @@
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-15",
-      "title": "Codes éthiques et déontologie",
+      "date": "2026-09-24",
+      "title": "Aspects juridiques et fiscaux des projets, programmes et portefeuille",
       "type": "Cours",
-      "teacher": "M. JUDICAEL OLADIKPEKOUN",
+      "teacher": "M. DESIRE TAHO",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1001",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13873"
     },
     {
       "id": "s2",
-      "date": "2026-09-16",
+      "date": "2026-09-25",
       "title": "Management de la qualité",
-      "type": "Cours",
+      "type": "Examen",
       "teacher": "M. JEROME DANDJINOU",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
+      "duration": "116 minutes",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1000",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13856"
-    },
-    {
-      "id": "s3",
-      "date": "2026-09-17",
-      "title": "Éthique et déontologie",
-      "type": "Cours",
-      "teacher": "M. JUDICAEL OLADIKPEKOUN",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "updated_at": "2026-09-17T13:49:26.1436898Z",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890",
-      "notes": "Remplace la séance d’Aspects juridiques et fiscaux des projets, programmes et portefeuille initialement prévue ce jour."
-    },
-    {
-      "id": "s4",
-      "date": "2026-09-18",
-      "title": "Approches innovantes de gestion de projet et méthodologie agile",
-      "type": "Examen",
-      "teacher": "M. TADAGBE HOUNKPEVI",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "duration": "120 minutes",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=995",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28821",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13856",
       "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt"
     }
   ]
