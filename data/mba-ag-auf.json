@@ -2,17 +2,17 @@
   "slug": "mba-ag-auf",
   "program_name": "MBA AG AUF",
   "program_short": "MBA AG AUF",
-  "week_label": "14 → 20 septembre 2026",
-  "week_file_label": "14-20_septembre_2026",
-  "updated_label": "11 septembre 2026",
+  "week_label": "21 → 27 septembre 2026",
+  "week_file_label": "21-27_septembre_2026",
+  "updated_label": "18 septembre 2026",
   "is_new": true,
-  "published_at": "2026-09-11T15:07:36.841Z",
-  "week_message": "Nous arrivons bientôt à la fin du semestre 1. Félicitations à toutes et à tous pour votre résilience et les efforts fournis !",
+  "published_at": "2026-09-18T15:33:47.277Z",
+  "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
   "sessions": [
     {
-      "id": "s2",
-      "date": "2026-09-15",
-      "title": "MBA AG AUF Marchés financiers",
+      "id": "s1",
+      "date": "2026-09-22",
+      "title": "Marchés financiers",
       "type": "Cours",
       "teacher": "M. AHMAD KONATE",
       "start": "18:00",
@@ -22,21 +22,21 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29343"
     },
     {
-      "id": "s3",
-      "date": "2026-09-16",
-      "title": "MBA (AG, ACG, GP, MCID, IGF) UE 4 ECUE 1 METHODOLOGIE DE REDACTION DE MEMOIRE",
+      "id": "s2",
+      "date": "2026-09-24",
+      "title": "Jeu d'entreprise",
       "type": "Cours",
-      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
+      "teacher": "Dr HERVE FOYANG FOYANG",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29849"
     },
     {
-      "id": "s4",
-      "date": "2026-09-17",
-      "title": "MBA AG AUF Contrôle Interne",
+      "id": "s3",
+      "date": "2026-09-25",
+      "title": "Contrôle Interne",
       "type": "Cours",
       "teacher": "M. SEKOU NIANGUE",
       "start": "18:00",
@@ -46,17 +46,16 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
     },
     {
-      "id": "s1",
-      "date": "2026-09-18",
-      "title": "MBA AG AUF Jeu d'entreprise",
+      "id": "s4",
+      "date": "2026-09-26",
+      "title": "Contrôle Interne",
       "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
-      "start": "18:00",
-      "end": "20:00",
+      "teacher": "M. SEKOU NIANGUE",
+      "start": "10:00",
+      "end": "12:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Séance de Simulation d’entreprises organisée conjointement avec le MBA MSCH."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1328",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
     }
   ]
 }
