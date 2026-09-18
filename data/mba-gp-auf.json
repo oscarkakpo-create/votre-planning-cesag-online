@@ -2,85 +2,60 @@
   "slug": "mba-gp-auf",
   "program_name": "MBA GP AUF",
   "program_short": "MBA GP AUF",
-  "week_label": "14 → 20 septembre 2026",
-  "week_file_label": "14-20_septembre_2026",
-  "updated_label": "15 septembre 2026",
+  "week_label": "21 → 27 septembre 2026",
+  "week_file_label": "21-27_septembre_2026",
+  "updated_label": "18 septembre 2026",
   "is_new": true,
-  "published_at": "2026-09-11T00:00:00Z",
+  "published_at": "2026-09-18T18:15:34.871Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
-  "information_blocks": [
-    {
-      "title": "Observation de la semaine",
-      "text": "Semaine relax : profitez-en pour vous reposer. La semaine suivante est prévue avec l’examen de Planification opérationnelle et le démarrage du module Management de la Qualité."
-    }
-  ],
   "sessions": [
     {
       "id": "s1",
-      "date": "2026-09-15",
-      "title": "MBA GP AUF Intégration et gestion de projets, programmes et portefeuille",
+      "date": "2026-09-22",
+      "title": "Codes éthiques et déontologie",
       "type": "Cours",
-      "teacher": "M. CLOVIS TOUGMA",
+      "teacher": "M. JUDICAEL OLADIKPEKOUN",
       "start": "18:00",
       "end": "20:00",
-      "status": "rescheduled",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1355",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20890",
-      "updated_at": "2026-09-15T12:00:00Z",
-      "moved_to": "s4"
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1363",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21026"
     },
     {
       "id": "s2",
-      "date": "2026-09-16",
-      "title": "MBA GP AUF Méthodologie de rédaction du TFE",
-      "type": "Cours",
-      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
-    },
-    {
-      "id": "s3",
-      "date": "2026-09-17",
-      "title": "MBA GP AUF Approches innovantes de gestion de projet et méthodologie agile",
-      "type": "Cours",
-      "teacher": "M. TADAGBE HOUNKPEVI",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "rescheduled",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1356",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29927",
-      "updated_at": "2026-09-15T12:00:00Z",
-      "notes": "Séance reportée — nouvelle date à confirmer."
-    },
-    {
-      "id": "s4",
-      "date": "2026-09-17",
-      "title": "MBA GP AUF Intégration et gestion de projets, programmes et portefeuille",
-      "type": "Cours",
-      "teacher": "M. CLOVIS TOUGMA",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1355",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20890",
-      "updated_at": "2026-09-15T12:00:00Z",
-      "moved_from": "s1"
-    },
-    {
-      "id": "s5",
-      "date": "2026-09-18",
-      "title": "MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes",
+      "date": "2026-09-23",
+      "title": "Planification opérationnelle et budgétisation des projets et programmes",
       "type": "Cours",
       "teacher": "M. PAPA FELOU DIALLO",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1354",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873",
-      "updated_at": "2026-09-15T12:00:00Z"
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873"
+    },
+    {
+      "id": "s3",
+      "date": "2026-09-24",
+      "title": "Approches innovantes de gestion de projet et méthodologie agile",
+      "type": "Cours",
+      "teacher": "M. TADAGBE HOUNKPEVI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1356",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20907"
+    },
+    {
+      "id": "s4",
+      "date": "2026-09-25",
+      "title": "Intégration et gestion de projets, programmes et portefeuille",
+      "type": "Cours",
+      "teacher": "M. CLOVIS TOUGMA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1355",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20890"
     }
   ]
 }
