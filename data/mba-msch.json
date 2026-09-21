@@ -4,7 +4,7 @@
   "program_short": "MBA MSCH",
   "week_label": "21 → 27 septembre 2026",
   "week_file_label": "21-27_septembre_2026",
-  "updated_label": "18 septembre 2026",
+  "updated_label": "21 septembre 2026",
   "is_new": true,
   "week_message": "La suite du cours de Théorie des organisations reprendra la semaine suivante.\nL’enseignant intervient actuellement également auprès du MBA ACG, ce qui contraint son planning.",
   "sessions": [
@@ -16,9 +16,25 @@
       "teacher": "Mme FELICIENNE KOUESSI",
       "start": "18:00",
       "end": "20:00",
+      "status": "rescheduled",
+      "updated_at": "2026-09-21T15:42:56.883Z",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
+      "notes": "Séance reportée au mardi 22 septembre 2026.",
+      "moved_to": "s5"
+    },
+    {
+      "id": "s5",
+      "date": "2026-09-22",
+      "title": "MBAGRH153 – Appréciation des performances du personnel",
+      "type": "Cours",
+      "teacher": "Mme FELICIENNE KOUESSI",
+      "start": "18:00",
+      "end": "20:00",
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729"
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
+      "moved_from": "s1"
     },
     {
       "id": "s2",
@@ -59,7 +75,7 @@
       "teams": "https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h"
     }
   ],
-  "published_at": "2026-09-18T16:12:13.372Z",
+  "published_at": "2026-09-21T15:42:56.883Z",
   "information_blocks": [
     {
       "title": "Simulation d’entreprises / Jeu d’entreprise — MBA MSCH × MBA AG",
