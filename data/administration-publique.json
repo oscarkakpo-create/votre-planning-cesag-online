@@ -17,9 +17,11 @@
       "teacher": "M. JILDAS NOUMONZOUNDE",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "cancelled",
+      "updated_at": "2026-09-28T09:24:00.945Z",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1050",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29997"
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29997",
+      "notes": "Séance annulée."
     }
   ]
 }
