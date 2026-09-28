@@ -43,10 +43,26 @@
       "teacher": "DR SOULEYMANE BOUSSO",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
+      "updated_at": "2026-09-28T09:09:40.900Z",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063",
-      "moved_from": "s3"
+      "notes": "Séance déplacée au vendredi 2 octobre 2026.",
+      "moved_to": "s7"
+    },
+    {
+      "id": "s8",
+      "date": "2026-09-30",
+      "title": "MBA MSCH – Bilan social (MBAGRH143)",
+      "type": "Cours",
+      "teacher": "DR MAMADOU SANE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1260",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407",
+      "notes": "A confirmer",
+      "moved_from": "s4"
     },
     {
       "id": "s3",
@@ -85,13 +101,28 @@
       "teacher": "DR MAMADOU SANE",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
+      "updated_at": "2026-09-28T09:09:40.900Z",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1260",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407",
-      "notes": "A confirmer"
+      "notes": "Séance déplacée au mercredi 30 septembre 2026.",
+      "moved_to": "s8"
+    },
+    {
+      "id": "s7",
+      "date": "2026-10-02",
+      "title": "MBA MSCH – Théorie des organisations (MBAGRH152)",
+      "type": "Cours",
+      "teacher": "DR SOULEYMANE BOUSSO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063",
+      "moved_from": "s6"
     }
   ],
-  "published_at": "2026-09-28T09:00:19.015Z",
+  "published_at": "2026-09-28T09:09:40.900Z",
   "information_blocks": [
     {
       "title": "Simulation d’entreprises / Jeu d’entreprise — MBA MSCH × MBA AG",
