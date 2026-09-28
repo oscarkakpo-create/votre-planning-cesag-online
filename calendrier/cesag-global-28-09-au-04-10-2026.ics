@@ -1,0 +1,297 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Planning global//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-s1-2026-09-28@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260928T180000Z
+DTEND:20260928T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG - MBAAG234 – Systèmes d'information
+DESCRIPTION:Type: Cours\\nEnseignant: M. JILDAS NOUMONZOUNDE\\nMoodle: http
+ s://formations.cesagonline.com/course/view.php?id=1044\\nBBB: https://forma
+ tions.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14667
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =14667
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-s2-2026-09-30@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260930T180000Z
+DTEND:20260930T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG - MBAAG232 – Administration et Gestion des ressources huma
+ ines
+DESCRIPTION:Type: Cours\\nEnseignant: M. AKIM PARAISO\\nMoodle: https://for
+ mations.cesagonline.com/course/view.php?id=1042\\nBBB: https://formations.c
+ esagonline.com/mod/bigbluebuttonbn/view.php?id=14633\\nNote: Lien accessibl
+ e en semaine. Rencontre à confirmer
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =14633
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-classique-s2-2026-10-01@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261001T180000Z
+DTEND:20261001T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG Classique
+SUMMARY:MBA AG Classique - Jeu d’entreprise 25-26
+DESCRIPTION:Type: Cours\\nEnseignant: DR HERVE FOYANG FOYANG\\nMoodle: http
+ s://formations.cesagonline.com/course/view.php?id=1279\\nBBB: https://forma
+ tions.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730\\nNote: Séance
+  de Simulation d’entreprises organisée conjointement avec le MBA MSCH.
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =18730
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-s1-2026-09-29@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260929T180000Z
+DTEND:20260929T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF - Marchés financiers
+DESCRIPTION:Type: Cours\\nEnseignant: M. AHMAD KONATE\\nMoodle: https://for
+ mations.cesagonline.com/course/view.php?id=1330\\nBBB: https://formations.c
+ esagonline.com/mod/bigbluebuttonbn/view.php?id=29343
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =29343
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-s5-2026-10-01@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261001T180000Z
+DTEND:20261001T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF - Jeu d'entreprise
+DESCRIPTION:Type: Cours\\nEnseignant: Dr HERVE FOYANG FOYANG\\nMoodle: http
+ s://formations.cesagonline.com/course/view.php?id=1279\\nBBB: https://forma
+ tions.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =18730
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-s3-2026-10-02@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261002T180000Z
+DTEND:20261002T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF - Contrôle Interne
+DESCRIPTION:Type: Cours\\nEnseignant: M. SEKOU NIANGUE\\nMoodle: https://fo
+ rmations.cesagonline.com/course/view.php?id=1328\\nBBB: https://formations.
+ cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =20431
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-s4-2026-10-03@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261003T100000Z
+DTEND:20261003T120000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF - Contrôle Interne
+DESCRIPTION:Type: Cours\\nEnseignant: M. SEKOU NIANGUE\\nMoodle: https://fo
+ rmations.cesagonline.com/course/view.php?id=1328\\nBBB: https://formations.
+ cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =20431
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-s1-2026-09-28@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260928T180000Z
+DTEND:20260928T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP - Logistique et gestion des ressources matérielles
+DESCRIPTION:Type: Cours\\nEnseignant: M. BADARA MBAYE\\nMoodle: https://for
+ mations.cesagonline.com/course/view.php?id=998\\nBBB: https://formations.ce
+ sagonline.com/mod/bigbluebuttonbn/view.php?id=29115
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =29115
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-s2-2026-09-30@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260930T180000Z
+DTEND:20260930T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP - Logistique et gestion des ressources matérielles
+DESCRIPTION:Type: Cours\\nEnseignant: M. BADARA MBAYE\\nMoodle: https://for
+ mations.cesagonline.com/course/view.php?id=998\\nBBB: https://formations.ce
+ sagonline.com/mod/bigbluebuttonbn/view.php?id=29115
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =29115
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-s3-2026-10-01@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261001T180000Z
+DTEND:20261001T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP - Aspects juridiques et fiscaux des projets\, programmes et 
+ portefeuille
+DESCRIPTION:Type: Cours\\nEnseignant: M. DESIRE TAHO\\nMoodle: https://form
+ ations.cesagonline.com/course/view.php?id=1001\\nBBB: https://formations.ce
+ sagonline.com/mod/bigbluebuttonbn/view.php?id=13873
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =13873
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-s4-2026-10-02@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261002T180000Z
+DTEND:20261002T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP - Logistique et gestion des ressources matérielles
+DESCRIPTION:Type: Cours\\nEnseignant: M. BADARA MBAYE\\nMoodle: https://for
+ mations.cesagonline.com/course/view.php?id=998\\nBBB: https://formations.ce
+ sagonline.com/mod/bigbluebuttonbn/view.php?id=29115
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =29115
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-s1-2026-09-28@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260928T180000Z
+DTEND:20260928T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF - MBA GP AUF Intégration et gestion de projets\, progra
+ mmes et portefeuille
+DESCRIPTION:Type: Cours\\nEnseignant: M. CLOVIS TOUGMA\\nMoodle: https://fo
+ rmations.cesagonline.com/course/view.php?id=1355\\nBBB: https://formations.
+ cesagonline.com/mod/bigbluebuttonbn/view.php?id=20890
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =20890
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-s2-2026-09-29@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260929T180000Z
+DTEND:20260929T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF - MBA GP AUF Codes éthiques et déontologie
+DESCRIPTION:Type: Cours\\nEnseignant: M. JUDICAEL OLADIKPEKOUN\\nMoodle: ht
+ tps://formations.cesagonline.com/course/view.php?id=1363\\nBBB: https://for
+ mations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21026
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =21026
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-s3-2026-09-30@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260930T180000Z
+DTEND:20260930T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF - MBA GP AUF Planification opérationnelle et budgétisa
+ tion des projets et programmes
+DESCRIPTION:Type: Cours\\nEnseignant: M. PAPA FELOU DIALLO\\nMoodle: https:
+ //formations.cesagonline.com/course/view.php?id=1354\\nBBB: https://formati
+ ons.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =20873
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-s4-2026-10-01@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261001T180000Z
+DTEND:20261001T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF - MBA GP AUF Approches innovantes de gestion de projet e
+ t méthodologie agile
+DESCRIPTION:Type: Cours\\nEnseignant: M. TADAGBE HOUNKPEVI\\nMoodle: https:
+ //formations.cesagonline.com/course/view.php?id=1356\\nBBB: https://formati
+ ons.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20907
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =20907
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-s5-2026-10-02@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261002T180000Z
+DTEND:20261002T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF - MBA GP AUF Planification opérationnelle et budgétisa
+ tion des projets et programmes
+DESCRIPTION:Type: Cours\\nEnseignant: M. PAPA FELOU DIALLO\\nMoodle: https:
+ //formations.cesagonline.com/course/view.php?id=1354\\nBBB: https://formati
+ ons.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =20873
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-s1-2026-09-28@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260928T180000Z
+DTEND:20260928T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH - MBA MSCH – Théorie des organisations (MBAGRH152)
+DESCRIPTION:Type: Cours\\nEnseignant: DR SOULEYMANE BOUSSO\\nMoodle: https:
+ //formations.cesagonline.com/course/view.php?id=1262\\nBBB: https://formati
+ ons.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =29063
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-s8-2026-09-30@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20260930T180000Z
+DTEND:20260930T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH - MBA MSCH – Bilan social (MBAGRH143)
+DESCRIPTION:Type: Cours\\nEnseignant: DR MAMADOU SANE\\nMoodle: https://for
+ mations.cesagonline.com/course/view.php?id=1260\\nBBB: https://formations.c
+ esagonline.com/mod/bigbluebuttonbn/view.php?id=18407\\nNote: A confirmer
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =18407
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-s5-2026-10-01@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261001T180000Z
+DTEND:20261001T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH - MBA MSCH – Simulation d'entreprises (MBAGRH243)
+DESCRIPTION:Type: Cours\\nEnseignant: DR HERVE FOYANG FOYANG\\nMoodle: http
+ s://formations.cesagonline.com/course/view.php?id=1279\\nBBB: https://forma
+ tions.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730\\nNote: Jumelé
+  avec MBA AG/AG AUF
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =18730
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-s7-2026-10-02@cesagonline.com
+DTSTAMP:20260928T093000Z
+DTSTART:20261002T180000Z
+DTEND:20261002T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH - MBA MSCH – Théorie des organisations (MBAGRH152)
+DESCRIPTION:Type: Cours\\nEnseignant: DR SOULEYMANE BOUSSO\\nMoodle: https:
+ //formations.cesagonline.com/course/view.php?id=1262\\nBBB: https://formati
+ ons.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id
+ =29063
+END:VEVENT
+END:VCALENDAR
+
