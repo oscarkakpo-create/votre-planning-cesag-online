@@ -4,9 +4,9 @@
   "program_short": "MBA AG AUF",
   "week_label": "28 septembre → 4 octobre 2026",
   "week_file_label": "28_septembre-04_octobre_2026",
-  "updated_label": "25 septembre 2026",
+  "updated_label": "28 septembre 2026",
   "is_new": true,
-  "published_at": "2026-09-25T16:23:35.018Z",
+  "published_at": "2026-09-28T09:00:19.015Z",
   "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
   "sessions": [
     {
@@ -17,9 +17,12 @@
       "teacher": "Dr HERVE FOYANG FOYANG",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
+      "updated_at": "2026-09-28T09:00:19.015Z",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730"
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "notes": "Séance déplacée au jeudi 1er octobre 2026.",
+      "moved_to": "s5"
     },
     {
       "id": "s1",
@@ -32,6 +35,19 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1330",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29343"
+    },
+    {
+      "id": "s5",
+      "date": "2026-10-01",
+      "title": "Jeu d'entreprise",
+      "type": "Cours",
+      "teacher": "Dr HERVE FOYANG FOYANG",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "moved_from": "s2"
     },
     {
       "id": "s3",

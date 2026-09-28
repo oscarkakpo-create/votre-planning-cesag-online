@@ -4,9 +4,9 @@
   "program_short": "MBA AG Classique",
   "week_label": "28 septembre → 4 octobre 2026",
   "week_file_label": "28_septembre-04_octobre_2026",
-  "updated_label": "25 septembre 2026",
+  "updated_label": "28 septembre 2026",
   "is_new": true,
-  "published_at": "2026-09-25T16:28:18.036Z",
+  "published_at": "2026-09-28T09:00:19.015Z",
   "sessions": [
     {
       "id": "s1",
@@ -16,10 +16,26 @@
       "teacher": "DR HERVE FOYANG FOYANG",
       "start": "18:00",
       "end": "20:00",
+      "status": "rescheduled",
+      "updated_at": "2026-09-28T09:00:19.015Z",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "notes": "Séance déplacée au jeudi 1er octobre 2026.",
+      "moved_to": "s2"
+    },
+    {
+      "id": "s2",
+      "date": "2026-10-01",
+      "title": "Jeu d’entreprise 25-26",
+      "type": "Cours",
+      "teacher": "DR HERVE FOYANG FOYANG",
+      "start": "18:00",
+      "end": "20:00",
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Séance de Simulation d’entreprises organisée conjointement avec le MBA MSCH."
+      "notes": "Séance de Simulation d’entreprises organisée conjointement avec le MBA MSCH.",
+      "moved_from": "s1"
     }
   ]
 }

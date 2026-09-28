@@ -4,7 +4,7 @@
   "program_short": "MBA MSCH",
   "week_label": "28 septembre → 4 octobre 2026",
   "week_file_label": "28_septembre-04_octobre_2026",
-  "updated_label": "25 septembre 2026",
+  "updated_label": "28 septembre 2026",
   "is_new": true,
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [
@@ -28,10 +28,25 @@
       "teacher": "DR HERVE FOYANG FOYANG",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
+      "updated_at": "2026-09-28T09:00:19.015Z",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Jumelé avec MBA AG/AG AUF"
+      "notes": "Séance déplacée au jeudi 1er octobre 2026.",
+      "moved_to": "s5"
+    },
+    {
+      "id": "s6",
+      "date": "2026-09-30",
+      "title": "MBA MSCH – Théorie des organisations (MBAGRH152)",
+      "type": "Cours",
+      "teacher": "DR SOULEYMANE BOUSSO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063",
+      "moved_from": "s3"
     },
     {
       "id": "s3",
@@ -41,9 +56,26 @@
       "teacher": "DR SOULEYMANE BOUSSO",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
+      "updated_at": "2026-09-28T09:00:19.015Z",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063"
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063",
+      "notes": "Séance déplacée au mercredi 30 septembre 2026.",
+      "moved_to": "s6"
+    },
+    {
+      "id": "s5",
+      "date": "2026-10-01",
+      "title": "MBA MSCH – Simulation d'entreprises (MBAGRH243)",
+      "type": "Cours",
+      "teacher": "DR HERVE FOYANG FOYANG",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "notes": "Jumelé avec MBA AG/AG AUF",
+      "moved_from": "s2"
     },
     {
       "id": "s4",
@@ -59,7 +91,7 @@
       "notes": "A confirmer"
     }
   ],
-  "published_at": "2026-09-25T14:59:46.366Z",
+  "published_at": "2026-09-28T09:00:19.015Z",
   "information_blocks": [
     {
       "title": "Simulation d’entreprises / Jeu d’entreprise — MBA MSCH × MBA AG",
