@@ -10,46 +10,6 @@
   "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
   "sessions": [
     {
-      "id": "s2",
-      "date": "2026-09-28",
-      "title": "Jeu d'entreprise",
-      "type": "Cours",
-      "teacher": "Dr HERVE FOYANG FOYANG",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "rescheduled",
-      "updated_at": "2026-09-28T09:00:19.015Z",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Séance déplacée au jeudi 1er octobre 2026.",
-      "moved_to": "s5"
-    },
-    {
-      "id": "s1",
-      "date": "2026-09-29",
-      "title": "Marchés financiers",
-      "type": "Cours",
-      "teacher": "M. AHMAD KONATE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1330",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29343"
-    },
-    {
-      "id": "s5",
-      "date": "2026-10-01",
-      "title": "Jeu d'entreprise",
-      "type": "Cours",
-      "teacher": "Dr HERVE FOYANG FOYANG",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "moved_from": "s2"
-    },
-    {
       "id": "s3",
       "date": "2026-10-02",
       "title": "Contrôle Interne",
@@ -79,11 +39,48 @@
   "upcoming_published_at": "2026-10-02T12:00:00Z",
   "upcoming_week_message": "Semaine à venir. Pour le Jeu d’entreprise, les chefs de groupe transmettent leurs décisions 24 heures avant la séance, au plus tard le 7 octobre.",
   "upcoming_sessions": [
-    {"id":"upcoming-s1","date":"2026-10-08","title":"MBA AG AUF Jeu d'entreprise","type":"Cours","teacher":"DR HERVE FOYANG FOYANG","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1279","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730","notes":"Cours mutualisé avec MBA MSCH et MBA AG Classique. Les chefs de groupe transmettent leurs décisions 24 heures avant la séance, au plus tard le 7 octobre."},
-    {"id":"upcoming-s2","date":"2026-10-09","title":"MBA AG AUF Contrôle Interne","type":"Cours","teacher":"M. SEKOU NIANGUE","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1328","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"},
-    {"id":"upcoming-s3","date":"2026-10-10","title":"MBA AG AUF Contrôle Interne","type":"Cours","teacher":"M. SEKOU NIANGUE","start":"10:00","end":"12:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1328","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"}
+    {
+      "id": "upcoming-s1",
+      "date": "2026-10-08",
+      "title": "MBA AG AUF Jeu d'entreprise",
+      "type": "Cours",
+      "teacher": "DR HERVE FOYANG FOYANG",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "notes": "Cours mutualisé avec MBA MSCH et MBA AG Classique. Les chefs de groupe transmettent leurs décisions 24 heures avant la séance, au plus tard le 7 octobre."
+    },
+    {
+      "id": "upcoming-s2",
+      "date": "2026-10-09",
+      "title": "MBA AG AUF Contrôle Interne",
+      "type": "Cours",
+      "teacher": "M. SEKOU NIANGUE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1328",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
+    },
+    {
+      "id": "upcoming-s3",
+      "date": "2026-10-10",
+      "title": "MBA AG AUF Contrôle Interne",
+      "type": "Cours",
+      "teacher": "M. SEKOU NIANGUE",
+      "start": "10:00",
+      "end": "12:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1328",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
+    }
   ],
   "information_blocks": [
-    {"title":"Rencontre avec Madame le Chef de Département","text":"Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."}
+    {
+      "title": "Rencontre avec Madame le Chef de Département",
+      "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
+    }
   ]
 }
