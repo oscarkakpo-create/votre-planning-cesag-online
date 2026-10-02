@@ -57,5 +57,18 @@
       "moodle": "https://formations.cesagonline.com/course/view.php?id=998",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115"
     }
+  ],
+  "upcoming_week_label": "5 octobre → 11 octobre 2026",
+  "upcoming_week_file_label": "05_octobre-11_octobre_2026",
+  "upcoming_published_at": "2026-10-02T12:00:00Z",
+  "upcoming_week_message": "Semaine à venir.",
+  "upcoming_sessions": [
+    {"id":"upcoming-s1","date":"2026-10-05","title":"Logistique et gestion des ressources matérielles","type":"Cours","teacher":"M. BADARA MBAYE","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=998","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115"},
+    {"id":"upcoming-s2","date":"2026-10-07","title":"Logistique et gestion des ressources matérielles","type":"Cours","teacher":"M. BADARA MBAYE","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=998","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115"},
+    {"id":"upcoming-s3","date":"2026-10-08","title":"Aspects juridiques et fiscaux des projets, programmes et portefeuille","type":"Cours","teacher":"M. DESIRE TAHO","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1001","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13873"},
+    {"id":"upcoming-s4","date":"2026-10-09","title":"EXAMEN – Codes éthiques et déontologie","type":"Examen","teacher":"M. JUDICAEL OLADIKPEKOUN","start":"18:00","end":"20:00","status":"pending","duration":"120 minutes","moodle":"https://formations.cesagonline.com/course/view.php?id=1002","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890","teams":"https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt"}
+  ],
+  "information_blocks": [
+    {"title":"Rencontre avec Madame le Chef de Département","text":"Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."}
   ]
 }

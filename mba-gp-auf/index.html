@@ -150,6 +150,8 @@
         </div>
       </div>
       <section class="agenda" id="agenda"></section>
+      <section id="upcomingBlock" style="display:none;margin-top:28px"><div class="section-head"><h2>Semaine à venir</h2><p id="upcomingLabel"></p></div><div class="agenda" id="upcomingAgenda"></div></section>
+      <section id="pastBlock" style="display:none;margin-top:28px;opacity:.72"><div class="section-head"><h2>Séances passées</h2><p>Les séances de la semaine précédente restent consultables à titre de rappel.</p></div><div class="agenda" id="pastAgenda"></div></section>
       <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
 
       <div class="notice">
@@ -265,7 +267,7 @@ function updateLiveStatus(){
   const now=new Date();
   document.getElementById("gmtClock").textContent=now.toLocaleTimeString("fr-FR",{timeZone:"UTC",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false});
   if(!pageData) return;
-  const timed=(pageData.sessions||[]).filter(icsIncluded).map(s=>({s,at:new Date(`${s.date}T${s.start}:00Z`),end:new Date(`${s.date}T${s.end}:00Z`)})).sort((a,b)=>a.at-b.at);
+  const timed=(pageData.displaySessions||[]).filter(icsIncluded).map(s=>({s,at:new Date(`${s.date}T${s.start}:00Z`),end:new Date(`${s.date}T${s.end}:00Z`)})).sort((a,b)=>a.at-b.at);
   const next=timed.find(x=>x.at>now);
   document.getElementById("nextSession").textContent=next
     ? `${weekdays[next.at.getUTCDay()]} ${next.at.getUTCDate()} ${months[next.at.getUTCMonth()]} à ${next.s.start} GMT — ${simplifyTitle(next.s.title)}`
@@ -330,7 +332,7 @@ function card(s, index){
     </article>`;
 }
 function downloadSingle(i){
-  const s=pageData.sessions[i];
+  const s=pageData.displaySessions[i];
   if(!s || !icsIncluded(s)) return;
   makeICS([s],`CESAG_${pageData.slug}_${s.date}_${s.type}.ics`);
 }
@@ -338,15 +340,19 @@ async function load(){
   const res = await fetch(DATA_FILE,{cache:"no-store"});
   pageData = await res.json();
   pageData.sessions = (pageData.sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
+  pageData.upcoming_sessions = (pageData.upcoming_sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
+  const switchDate = "2026-10-05";
+  const showUpcoming = gmtDateKey() >= switchDate && pageData.upcoming_sessions.length > 0;
+  pageData.displaySessions = showUpcoming ? pageData.upcoming_sessions : pageData.sessions;
   document.title = `${pageData.program_name} — Agenda FOAD CESAG ONLINE`;
   document.getElementById("programEyebrow").textContent=pageData.program_name;
   document.getElementById("programShort").textContent=pageData.program_short;
   document.getElementById("footerProgram").textContent=pageData.program_name;
-  document.getElementById("weekLabel").textContent=pageData.week_label || "—";
+  document.getElementById("weekLabel").textContent=(showUpcoming ? pageData.upcoming_week_label : pageData.week_label) || "—";
   document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
   document.getElementById("newFlag").style.display=pageData.is_new?"inline-block":"none";
-  document.getElementById("countSessions").textContent=pageData.sessions.length;
-  document.getElementById("countExams").textContent=pageData.sessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
+  document.getElementById("countSessions").textContent=pageData.displaySessions.length;
+  document.getElementById("countExams").textContent=pageData.displaySessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
   document.getElementById("informationBlocks").innerHTML=(pageData.information_blocks||[]).map(info=>`
     <div class="notice" style="margin:0 0 18px">
       <span class="info-kicker">Information importante</span><br>
@@ -354,12 +360,22 @@ async function load(){
       <span style="white-space:pre-line">${escHtml(info.text)}</span>
       ${info.link?`<a class="action moodle" style="margin-top:12px" href="${escHtml(info.link)}" target="_blank" rel="noopener">${escHtml(info.link_label||"Accéder au lien")}</a>`:""}
     </div>`).join("");
-  document.getElementById("agenda").innerHTML=pageData.sessions.map(card).join("");
+  document.getElementById("agenda").innerHTML=pageData.displaySessions.map(card).join("");
+  const upcomingBlock=document.getElementById("upcomingBlock");
+  const pastBlock=document.getElementById("pastBlock");
+  if(showUpcoming){
+    pastBlock.style.display=pageData.sessions.length?"block":"none";
+    document.getElementById("pastAgenda").innerHTML=pageData.sessions.map(card).join("");
+  }else if(pageData.upcoming_sessions.length){
+    upcomingBlock.style.display="block";
+    document.getElementById("upcomingLabel").textContent=`${pageData.upcoming_week_label} · Semaine à venir`;
+    document.getElementById("upcomingAgenda").innerHTML=pageData.upcoming_sessions.map(card).join("");
+  }
   updateLiveStatus();
-  document.getElementById("empty").style.display=pageData.sessions.length?"none":"block";
+  document.getElementById("empty").style.display=pageData.displaySessions.length?"none":"block";
   document.getElementById("downloadWeek").onclick=()=>{
-    const items=pageData.sessions.filter(icsIncluded);
-    if(items.length) makeICS(items,`Agenda_${pageData.slug}_${pageData.week_file_label || "semaine"}.ics`);
+    const items=pageData.displaySessions.filter(icsIncluded);
+    if(items.length) makeICS(items,`Agenda_${pageData.slug}_${showUpcoming?(pageData.upcoming_week_file_label||"semaine"):pageData.week_file_label || "semaine"}.ics`);
   };
 }
 load().catch(err=>{

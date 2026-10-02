@@ -69,5 +69,18 @@
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1354",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873"
     }
+  ],
+  "upcoming_week_label": "5 octobre → 11 octobre 2026",
+  "upcoming_week_file_label": "05_octobre-11_octobre_2026",
+  "upcoming_published_at": "2026-10-02T12:00:00Z",
+  "upcoming_week_message": "Semaine à venir. Semaine chargée : du courage aux étudiants.",
+  "upcoming_sessions": [
+    {"id":"upcoming-s1","date":"2026-10-05","title":"MBA GP AUF Codes éthiques et déontologie","type":"Cours","teacher":"M. JUDICAEL OLADIKPEKOUN","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1363","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21026"},
+    {"id":"upcoming-s2","date":"2026-10-07","title":"MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes","type":"Cours","teacher":"M. PAPA FELOU DIALLO","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1354","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873"},
+    {"id":"upcoming-s3","date":"2026-10-08","title":"MBA GP AUF Approches innovantes de gestion de projet et méthodologie agile","type":"Cours","teacher":"M. TADAGBE HOUNKPEVI","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1356","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20907"},
+    {"id":"upcoming-s4","date":"2026-10-09","title":"MBA GP AUF Séance spéciale de révision – Planification opérationnelle et budgétisation","type":"Cours","teacher":"M. PAPA FELOU DIALLO","start":"10:00","end":"13:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1354","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873","notes":"Séance fortement recommandée."}
+  ],
+  "information_blocks": [
+    {"title":"Rencontre avec Madame le Chef de Département","text":"Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."}
   ]
 }

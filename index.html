@@ -719,7 +719,8 @@
         const slug=(card.getAttribute("href")||"").replace(/^\.\//,"").replace(/\/$/,"");
         try{const res=await fetch(`./data/${slug}.json`,{cache:"no-store"});return res.ok?await res.json():null}catch(e){return null}
       }));
-      homeSessions=data.filter(Boolean).flatMap(d=>(d.sessions||[]).map(s=>({s,program:d.program_short||d.program_name,at:new Date(`${s.date}T${s.start}:00Z`),end:new Date(`${s.date}T${s.end}:00Z`)}))).sort((a,b)=>a.at-b.at);
+      const showUpcoming=new Date().toISOString().slice(0,10) >= "2026-10-05";
+      homeSessions=data.filter(Boolean).flatMap(d=>((showUpcoming&&d.upcoming_sessions?.length)?d.upcoming_sessions:(d.sessions||[])).map(s=>({s,program:d.program_short||d.program_name,at:new Date(`${s.date}T${s.start}:00Z`),end:new Date(`${s.date}T${s.end}:00Z`)}))).sort((a,b)=>a.at-b.at);
       updateHomeDashboard();
     }
     setInterval(updateHomeDashboard,1000);
