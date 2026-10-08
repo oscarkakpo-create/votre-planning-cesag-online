@@ -17,7 +17,7 @@
       "teacher": "M. BADARA MBAYE",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=998",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115"
     }
@@ -71,11 +71,12 @@
       "teacher": "M. JUDICAEL OLADIKPEKOUN",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
       "duration": "120 minutes",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1002",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13890",
-      "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt"
+      "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt",
+      "notes": "Examen reporté en raison de l’indisponibilité de la salle virtuelle BBB. Nouvelle date à confirmer."
     }
   ],
   "information_blocks": [

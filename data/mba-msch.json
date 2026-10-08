@@ -31,7 +31,7 @@
       "teacher": "DR SOULEYMANE BOUSSO",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063",
       "moved_from": "s6"
@@ -106,11 +106,12 @@
       "teacher": "Mme FELICIENNE KOUESSI",
       "start": "18:00",
       "end": "20:00",
-      "status": "pending",
+      "status": "rescheduled",
       "duration": "120 minutes",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
-      "teams": "https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h"
+      "teams": "https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h",
+      "notes": "Examen reporté en raison de l’indisponibilité de la salle virtuelle BBB. Nouvelle date à confirmer."
     }
   ]
 }
