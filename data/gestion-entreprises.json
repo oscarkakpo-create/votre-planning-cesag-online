@@ -8,20 +8,7 @@
   "is_new": true,
   "published_at": "2026-09-25T15:13:56.627Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
-  "sessions": [
-    {
-      "id": "upcoming-s1",
-      "date": "2026-10-07",
-      "title": "MBAAG232 – Administration et Gestion des ressources humaines",
-      "type": "Cours",
-      "teacher": "M. AKIM PARAISO",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1042",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633"
-    }
-  ],
+  "sessions": [],
   "upcoming_week_label": "12 octobre → 18 octobre 2026",
   "upcoming_week_file_label": "12_octobre-18_octobre_2026",
   "upcoming_published_at": "2026-10-09T12:00:00Z",

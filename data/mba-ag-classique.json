@@ -7,21 +7,7 @@
   "updated_label": "9 octobre 2026",
   "is_new": true,
   "published_at": "2026-09-28T09:00:19.015Z",
-  "sessions": [
-    {
-      "id": "upcoming-s1",
-      "date": "2026-10-08",
-      "title": "Jeu d’entreprise 25-26",
-      "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Les chefs de groupe transmettent leurs décisions 24 heures avant chaque séance."
-    }
-  ],
+  "sessions": [],
   "upcoming_week_label": "12 octobre → 18 octobre 2026",
   "upcoming_week_file_label": "12_octobre-18_octobre_2026",
   "upcoming_published_at": "2026-10-09T12:00:00Z",

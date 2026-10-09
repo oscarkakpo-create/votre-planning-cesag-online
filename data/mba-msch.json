@@ -7,60 +7,7 @@
   "updated_label": "9 octobre 2026",
   "is_new": true,
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
-  "sessions": [
-    {
-      "id": "upcoming-s1",
-      "date": "2026-10-05",
-      "title": "MBA MSCH – Bilan social (MBAGRH143)",
-      "type": "Cours",
-      "teacher": "DR MAMADOU SANE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1260",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407"
-    },
-    {
-      "id": "upcoming-s2",
-      "date": "2026-10-07",
-      "title": "MBA MSCH – Bilan social (MBAGRH143)",
-      "type": "Cours",
-      "teacher": "DR MAMADOU SANE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1260",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407"
-    },
-    {
-      "id": "upcoming-s3",
-      "date": "2026-10-08",
-      "title": "MBA MSCH – Simulation d'entreprises (MBAGRH243)",
-      "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Cours mutualisé avec MBA AG et MBA AG AUF. Les chefs de groupe transmettent leurs décisions 24 heures avant la séance, au plus tard le 7 octobre."
-    },
-    {
-      "id": "upcoming-s4",
-      "date": "2026-10-09",
-      "title": "EXAMEN – Appréciation des performances du personnel (MBAGRH153)",
-      "type": "Examen",
-      "teacher": "Mme FELICIENNE KOUESSI",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "rescheduled",
-      "duration": "120 minutes",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1263",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
-      "teams": "https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h",
-      "notes": "Examen reporté en raison de l’indisponibilité de la salle virtuelle BBB. Nouvelle date à confirmer."
-    }
-  ],
+  "sessions": [],
   "published_at": "2026-09-28T09:09:40.900Z",
   "information_blocks": [
     {
@@ -76,12 +23,12 @@
       "text": "Pensez à finaliser les quiz encore en attente dans vos différents modules."
     },
     {
-      "title": "Rencontre avec Madame le Chef de Département",
-      "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
-    },
-    {
       "title": "Accès pendant la maintenance BBB",
       "text": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés."
+    },
+    {
+      "title": "Rencontre avec Madame la Cheffe de Département — lundi 12 octobre à 20h00 GMT",
+      "text": "Une rencontre avec Madame la Cheffe de Département aura lieu immédiatement après le cours. Lien Teams spécifique : https://teams.microsoft.com/meet/316098648587261?p=aASzZlULp9SZ6QKBDf"
     }
   ],
   "upcoming_week_label": "12 octobre → 18 octobre 2026",

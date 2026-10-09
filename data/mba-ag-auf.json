@@ -10,31 +10,6 @@
   "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
   "sessions": [
     {
-      "id": "upcoming-s1",
-      "date": "2026-10-08",
-      "title": "MBA AG AUF Jeu d'entreprise",
-      "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Cours mutualisé avec MBA MSCH et MBA AG Classique. Les chefs de groupe transmettent leurs décisions 24 heures avant la séance, au plus tard le 7 octobre."
-    },
-    {
-      "id": "upcoming-s2",
-      "date": "2026-10-09",
-      "title": "MBA AG AUF Contrôle Interne",
-      "type": "Cours",
-      "teacher": "M. SEKOU NIANGUE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1328",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
-    },
-    {
       "id": "upcoming-s3",
       "date": "2026-10-10",
       "title": "MBA AG AUF Contrôle Interne",
