@@ -2,31 +2,13 @@
   "slug": "mba-gp",
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
-  "week_label": "28 septembre → 4 octobre 2026",
-  "week_file_label": "28_septembre-04_octobre_2026",
-  "updated_label": "25 septembre 2026",
+  "week_label": "5 octobre → 11 octobre 2026",
+  "week_file_label": "05_octobre-11_octobre_2026",
+  "updated_label": "9 octobre 2026",
   "is_new": true,
   "published_at": "2026-09-25T14:44:38.340Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [
-    {
-      "id": "s4",
-      "date": "2026-10-02",
-      "title": "Logistique et gestion des ressources matérielles",
-      "type": "Cours",
-      "teacher": "M. BADARA MBAYE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "rescheduled",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=998",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115"
-    }
-  ],
-  "upcoming_week_label": "5 octobre → 11 octobre 2026",
-  "upcoming_week_file_label": "05_octobre-11_octobre_2026",
-  "upcoming_published_at": "2026-10-02T12:00:00Z",
-  "upcoming_week_message": "Semaine à venir.",
-  "upcoming_sessions": [
     {
       "id": "upcoming-s1",
       "date": "2026-10-05",
@@ -79,10 +61,73 @@
       "notes": "Examen reporté en raison de l’indisponibilité de la salle virtuelle BBB. Nouvelle date à confirmer."
     }
   ],
+  "upcoming_week_label": "12 octobre → 18 octobre 2026",
+  "upcoming_week_file_label": "12_octobre-18_octobre_2026",
+  "upcoming_published_at": "2026-10-09T12:00:00Z",
+  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés.",
+  "upcoming_sessions": [
+    {
+      "id": "w12-s1",
+      "date": "2026-10-12",
+      "title": "Logistique et gestion des ressources matérielles",
+      "type": "Cours",
+      "teacher": "M. BADARA MBAYE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=998",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29115",
+      "teams": "https://teams.microsoft.com/meet/31554648261846?p=3JYINmMYj7AHpnRmnU"
+    },
+    {
+      "id": "w12-s2",
+      "date": "2026-10-13",
+      "title": "Méthodologie de recherche qualitative",
+      "type": "Cours",
+      "teacher": "Dr Bassirou DIA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1003",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13907",
+      "teams": "https://teams.microsoft.com/meet/31554648261846?p=3JYINmMYj7AHpnRmnU"
+    },
+    {
+      "id": "w12-s3",
+      "date": "2026-10-15",
+      "title": "Méthodologie de recherche qualitative",
+      "type": "Cours",
+      "teacher": "Dr Bassirou DIA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1003",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13907",
+      "teams": "https://teams.microsoft.com/meet/31554648261846?p=3JYINmMYj7AHpnRmnU"
+    },
+    {
+      "id": "w12-s4",
+      "date": "2026-10-17",
+      "title": "Intégration des risques transversaux",
+      "type": "Cours",
+      "teacher": "M. MALICK BABAH DAOUDA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1010",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026",
+      "teams": "https://teams.microsoft.com/meet/31554648261846?p=3JYINmMYj7AHpnRmnU",
+      "notes": "Nouveau module. Horaire à retenir : samedi 17 octobre à 18h00 GMT, et non dans la matinée."
+    }
+  ],
   "information_blocks": [
     {
       "title": "Rencontre avec Madame le Chef de Département",
       "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
+    },
+    {
+      "title": "Accès pendant la maintenance BBB",
+      "text": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés."
     }
   ]
 }

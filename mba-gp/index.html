@@ -135,6 +135,7 @@
         <h2>Planning hebdomadaire</h2>
         <p>Les séances sont présentées par ordre chronologique.</p>
       </div>
+      <div class="notice maintenance-banner"><b>Information — Maintenance BigBlueButton :</b> Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances programmées se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés. Nous vous prions de nous excuser pour ce désagrément.</div>
       <div class="status-legend" aria-label="Signification du statut programmé">
         <span class="status-badge st-pending">Programmé</span>
         <span>La séance figure au planning et passe automatiquement à « Confirmée » à 15h00 GMT le jour J, sauf action manuelle.</span>
@@ -316,9 +317,9 @@ function card(s, index){
         ${autoConfirmed?'<div class="updated-line">Confirmation automatique à 15h00 GMT le jour du cours</div>':""}
       </div>
       <div class="actions">
+        ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Rejoindre le cours sur Teams</a>`:""}
         ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
-        ${showLinks && s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">Rejoindre la salle virtuelle</a>`:""}
-        ${showLinks && s.room?`<button class="action copy-room" type="button" onclick="copyRoom(${index},this)">Copier le lien de la salle</button>`:""}
+        ${showLinks && s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">BBB — temporairement indisponible</a>`:""}
         ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Surveillance Teams</a>`:""}
         ${inIcs?`<button class="action ics" onclick="downloadSingle(${index})">Ajouter cette séance</button>`:""}
         ${cancelled?`<div class="cancel-note">Séance annulée</div>`:""}
@@ -348,7 +349,7 @@ async function load(){
   pageData = await res.json();
   pageData.sessions = (pageData.sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
   pageData.upcoming_sessions = (pageData.upcoming_sessions||[]).sort((a,b)=>(a.date+a.start).localeCompare(b.date+b.start));
-  const switchDate = "2026-10-05";
+  const switchDate = "2026-10-12";
   const showUpcoming = gmtDateKey() >= switchDate && pageData.upcoming_sessions.length > 0;
   pageData.displaySessions = showUpcoming ? pageData.upcoming_sessions : pageData.sessions;
   document.title = `${pageData.program_name} — Agenda FOAD CESAG ONLINE`;
@@ -358,7 +359,7 @@ async function load(){
   document.getElementById("weekLabel").textContent=(showUpcoming ? pageData.upcoming_week_label : pageData.week_label) || "—";
   document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
   document.getElementById("newFlag").style.display=pageData.is_new?"inline-block":"none";
-  const wm=document.getElementById("weekMsg"); if(pageData.week_message){ wm.textContent=pageData.week_message; wm.style.display="block"; } else { wm.style.display="none"; }
+  const wm=document.getElementById("weekMsg"); const activeWeekMessage=showUpcoming ? pageData.upcoming_week_message : pageData.week_message; if(activeWeekMessage){ wm.textContent=activeWeekMessage; wm.style.display="block"; } else { wm.style.display="none"; }
   document.getElementById("informationBlocks").innerHTML=(pageData.information_blocks||[]).map(info=>`
     <div class="weekmsg">
       <span class="info-kicker">Information importante</span><br>

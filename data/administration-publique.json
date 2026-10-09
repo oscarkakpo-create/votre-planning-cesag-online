@@ -2,18 +2,13 @@
   "slug": "administration-publique",
   "program_name": "MBA AG — Administration publique",
   "program_short": "MBA AG",
-  "week_label": "28 septembre → 4 octobre 2026",
-  "week_file_label": "28_septembre-04_octobre_2026",
-  "updated_label": "25 septembre 2026",
+  "week_label": "5 octobre → 11 octobre 2026",
+  "week_file_label": "05_octobre-11_octobre_2026",
+  "updated_label": "9 octobre 2026",
   "is_new": true,
   "published_at": "2026-09-25T15:13:56.627Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
-  "sessions": [],
-  "upcoming_week_label": "5 octobre → 11 octobre 2026",
-  "upcoming_week_file_label": "05_octobre-11_octobre_2026",
-  "upcoming_published_at": "2026-10-02T12:00:00Z",
-  "upcoming_week_message": "Semaine à venir.",
-  "upcoming_sessions": [
+  "sessions": [
     {
       "id": "upcoming-s1",
       "date": "2026-10-05",
@@ -41,10 +36,61 @@
       "teams": "https://teams.microsoft.com/meet/353829825998646?p=iMNg4ErX3gOw27WzJD"
     }
   ],
+  "upcoming_week_label": "12 octobre → 18 octobre 2026",
+  "upcoming_week_file_label": "12_octobre-18_octobre_2026",
+  "upcoming_published_at": "2026-10-09T12:00:00Z",
+  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés.",
+  "upcoming_sessions": [
+    {
+      "id": "w12-s1",
+      "date": "2026-10-12",
+      "title": "MBAAG246 – Modernisation et digitalisation du service public",
+      "type": "Cours",
+      "teacher": "M. JILDAS NOUMONZOUNDE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1050",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29997",
+      "teams": "https://teams.microsoft.com/meet/3137026727071?p=NRftIrs727uEcCXm3O"
+    },
+    {
+      "id": "w12-s2",
+      "date": "2026-10-14",
+      "title": "MBAAG243 – Science administrative et droit administratif",
+      "type": "Cours",
+      "teacher": "Dr Mamane DJIBO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1047",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718",
+      "teams": "https://teams.microsoft.com/meet/3137026727071?p=NRftIrs727uEcCXm3O",
+      "notes": "Nouveau module"
+    },
+    {
+      "id": "w12-s3",
+      "date": "2026-10-16",
+      "title": "MBAAG243 – Science administrative et droit administratif",
+      "type": "Cours",
+      "teacher": "Dr Mamane DJIBO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1047",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718",
+      "teams": "https://teams.microsoft.com/meet/3137026727071?p=NRftIrs727uEcCXm3O",
+      "notes": "Nouveau module"
+    }
+  ],
   "information_blocks": [
     {
       "title": "Rencontre avec Madame le Chef de Département",
       "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
+    },
+    {
+      "title": "Accès pendant la maintenance BBB",
+      "text": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés."
     }
   ]
 }

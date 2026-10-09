@@ -2,65 +2,12 @@
   "slug": "mba-msch",
   "program_name": "Management Stratégique du Capital Humain",
   "program_short": "MBA MSCH",
-  "week_label": "28 septembre → 4 octobre 2026",
-  "week_file_label": "28_septembre-04_octobre_2026",
-  "updated_label": "28 septembre 2026",
+  "week_label": "5 octobre → 11 octobre 2026",
+  "week_file_label": "05_octobre-11_octobre_2026",
+  "updated_label": "9 octobre 2026",
   "is_new": true,
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [
-    {
-      "id": "s4",
-      "date": "2026-10-02",
-      "title": "MBA MSCH – Bilan social (MBAGRH143)",
-      "type": "Cours",
-      "teacher": "DR MAMADOU SANE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "rescheduled",
-      "updated_at": "2026-09-28T09:09:40.900Z",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1260",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407",
-      "notes": "Séance déplacée au mercredi 30 septembre 2026.",
-      "moved_to": "s8"
-    },
-    {
-      "id": "s7",
-      "date": "2026-10-02",
-      "title": "MBA MSCH – Théorie des organisations (MBAGRH152)",
-      "type": "Cours",
-      "teacher": "DR SOULEYMANE BOUSSO",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "rescheduled",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1262",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063",
-      "moved_from": "s6"
-    }
-  ],
-  "published_at": "2026-09-28T09:09:40.900Z",
-  "information_blocks": [
-    {
-      "title": "Simulation d’entreprises / Jeu d’entreprise — MBA MSCH × MBA AG",
-      "text": "Ce module sera organisé conjointement avec les apprenants du MBA AG. Avant la première rencontre, les participants doivent impérativement lire les documents mis à disposition dans le cours et réaliser le premier travail demandé par l’enseignant. Le module repose fortement sur le travail en équipe. L’évaluation accordera une importance particulière à la participation effective aux séances, à l’implication dans les travaux collectifs et à la contribution individuelle de chaque participant."
-    },
-    {
-      "title": "Audit social et audit de la RSE",
-      "text": "Un espace Moodle sera mis à disposition pour le dépôt des travaux finaux du module. Le dépôt Moodle devra être effectué même si l’enseignant demande également une transmission du travail par courriel. Le lien de dépôt sera communiqué ultérieurement."
-    },
-    {
-      "title": "Quiz",
-      "text": "Pensez à finaliser les quiz encore en attente dans vos différents modules."
-    },
-    {
-      "title": "Rencontre avec Madame le Chef de Département",
-      "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
-    }
-  ],
-  "upcoming_week_label": "5 octobre → 11 octobre 2026",
-  "upcoming_week_file_label": "05_octobre-11_octobre_2026",
-  "upcoming_published_at": "2026-10-02T12:00:00Z",
-  "upcoming_week_message": "Semaine à venir. Le cas de Dr Bousso est attendu pour le 15 octobre ; l’espace de dépôt sera communiqué ultérieurement.",
-  "upcoming_sessions": [
     {
       "id": "upcoming-s1",
       "date": "2026-10-05",
@@ -112,6 +59,90 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729",
       "teams": "https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h",
       "notes": "Examen reporté en raison de l’indisponibilité de la salle virtuelle BBB. Nouvelle date à confirmer."
+    }
+  ],
+  "published_at": "2026-09-28T09:09:40.900Z",
+  "information_blocks": [
+    {
+      "title": "Simulation d’entreprises / Jeu d’entreprise — MBA MSCH × MBA AG",
+      "text": "Ce module sera organisé conjointement avec les apprenants du MBA AG. Avant la première rencontre, les participants doivent impérativement lire les documents mis à disposition dans le cours et réaliser le premier travail demandé par l’enseignant. Le module repose fortement sur le travail en équipe. L’évaluation accordera une importance particulière à la participation effective aux séances, à l’implication dans les travaux collectifs et à la contribution individuelle de chaque participant."
+    },
+    {
+      "title": "Audit social et audit de la RSE",
+      "text": "Un espace Moodle sera mis à disposition pour le dépôt des travaux finaux du module. Le dépôt Moodle devra être effectué même si l’enseignant demande également une transmission du travail par courriel. Le lien de dépôt sera communiqué ultérieurement."
+    },
+    {
+      "title": "Quiz",
+      "text": "Pensez à finaliser les quiz encore en attente dans vos différents modules."
+    },
+    {
+      "title": "Rencontre avec Madame le Chef de Département",
+      "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
+    },
+    {
+      "title": "Accès pendant la maintenance BBB",
+      "text": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés."
+    }
+  ],
+  "upcoming_week_label": "12 octobre → 18 octobre 2026",
+  "upcoming_week_file_label": "12_octobre-18_octobre_2026",
+  "upcoming_published_at": "2026-10-09T12:00:00Z",
+  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés.",
+  "upcoming_sessions": [
+    {
+      "id": "w12-s1",
+      "date": "2026-10-12",
+      "title": "MBAGRH143 – Bilan social",
+      "type": "Cours",
+      "teacher": "Dr Mamadou SANE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1260",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407",
+      "teams": "https://teams.microsoft.com/meet/31031675580734?p=0O713AD7ztqiZ3pPjs",
+      "notes": "Rencontre avec Madame la Cheffe de Département à 20h00 GMT après le cours. Lien Teams spécifique : https://teams.microsoft.com/meet/316098648587261?p=aASzZlULp9SZ6QKBDf"
+    },
+    {
+      "id": "w12-s2",
+      "date": "2026-10-14",
+      "title": "MBAGRH154 – Management des rémunérations",
+      "type": "Cours",
+      "teacher": "Mme Félicienne KOUESSI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1265",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18492",
+      "teams": "https://teams.microsoft.com/meet/31031675580734?p=0O713AD7ztqiZ3pPjs"
+    },
+    {
+      "id": "w12-s3",
+      "date": "2026-10-15",
+      "title": "MBAGRH243 – Simulation d'entreprises",
+      "type": "Cours",
+      "teacher": "Dr Hervé FOYANG FOYANG",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
+      "teams": "https://teams.microsoft.com/meet/31031675580734?p=0O713AD7ztqiZ3pPjs",
+      "notes": "Cours mutualisé avec MBA AG Classique et MBA AG AUF. Décisions à déposer au plus tard le mercredi 14 octobre 2026 à 09h00 GMT."
+    },
+    {
+      "id": "w12-s4",
+      "date": "2026-10-16",
+      "title": "MBAGRH143 – Bilan social",
+      "type": "Cours",
+      "teacher": "Dr Mamadou SANE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1260",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407",
+      "teams": "https://teams.microsoft.com/meet/31031675580734?p=0O713AD7ztqiZ3pPjs",
+      "notes": "À confirmer"
     }
   ]
 }
