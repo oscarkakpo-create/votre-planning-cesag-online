@@ -6,18 +6,18 @@
 <title>MBA Gestion de Projets · Cours FutureLearn Unlimited</title>
 <meta name="description" content="Vérification du statut Unlimited des cours FutureLearn associés au programme MBA Gestion de Projets (état au 15/10/2026).">
 <style>
-:root{--bg:#f6f8f6;--surface:#fff;--ink:#16241d;--muted:#586a60;--line:#e3e9e5;--accent:#0b4d2e;--accent-soft:#e9f2ed;--gold:#c9962a;
+:root{--bg:#f7f7fb;--surface:#fff;--ink:#16213d;--muted:#596579;--line:#e6e7f0;--accent:#8b5cf6;--accent-soft:#f1ebff;--pink:#ff4da6;--orange:#f97316;--title:#0a4ea1;--gold:#f97316;
 --ok:#16794c;--ok-bg:#e4f5ec;--warn:#9a6700;--warn-bg:#fff3d6;--bad:#b42318;--bad-bg:#fde8e6;--info:#475569;--info-bg:#eaeef4;--radius:14px}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1420;--surface:#161e2e;--ink:#e8edf6;--muted:#9aa6bc;--line:#26324a;--accent:#7db3f0;--accent-soft:#1a2a44;
 --ok:#59d39a;--ok-bg:#12301f;--warn:#f0c04f;--warn-bg:#3a2d0c;--bad:#ff8f84;--bad-bg:#3d1714;--info:#aab6cc;--info-bg:#1f2a40}}
 :root[data-theme=dark]{--bg:#0e1420;--surface:#161e2e;--ink:#e8edf6;--muted:#9aa6bc;--line:#26324a;--accent:#7db3f0;--accent-soft:#1a2a44;--ok:#59d39a;--ok-bg:#12301f;--warn:#f0c04f;--warn-bg:#3a2d0c;--bad:#ff8f84;--bad-bg:#3d1714;--info:#aab6cc;--info-bg:#1f2a40}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;border-top:4px solid var(--gold)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;border-top:4px solid var(--pink)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px 64px}
 header.hero{padding:40px 0 20px}
 .crumb{font-size:13px;color:var(--muted);margin-bottom:10px}
 .crumb a{color:var(--accent);text-decoration:none}
-h1{font-size:clamp(24px,4vw,34px);line-height:1.2;margin:0 0 8px;letter-spacing:-.01em}
+h1{font-size:clamp(24px,4vw,34px);line-height:1.2;margin:0 0 8px;letter-spacing:-.01em;color:var(--title)}
 .sub{color:var(--muted);margin:0;max-width:62ch}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:24px 0}
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
@@ -33,7 +33,7 @@ h1{font-size:clamp(24px,4vw,34px);line-height:1.2;margin:0 0 8px;letter-spacing:
 .chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:#fff}
 .theme{margin-left:auto}
 .list{display:grid;gap:14px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;border-left:5px solid var(--line)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;border-left:5px solid var(--line);box-shadow:0 8px 24px rgba(10,78,161,.06);transition:transform .18s ease,box-shadow .18s ease}.card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(139,92,246,.13)}
 .card.ok{border-left-color:var(--ok)}.card.norun,.card.redir{border-left-color:var(--warn)}.card.no,.card.dead,.card.invite{border-left-color:var(--bad)}
 .card h2{margin:0 0 2px;font-size:18px}
 .course{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;justify-content:space-between;margin-top:8px}
