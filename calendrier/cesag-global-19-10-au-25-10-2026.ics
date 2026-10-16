@@ -1,0 +1,370 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Planning global//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CESAG ONLINE — Semaine du 19 au 25 octobre 2026
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:cesag-administration-publique-w13-s1-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261019T180000Z
+DTEND:20261019T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG246 – Modernisation et digitalisation du service pub
+ lic
+DESCRIPTION:Programme: MBA AG — Administration publique\nType: Cours\nEnse
+ ignant: M. JILDAS NOUMONZOUNDE\nMoodle: https://formations.cesagonline.co
+ m/course/view.php?id=1050\nSalle virtuelle BBB: https://formations.cesago
+ nline.com/mod/bigbluebuttonbn/view.php?id=29997
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=29997
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=299
+ 97
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-w13-s1-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261019T180000Z
+DTEND:20261019T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG234 – Systèmes d'information
+DESCRIPTION:Programme: MBA AG — Gestion des entreprises\nType: Examen\nEns
+ eignant: M. JILDAS NOUMONZOUNDE\nMoodle: https://formations.cesagonline.c
+ om/course/view.php?id=1044\nSalle virtuelle BBB: https://formations.cesag
+ online.com/mod/bigbluebuttonbn/view.php?id=14667\nSurveillance Teams: htt
+ ps://teams.microsoft.com/meet/353829825998646?p=iMNg4ErX3gOw27WzJD\nDurée
+ : 120 min
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=14667
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=146
+ 67
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w13-s1-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261019T180000Z
+DTEND:20261019T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Méthodologie de recherche qualitative
+DESCRIPTION:Programme: MBA Gestion de Projets\nType: Cours\nEnseignant: M.
+  BASSIROU DIA\nMoodle: https://formations.cesagonline.com/course/view.php
+ ?id=1004\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/big
+ bluebuttonbn/view.php?id=30550
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=30550
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=305
+ 50
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w13-s1-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261020T180000Z
+DTEND:20261020T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — MBA MSCH – Management interculturel (MBAGRH223)
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nType: Cou
+ rs\nEnseignant: Mme ICHOLA\nMoodle: https://formations.cesagonline.com/co
+ urse/view.php?id=1272\nSalle virtuelle BBB: https://formations.cesagonlin
+ e.com/mod/bigbluebuttonbn/view.php?id=18611
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=18611
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=186
+ 11
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w13-s1-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261020T180000Z
+DTEND:20261020T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Management de la qualité
+DESCRIPTION:Programme: MBA GP AUF\nType: Cours\nEnseignant: M. JEROME DAND
+ JINOU\nMoodle: https://formations.cesagonline.com/course/view.php?id=1361
+ \nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebutt
+ onbn/view.php?id=20992
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=20992
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=209
+ 92
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w13-s2-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261021T180000Z
+DTEND:20261021T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG243 – Science administrative et droit administratif
+DESCRIPTION:Programme: MBA AG — Administration publique\nType: Cours\nEnse
+ ignant: DR.MAMANE DJIBO\nMoodle: https://formations.cesagonline.com/cours
+ e/view.php?id=1047\nSalle virtuelle BBB: https://formations.cesagonline.c
+ om/mod/bigbluebuttonbn/view.php?id=14718
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=14718
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=147
+ 18
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-w13-s2-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261021T180000Z
+DTEND:20261021T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG232 – Administration et Gestion des ressources humai
+ nes
+DESCRIPTION:Programme: MBA AG — Gestion des entreprises\nType: Cours\nEnse
+ ignant: M. AKIM PARAISO\nMoodle: https://formations.cesagonline.com/cours
+ e/view.php?id=1042\nSalle virtuelle BBB: https://formations.cesagonline.c
+ om/mod/bigbluebuttonbn/view.php?id=14633\nNotes: À confirmer\, le cours p
+ ourrait se tenir un autre jour de la semaine
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=14633
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=146
+ 33
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w13-s2-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261021T180000Z
+DTEND:20261021T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Gestion des parties prenantes de projets\, programmes et 
+ portefeuille
+DESCRIPTION:Programme: MBA Gestion de Projets\nType: Cours\nEnseignant: M.
+  CLOVIS TOUGMA\nMoodle: https://formations.cesagonline.com/course/view.ph
+ p?id=997\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/big
+ bluebuttonbn/view.php?id=13805\nNotes: Ce cours est jumelé avec la cohort
+ e MBA GP AUF
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=13805
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=138
+ 05
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w13-s2-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261021T180000Z
+DTEND:20261021T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Gestion des parties prenantes de projets\,
+  programmes et portefeuille
+DESCRIPTION:Programme: MBA GP AUF\nType: Cours\nEnseignant: M. CLOVIS TOUG
+ MA\nMoodle: https://formations.cesagonline.com/course/view.php?id=997\nSa
+ lle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn
+ /view.php?id=13805\nNotes: Cours jumelé avec GP CLASSIQUE
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=13805
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=138
+ 05
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w13-s2-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261022T180000Z
+DTEND:20261022T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — MBA MSCH – Simulation d'entreprises (MBAGRH243)
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nType: Cou
+ rs\nEnseignant: DR HERVE FOYANG FOYANG\nMoodle: https://formations.cesago
+ nline.com/course/view.php?id=1279\nSalle virtuelle BBB: https://formation
+ s.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730\nNotes: Les décis
+ ions 3 doivent être déposées dans l’espace dédié\, même si l’enseignant d
+ emande également un envoi par courriel. Dépôt prévu mercredi 21/10/2026.
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=18730
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=187
+ 30
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-w13-s2-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261022T180000Z
+DTEND:20261022T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF — MBA AG AUF Jeu d'entreprise
+DESCRIPTION:Programme: MBA AG AUF\nType: Cours\nEnseignant: DR HERVE FOYAN
+ G FOYANG\nMoodle: https://formations.cesagonline.com/course/view.php?id=1
+ 279\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigblueb
+ uttonbn/view.php?id=18730\nNotes: Cours commun avec MBA AG Classique et M
+ BA MSCH. Les décisions 3 doivent être déposées dans l’espace dédié\, même
+  si l’enseignant demande également un envoi par courriel.
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=18730
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=187
+ 30
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-classique-w13-s1-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261022T180000Z
+DTEND:20261022T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG Classique
+SUMMARY:MBA AG Classique — Jeu d’entreprise 25-26
+DESCRIPTION:Programme: MBA AG Classique\nType: Cours\nEnseignant: DR HERVE
+  FOYANG FOYANG\nMoodle: https://formations.cesagonline.com/course/view.ph
+ p?id=1279\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bi
+ gbluebuttonbn/view.php?id=18730\nSurveillance Teams: https://teams.micros
+ oft.com/meet/31031675580734?p=0O713AD7ztqiZ3pPjs\nNotes: Cours commun ave
+ c MBA AG AUF et MBA MSCH. Les décisions 3 doivent être déposées dans l’es
+ pace dédié\, même si l’enseignant demande également un envoi par courriel
+ .
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=18730
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=187
+ 30
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w13-s3-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261022T180000Z
+DTEND:20261022T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Approches innovantes de gestion de projet 
+ et méthodologie agile
+DESCRIPTION:Programme: MBA GP AUF\nType: Cours\nEnseignant: M. TADAGBE HOU
+ NKPEVI\nMoodle: https://formations.cesagonline.com/course/view.php?id=995
+ \nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebutt
+ onbn/view.php?id=29927
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=29927
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=299
+ 27
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w13-s3-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261023T180000Z
+DTEND:20261023T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — MBA MSCH – Appréciation des performances du personnel (
+ MBAGRH153)
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nType: Exa
+ men\nEnseignant: MME FELICIENNE KOUESSI\nMoodle: https://formations.cesag
+ online.com/course/view.php?id=1263\nSalle virtuelle BBB: https://formatio
+ ns.cesagonline.com/mod/bigbluebuttonbn/view.php?id=27729\nSurveillance Te
+ ams: https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h
+ \nDurée: 120 min
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=27729
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=277
+ 29
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-w13-s1-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261023T180000Z
+DTEND:20261023T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF — MBA AG AUF Marchés financiers
+DESCRIPTION:Programme: MBA AG AUF\nType: Examen\nEnseignant: M. AHMAD KONA
+ TE\nMoodle: https://formations.cesagonline.com/course/view.php?id=1330\nS
+ urveillance Teams: https://teams.microsoft.com/meet/37585599321691?p=P2bf
+ gxd8lrMVzrHtUp\nDurée: 120 min
+LOCATION:Examen en ligne — surveillance Teams
+URL:https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w13-s3-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261023T180000Z
+DTEND:20261023T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Codes éthiques et déontologie
+DESCRIPTION:Programme: MBA Gestion de Projets\nType: Examen\nEnseignant: M
+ . JUDICAEL OLADIKPEKOUN\nMoodle: https://formations.cesagonline.com/cours
+ e/view.php?id=1002\nSalle virtuelle BBB: https://formations.cesagonline.c
+ om/mod/bigbluebuttonbn/view.php?id=13890\nSurveillance Teams: https://tea
+ ms.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt\nDurée: 120 min
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=13890
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=138
+ 90
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w13-s4-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261023T180000Z
+DTEND:20261023T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Management de la qualité
+DESCRIPTION:Programme: MBA GP AUF\nType: Cours\nEnseignant: M. JEROME DAND
+ JINOU\nMoodle: https://formations.cesagonline.com/course/view.php?id=1361
+ \nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebutt
+ onbn/view.php?id=20992
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=20992
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=209
+ 92
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w13-s3-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261024T110000Z
+DTEND:20261024T130000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG243 – Science administrative et droit administratif
+DESCRIPTION:Programme: MBA AG — Administration publique\nType: Cours\nEnse
+ ignant: DR.MAMANE DJIBO\nMoodle: https://formations.cesagonline.com/cours
+ e/view.php?id=1047\nSalle virtuelle BBB: https://formations.cesagonline.c
+ om/mod/bigbluebuttonbn/view.php?id=14718\nNotes: Attention : cours du sam
+ edi.
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=14718
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=147
+ 18
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-w13-s3-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261024T110000Z
+DTEND:20261024T130000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG232 – Administration et Gestion des ressources humai
+ nes
+DESCRIPTION:Programme: MBA AG — Gestion des entreprises\nType: Cours\nEnse
+ ignant: M. AKIM PARAISO\nMoodle: https://formations.cesagonline.com/cours
+ e/view.php?id=1042\nSalle virtuelle BBB: https://formations.cesagonline.c
+ om/mod/bigbluebuttonbn/view.php?id=14633\nNotes: À confirmer\, le cours p
+ ourrait se tenir un autre jour de la semaine
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=14633
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=146
+ 33
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w13-s4-2026-10@cesagonline.com
+DTSTAMP:20261016T120000Z
+DTSTART:20261024T180000Z
+DTEND:20261024T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Intégration des risques transversaux
+DESCRIPTION:Programme: MBA Gestion de Projets\nType: Cours\nEnseignant: M.
+  MALICK BABAH DAOUDA\nMoodle: https://formations.cesagonline.com/course/v
+ iew.php?id=1010\nSalle virtuelle BBB: https://formations.cesagonline.com/
+ mod/bigbluebuttonbn/view.php?id=14026
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?i
+ d=14026
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=140
+ 26
+END:VEVENT
+END:VCALENDAR
