@@ -12,7 +12,7 @@
   "upcoming_week_label": "19 octobre → 25 octobre 2026",
   "upcoming_week_file_label": "19_octobre-25_octobre_2026",
   "upcoming_published_at": "2026-10-16T12:00:00Z",
-  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés.",
+  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
       "id": "w13-s1",
@@ -58,8 +58,8 @@
       "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
     },
     {
-      "title": "Accès pendant la maintenance BBB",
-      "text": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés."
+      "title": "Accès aux salles virtuelles",
+      "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
     },
     {
       "title": "Observation de la semaine",

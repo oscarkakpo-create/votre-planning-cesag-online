@@ -79,6 +79,7 @@
     .brandline{font-weight:700;letter-spacing:.2px;display:flex;align-items:center;gap:9px}
     .brandline .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex:none}
     .topbar .note{color:rgba(255,255,255,.82)}
+    .home-nav{display:flex;align-items:center;gap:14px}.home-nav a{color:#fff;font-weight:700;font-size:12px;padding:6px 0;border-bottom:1px solid transparent}.home-nav a:hover,.home-nav a:focus-visible{border-bottom-color:var(--gold);outline:none}
     .topbar-shortcut{position:absolute;left:50%;transform:translateX(-50%);display:inline-flex;align-items:center;gap:7px;padding:6px 13px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:linear-gradient(90deg,rgba(255,77,166,.92),rgba(139,92,246,.92));color:#fff;font-size:12px;font-weight:800;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.12);transition:transform .2s var(--ease),box-shadow .2s var(--ease)}
     .topbar-shortcut:hover{transform:translateX(-50%) translateY(-1px);box-shadow:0 7px 16px rgba(0,0,0,.18)}
 
@@ -422,7 +423,7 @@
   <div class="topbar">
     <div class="container">
       <div class="brandline"><span class="dot"></span> CESAG ONLINE · Agenda FOAD</div>
-      <a class="topbar-shortcut" href="./futurelearn/" aria-label="Ouvrir l’espace FutureLearn">✦ FutureLearn</a>
+      <nav class="home-nav" aria-label="Navigation principale"><a href="#programmes">Programmes</a><a href="./calendrier/">Calendrier</a><a href="#toolbox-title">Outils</a></nav>
       <div class="note">Un accès unique à vos plannings de cours et d’examens</div>
     </div>
   </div>
