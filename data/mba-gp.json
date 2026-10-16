@@ -70,6 +70,10 @@
     {
       "title": "Accès pendant la maintenance BBB",
       "text": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés."
+    },
+    {
+      "title": "Alerte — examen de Logistique",
+      "text": "Un examen de Logistique et gestion des ressources matérielles est prévu la semaine suivante. Les informations détaillées seront communiquées ultérieurement."
     }
   ]
 }
