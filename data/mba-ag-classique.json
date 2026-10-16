@@ -4,18 +4,18 @@
   "program_short": "MBA AG Classique",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "9 octobre 2026",
+  "updated_label": "16 octobre 2026",
   "is_new": true,
-  "published_at": "2026-09-28T09:00:19.015Z",
+  "published_at": "2026-10-16T12:00:00Z",
   "sessions": [],
-  "upcoming_week_label": "12 octobre → 18 octobre 2026",
-  "upcoming_week_file_label": "12_octobre-18_octobre_2026",
-  "upcoming_published_at": "2026-10-09T12:00:00Z",
+  "upcoming_week_label": "19 octobre → 25 octobre 2026",
+  "upcoming_week_file_label": "19_octobre-25_octobre_2026",
+  "upcoming_published_at": "2026-10-16T12:00:00Z",
   "upcoming_week_message": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
       "id": "w12-common",
-      "date": "2026-10-15",
+      "date": "2026-10-22",
       "title": "Jeux d'entreprise / Simulation d'entreprises (cours commun)",
       "type": "Cours",
       "teacher": "Dr Hervé FOYANG FOYANG",
@@ -25,7 +25,7 @@
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
       "teams": "https://teams.microsoft.com/meet/31031675580734?p=0O713AD7ztqiZ3pPjs",
-      "notes": "Cours commun avec MBA AG AUF et MBA MSCH."
+      "notes": "Cours commun avec MBA AG AUF et MBA MSCH. Les décisions 3 doivent être déposées dans l’espace dédié, même si l’enseignant demande également un envoi par courriel."
     }
   ],
   "information_blocks": [
