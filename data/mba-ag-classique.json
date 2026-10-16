@@ -14,11 +14,11 @@
   "upcoming_week_message": "Les salles virtuelles BigBlueButton sont temporairement indisponibles en raison d’une maintenance. Les séances se dérouleront sur Microsoft Teams, à partir des liens indiqués dans le planning. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
-      "id": "w12-common",
+      "id": "w13-s1",
       "date": "2026-10-22",
-      "title": "Jeux d'entreprise / Simulation d'entreprises (cours commun)",
+      "title": "Jeu d’entreprise 25-26",
       "type": "Cours",
-      "teacher": "Dr Hervé FOYANG FOYANG",
+      "teacher": "DR HERVE FOYANG FOYANG",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
