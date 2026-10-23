@@ -4,9 +4,9 @@
   "program_short": "MBA AG AUF",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "16 octobre 2026",
+  "updated_label": "23 octobre 2026",
   "is_new": true,
-  "published_at": "2026-10-16T12:00:00Z",
+  "published_at": "2026-10-23T12:00:00Z",
   "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
   "sessions": [
     {
@@ -22,27 +22,14 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
     }
   ],
-  "upcoming_week_label": "19 octobre → 25 octobre 2026",
-  "upcoming_week_file_label": "19_octobre-25_octobre_2026",
-  "upcoming_published_at": "2026-10-16T12:00:00Z",
+  "upcoming_week_label": "26 octobre → 1 novembre 2026",
+  "upcoming_week_file_label": "26_octobre-01_novembre_2026",
+  "upcoming_published_at": "2026-10-23T12:00:00Z",
   "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
-      "id": "w13-s1",
-      "date": "2026-10-23",
-      "title": "MBA AG AUF Marchés financiers",
-      "type": "Examen",
-      "teacher": "M. AHMAD KONATE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "duration": "120 min",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1330",
-      "teams": "https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp"
-    },
-    {
-      "id": "w13-s2",
-      "date": "2026-10-22",
+      "id": "w14-s1",
+      "date": "2026-10-29",
       "title": "MBA AG AUF Jeu d'entreprise",
       "type": "Cours",
       "teacher": "DR HERVE FOYANG FOYANG",
@@ -51,13 +38,17 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Cours commun avec MBA AG Classique et MBA MSCH. Les décisions 3 doivent être déposées dans l’espace dédié, même si l’enseignant demande également un envoi par courriel."
+      "notes": "Cours commun avec MBA AG Classique et MBA MSCH. Déposer la décision 4 dans cet espace mercredi 28 octobre 2026 : https://formations.cesagonline.com/mod/assign/view.php?id=32623"
     }
   ],
   "information_blocks": [
     {
       "title": "Accès aux salles virtuelles",
       "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
+    },
+    {
+      "title": "Préparation de la semaine suivante",
+      "text": "Deux examens seront à programmer la semaine suivante. Préparez-vous."
     }
   ]
 }
