@@ -1,0 +1,359 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Planning global//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CESAG ONLINE — Semaine du 2 au 8 novembre 2026
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-w15-s1-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261102T180000Z
+DTEND:20261102T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG233 – Gestion financière
+DESCRIPTION:Programme: MBA AG — Gestion des entreprises\nModule: MBAAG233 – Gestion financière\nType: Cours\nEnseignant: M. MATY SENE\nMoodle: https://formations.cesagonline.com/course/view.php?id=1043\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14650
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14650
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14650
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261101T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w15-s1-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261103T180000Z
+DTEND:20261103T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Gestion des parties prenantes de projets\, programmes et portefeuille
+DESCRIPTION:Programme: MBA Gestion de Projets\nModule: Gestion des parties prenantes de projets\, programmes et portefeuille\nType: Cours\nEnseignant: M. CLOVIS TOUGMA\nMoodle: https://formations.cesagonline.com/course/view.php?id=997\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805\nNotes: Jumelé avec MBA GP AUF
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261102T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w15-s1-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261103T180000Z
+DTEND:20261103T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Gestion des parties prenantes de projets\, programmes et portefeuille
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Gestion des parties prenantes de projets\, programmes et portefeuille\nType: Cours\nEnseignant: M. CLOVIS TOUGMA\nMoodle: https://formations.cesagonline.com/course/view.php?id=997\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805\nNotes: Cours jumelé avec MBA GP CLASSIQUE
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261102T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-w15-s1-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261104T180000Z
+DTEND:20261104T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF — MBA (AG\, ACG\, GP\, MCID\, IGF) UE 4 ECUE 1 METHODOLOGIE DE REDACTION DE MEMOIRE
+DESCRIPTION:Programme: MBA AG AUF\nModule: MBA (AG\, ACG\, GP\, MCID\, IGF) UE 4 ECUE 1 METHODOLOGIE DE REDACTION DE MEMOIRE\nType: Cours\nEnseignant: DR ALASSANE OUATTARA ET MME AUDRY MONI\nMoodle: https://formations.cesagonline.com/course/view.php?id=1331\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482\nNotes: Séance dédiée aux projets professionnels
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261103T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w15-s2-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261104T180000Z
+DTEND:20261104T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Méthodologie de rédaction du TFE
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Méthodologie de rédaction du TFE\nType: Cours\nEnseignant: DR ALASSANE OUATTARA ET MME AUDRY MONI\nMoodle: https://formations.cesagonline.com/course/view.php?id=1331\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261103T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-w15-s2-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261105T180000Z
+DTEND:20261105T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF — MBA AG AUF Contrôle Interne
+DESCRIPTION:Programme: MBA AG AUF\nModule: MBA AG AUF Contrôle Interne\nType: Examen\nEnseignant: M. SEKOU NIANGUE\nDurée: 120 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1328\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431\nSurveillance Teams: https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
+LOCATION:https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
+URL:https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261104T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w15-s2-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261105T180000Z
+DTEND:20261105T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Aspects juridiques et fiscaux des projets\, programmes et portefeuille
+DESCRIPTION:Programme: MBA Gestion de Projets\nModule: Aspects juridiques et fiscaux des projets\, programmes et portefeuille\nType: Examen\nEnseignant: M. DESIRE TAHO\nDurée: 120 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1001\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13873\nSurveillance Teams: https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt\nNotes: Attention exceptionnellement EXAMEN PROGRAMME JEUDI
+LOCATION:https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt
+URL:https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261104T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w15-s3-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261105T180000Z
+DTEND:20261105T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes\nType: Examen\nEnseignant: M. PAPA FELOU DIALLO\nDurée: 120 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1354\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873\nSurveillance Teams: https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+LOCATION:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+URL:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261104T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-w15-s2-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261106T180000Z
+DTEND:20261106T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG232 – Administration et Gestion des ressources humaines
+DESCRIPTION:Programme: MBA AG — Gestion des entreprises\nModule: MBAAG232 – Administration et Gestion des ressources humaines\nType: Cours\nEnseignant: M. AKIM PARAISO\nMoodle: https://formations.cesagonline.com/course/view.php?id=1042\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261105T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w15-s1-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261106T180000Z
+DTEND:20261106T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG243 – Science administrative et droit administratif
+DESCRIPTION:Programme: MBA AG — Administration publique\nModule: MBAAG243 – Science administrative et droit administratif\nType: Cours\nEnseignant: DR MAMANE DJIBO\nMoodle: https://formations.cesagonline.com/course/view.php?id=1047\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261105T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w15-s3-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261106T180000Z
+DTEND:20261106T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Intégration des risques transversaux
+DESCRIPTION:Programme: MBA Gestion de Projets\nModule: Intégration des risques transversaux\nType: Cours\nEnseignant: DR MALICK BABAH DAOUDA\nMoodle: https://formations.cesagonline.com/course/view.php?id=1010\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261105T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w15-s4-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261106T180000Z
+DTEND:20261106T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Codes éthiques et déontologie
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Codes éthiques et déontologie\nType: Examen\nEnseignant: M. JUDICAEL OLADIKPEKOUN\nDurée: 120 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1363\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21026\nSurveillance Teams: https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+LOCATION:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+URL:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261105T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w15-s2-2026-11@cesagonline.com
+DTSTAMP:20261030T184200Z
+DTSTART:20261107T100000Z
+DTEND:20261107T130000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG243 – Science administrative et droit administratif
+DESCRIPTION:Programme: MBA AG — Administration publique\nModule: MBAAG243 – Science administrative et droit administratif\nType: Cours\nEnseignant: DR MAMANE DJIBO\nMoodle: https://formations.cesagonline.com/course/view.php?id=1047\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261106T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+END:VCALENDAR

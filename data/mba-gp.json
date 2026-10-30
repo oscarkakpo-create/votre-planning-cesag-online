@@ -6,12 +6,12 @@
   "week_file_label": "05_octobre-11_octobre_2026",
   "updated_label": "30 octobre 2026",
   "is_new": true,
-  "published_at": "2026-10-30T14:05:00Z",
+  "published_at": "2026-10-30T18:42:00Z",
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [],
   "upcoming_week_label": "26 octobre → 8 novembre 2026",
   "upcoming_week_file_label": "26_octobre-08_novembre_2026",
-  "upcoming_published_at": "2026-10-30T14:05:00Z",
+  "upcoming_published_at": "2026-10-30T18:42:00Z",
   "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
@@ -58,7 +58,20 @@
     },
     {
       "id": "w15-s1",
-      "date": "2026-11-02",
+      "date": "2026-11-03",
+      "title": "Gestion des parties prenantes de projets, programmes et portefeuille",
+      "type": "Cours",
+      "teacher": "M. CLOVIS TOUGMA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=997",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805",
+      "notes": "Jumelé avec MBA GP AUF"
+    },
+    {
+      "id": "w15-s2",
+      "date": "2026-11-05",
       "title": "Aspects juridiques et fiscaux des projets, programmes et portefeuille",
       "type": "Examen",
       "teacher": "M. DESIRE TAHO",
@@ -70,19 +83,6 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13873",
       "teams": "https://teams.microsoft.com/meet/3252313093486?p=oOUuPSkaTTZQWM0AMt",
       "notes": "Attention exceptionnellement EXAMEN PROGRAMME JEUDI"
-    },
-    {
-      "id": "w15-s2",
-      "date": "2026-11-03",
-      "title": "Gestion des parties prenantes de projets, programmes et portefeuille",
-      "type": "Cours",
-      "teacher": "M. CLOVIS TOUGMA",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=997",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805",
-      "notes": "Jumelé avec MBA GP AUF"
     },
     {
       "id": "w15-s3",
