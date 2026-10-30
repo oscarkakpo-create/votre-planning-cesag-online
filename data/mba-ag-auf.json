@@ -4,9 +4,9 @@
   "program_short": "MBA AG AUF",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "23 octobre 2026",
+  "updated_label": "30 octobre 2026",
   "is_new": true,
-  "published_at": "2026-10-23T12:00:00Z",
+  "published_at": "2026-10-30T13:00:00Z",
   "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
   "sessions": [
     {
@@ -22,23 +22,37 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
     }
   ],
-  "upcoming_week_label": "26 octobre → 1 novembre 2026",
-  "upcoming_week_file_label": "26_octobre-01_novembre_2026",
-  "upcoming_published_at": "2026-10-23T12:00:00Z",
+  "upcoming_week_label": "2 novembre → 8 novembre 2026",
+  "upcoming_week_file_label": "02_novembre-08_novembre_2026",
+  "upcoming_published_at": "2026-10-30T13:00:00Z",
   "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
-      "id": "w14-s1",
-      "date": "2026-10-29",
-      "title": "MBA AG AUF Jeu d'entreprise",
+      "id": "w15-s1",
+      "date": "2026-11-04",
+      "title": "MBA (AG, ACG, GP, MCID, IGF) UE 4 ECUE 1 METHODOLOGIE DE REDACTION DE MEMOIRE",
       "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
+      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Cours commun avec MBA AG Classique et MBA MSCH. Déposer la décision 4 dans cet espace mercredi 28 octobre 2026 : https://formations.cesagonline.com/mod/assign/view.php?id=32623"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482",
+      "notes": "Séance dédiée aux projets professionnels"
+    },
+    {
+      "id": "w15-s2",
+      "date": "2026-11-05",
+      "title": "MBA AG AUF Contrôle Interne",
+      "type": "Examen",
+      "teacher": "M. SEKOU NIANGUE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1328",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431",
+      "teams": "https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp"
     }
   ],
   "information_blocks": [

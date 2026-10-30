@@ -4,12 +4,16 @@
   "program_short": "MBA MSCH",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "23 octobre 2026",
+  "updated_label": "30 octobre 2026",
   "is_new": true,
   "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [],
-  "published_at": "2026-10-23T12:00:00Z",
+  "published_at": "2026-10-30T13:55:00Z",
   "information_blocks": [
+    {
+      "title": "Semaine du 2 au 8 novembre 2026 — Travaux personnels et asynchrones",
+      "text": "Aucune séance synchrone (classe virtuelle en direct) n’est programmée du lundi 2 au dimanche 8 novembre 2026. Cette semaine est consacrée aux travaux individuels, aux lectures recommandées et à la finalisation des activités et quiz sur Moodle. Les cours en direct reprendront le lundi 9 novembre 2026 selon le planning ci-dessous."
+    },
     {
       "title": "Simulation d’entreprises / Jeu d’entreprise — MBA MSCH × MBA AG",
       "text": "Ce module sera organisé conjointement avec les apprenants du MBA AG. Avant la première rencontre, les participants doivent impérativement lire les documents mis à disposition dans le cours et réaliser le premier travail demandé par l’enseignant. Le module repose fortement sur le travail en équipe. L’évaluation accordera une importance particulière à la participation effective aux séances, à l’implication dans les travaux collectifs et à la contribution individuelle de chaque participant."
@@ -25,20 +29,16 @@
     {
       "title": "Accès aux salles virtuelles",
       "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
-    },
-    {
-      "title": "Rencontre avec Madame la Cheffe de Département — lundi 12 octobre à 20h00 GMT",
-      "text": "Une rencontre avec Madame la Cheffe de Département aura lieu immédiatement après le cours. Lien Teams spécifique : https://teams.microsoft.com/meet/316098648587261?p=aASzZlULp9SZ6QKBDf"
     }
   ],
-  "upcoming_week_label": "26 octobre → 1 novembre 2026",
-  "upcoming_week_file_label": "26_octobre-01_novembre_2026",
-  "upcoming_published_at": "2026-10-23T12:00:00Z",
+  "upcoming_week_label": "26 octobre → 15 novembre 2026",
+  "upcoming_week_file_label": "26_octobre-15_novembre_2026",
+  "upcoming_published_at": "2026-10-30T13:55:00Z",
   "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
-      "id": "w14-s1",
-      "date": "2026-10-27",
+      "id": "w14-s4",
+      "date": "2026-10-30",
       "title": "MBA MSCH – Recrutement et intégration (MBAGRH153)",
       "type": "Cours",
       "teacher": "MME FELICIENNE KOUESSI",
@@ -49,8 +49,32 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475"
     },
     {
-      "id": "w14-s2",
-      "date": "2026-10-28",
+      "id": "w16-s1",
+      "date": "2026-11-09",
+      "title": "MBA MSCH – Audit social et audit de la RSE (MBAGRH142)",
+      "type": "Cours",
+      "teacher": "DR MAMADOU SANE",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1259",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390"
+    },
+    {
+      "id": "w16-s2",
+      "date": "2026-11-10",
+      "title": "MBA MSCH – Recrutement et intégration (MBAGRH153)",
+      "type": "Cours",
+      "teacher": "MME FELICIENNE KOUESSI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1264",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475"
+    },
+    {
+      "id": "w16-s3",
+      "date": "2026-11-11",
       "title": "MBA MSCH – Management interculturel (MBAGRH223)",
       "type": "Cours",
       "teacher": "MME ICHOLA LANIBA ISSIMATOU",
@@ -61,21 +85,8 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18611"
     },
     {
-      "id": "w14-s3",
-      "date": "2026-10-29",
-      "title": "MBA MSCH – Simulation d'entreprises (MBAGRH243)",
-      "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Déposer la décision 4 dans cet espace mercredi 28 octobre 2026 : https://formations.cesagonline.com/mod/assign/view.php?id=32623"
-    },
-    {
-      "id": "w14-s4",
-      "date": "2026-10-30",
+      "id": "w16-s4",
+      "date": "2026-11-13",
       "title": "MBA MSCH – Recrutement et intégration (MBAGRH153)",
       "type": "Cours",
       "teacher": "MME FELICIENNE KOUESSI",

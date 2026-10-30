@@ -4,9 +4,9 @@
   "program_short": "MBA GP AUF",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "23 octobre 2026",
+  "updated_label": "30 octobre 2026",
   "is_new": true,
-  "published_at": "2026-10-23T12:00:00Z",
+  "published_at": "2026-10-30T16:15:00Z",
   "week_message": "Semaine chargée. Du courage à eux",
   "sessions": [
     {
@@ -23,35 +23,11 @@
       "notes": "Séance fortement recommandée."
     }
   ],
-  "upcoming_week_label": "26 octobre → 1 novembre 2026",
-  "upcoming_week_file_label": "26_octobre-01_novembre_2026",
-  "upcoming_published_at": "2026-10-23T12:00:00Z",
-  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
+  "upcoming_week_label": "26 octobre → 8 novembre 2026",
+  "upcoming_week_file_label": "26_octobre-08_novembre_2026",
+  "upcoming_published_at": "2026-10-30T16:15:00Z",
+  "upcoming_week_message": "Semaine chargée avec deux examens, du courage !",
   "upcoming_sessions": [
-    {
-      "id": "w14-s1",
-      "date": "2026-10-26",
-      "title": "MBA GP AUF Management de la qualité",
-      "type": "Cours",
-      "teacher": "M. JEROME DANDJINOU",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1361",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20992"
-    },
-    {
-      "id": "w14-s2",
-      "date": "2026-10-29",
-      "title": "MBA GP AUF Aspects juridiques et fiscaux des projets, programmes et portefeuille",
-      "type": "Cours",
-      "teacher": "M. DESIRE TAHO",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1362",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21009"
-    },
     {
       "id": "w14-s3",
       "date": "2026-10-30",
@@ -78,6 +54,59 @@
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1713",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=32519",
       "notes": "Cours jumelé avec MBA GP CLASSIQUE"
+    },
+    {
+      "id": "w15-s1",
+      "date": "2026-11-03",
+      "title": "MBA GP AUF Gestion des parties prenantes de projets, programmes et portefeuille",
+      "type": "Cours",
+      "teacher": "M. CLOVIS TOUGMA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=997",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805",
+      "notes": "Cours jumelé avec MBA GP CLASSIQUE"
+    },
+    {
+      "id": "w15-s2",
+      "date": "2026-11-04",
+      "title": "MBA GP AUF Méthodologie de rédaction du TFE",
+      "type": "Cours",
+      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
+    },
+    {
+      "id": "w15-s3",
+      "date": "2026-11-05",
+      "title": "MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes",
+      "type": "Examen",
+      "teacher": "M. PAPA FELOU DIALLO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1354",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873",
+      "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk"
+    },
+    {
+      "id": "w15-s4",
+      "date": "2026-11-06",
+      "title": "MBA GP AUF Codes éthiques et déontologie",
+      "type": "Examen",
+      "teacher": "M. JUDICAEL OLADIKPEKOUN",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1363",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21026",
+      "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk"
     }
   ],
   "information_blocks": [
