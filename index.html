@@ -414,6 +414,12 @@
       letter-spacing:.6px;text-transform:uppercase;padding:5px 10px;border-radius:999px;
       box-shadow:0 4px 12px rgba(201,150,42,.35);
     }
+    /* À la une : mise en avant temporaire des vidéos TFF (masquée automatiquement après la date data-until). */
+    .spotlight{margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:var(--gold-soft);border:1px solid #EADCB6;border-radius:18px;padding:18px 22px}
+    .spotlight-tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold-dark);margin-bottom:4px}
+    .spotlight h2{margin:0 0 4px;font-size:20px;color:var(--green)}.spotlight p{margin:0;color:#5F4B20;font-size:14px;line-height:1.5;max-width:640px}
+    .spotlight-btn{display:inline-flex;align-items:center;border-radius:12px;padding:11px 16px;background:var(--green);color:#fff;font-weight:800;font-size:14px;text-decoration:none}
+    .spotlight-btn:hover,.spotlight-btn:focus-visible{background:var(--green-dark)}
   </style>
 </head>
 
@@ -450,6 +456,15 @@
           <span>Planning hebdomadaire</span>
           <span>ICS &amp; PDF</span>
         </div>
+      </section>
+
+      <section class="spotlight" id="tffSpotlight" data-until="2026-12-03" aria-label="À la une">
+        <div>
+          <span class="spotlight-tag">À la une · Nouveau</span>
+          <h2>TFF : 2 vidéos pour comprendre le processus</h2>
+          <p>De l’enregistrement du thème au dépôt de la version finale, suivez les étapes en moins de 6 minutes, puis téléchargez les formulaires officiels.</p>
+        </div>
+        <a class="spotlight-btn" href="./documents-tff/#videos">Voir les vidéos</a>
       </section>
 
       <section class="guide" aria-label="Comment ça marche">
@@ -645,6 +660,7 @@
             <div class="tool-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h6"/></svg>
             </div>
+            <span class="tool-alert" id="tffBadge">Nouveau · Vidéos</span>
             <h4>Documents TFF</h4>
             <p>Accédez aux formulaires officiels : thème, encadrement, non-plagiat, dépôt et publication.</p>
             <span class="tool-link">Voir les documents
@@ -801,6 +817,18 @@
           }
         } catch (e) { /* accueil statique : on ignore silencieusement */ }
       }));
+    })();
+  </script>
+  <script>
+    /* Retire la mise en avant des vidéos TFF après la date indiquée dans data-until. */
+    (function(){
+      var el=document.getElementById('tffSpotlight');
+      if(!el) return;
+      var end=new Date(el.getAttribute('data-until')+'T23:59:59');
+      if(new Date()>end){
+        el.remove();
+        var b=document.getElementById('tffBadge'); if(b) b.remove();
+      }
     })();
   </script>
 </body>
