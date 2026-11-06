@@ -1,0 +1,548 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CESAG ONLINE//Planning global//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CESAG ONLINE — Semaine du 9 au 15 novembre 2026
+X-WR-TIMEZONE:UTC
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-w16-s1-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261109T180000Z
+DTEND:20261109T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG233 – Gestion financière
+DESCRIPTION:Programme: MBA AG — Gestion des entreprises\nModule: MBAAG233 – Gestion financière\nType: Cours\nEnseignant: M. MATY SENE\nMoodle: https://formations.cesagonline.com/course/view.php?id=1043\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14650
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14650
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14650
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261108T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w16-s1-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261109T180000Z
+DTEND:20261109T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG246 – Modernisation et digitalisation du service public
+DESCRIPTION:Programme: MBA AG — Administration publique\nModule: MBAAG246 – Modernisation et digitalisation du service public\nType: Cours\nEnseignant: M. JILDAS NOUMONZOUNDE\nMoodle: https://formations.cesagonline.com/course/view.php?id=1050\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14769\nNotes: Séance de révision avant examen
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14769
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14769
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261108T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w16-s1-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261109T180000Z
+DTEND:20261109T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Méthodologie de recherche quantitative
+DESCRIPTION:Programme: MBA Gestion de Projets\nModule: Méthodologie de recherche quantitative\nType: Cours\nEnseignant: M. NASSIBOU BASSONGUI\nMoodle: https://formations.cesagonline.com/course/view.php?id=1005\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=39645
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=39645
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=39645
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261108T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w16-s1-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261109T180000Z
+DTEND:20261109T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Méthodologie de recherche quantitative
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Méthodologie de recherche quantitative\nType: Cours\nEnseignant: M. BASSIROU DIA\nMoodle: https://formations.cesagonline.com/course/view.php?id=1365\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21060
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21060
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21060
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261108T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w16-s1-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261109T180000Z
+DTEND:20261109T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — MBA MSCH – Audit social et audit de la RSE (MBAGRH142)
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nModule: MBA MSCH – Audit social et audit de la RSE (MBAGRH142)\nType: Cours\nEnseignant: DR MAMADOU SANE\nMoodle: https://formations.cesagonline.com/course/view.php?id=1259\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261108T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w16-s2-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261110T180000Z
+DTEND:20261110T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG244 – Finances de l'État et Finances locales
+DESCRIPTION:Programme: MBA AG — Administration publique\nModule: MBAAG244 – Finances de l'État et Finances locales\nType: Cours\nEnseignant: M. ZAKARIA NAMASSA\nMoodle: https://formations.cesagonline.com/course/view.php?id=1048\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14735
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14735
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14735
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261109T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w16-s2-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261110T180000Z
+DTEND:20261110T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Gestion des parties prenantes de projets\, programmes et portefeuille
+DESCRIPTION:Programme: MBA Gestion de Projets\nModule: Gestion des parties prenantes de projets\, programmes et portefeuille\nType: Cours\nEnseignant: M. CLOVIS TOUGMA\nMoodle: https://formations.cesagonline.com/course/view.php?id=997\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261109T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w16-s2-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261110T180000Z
+DTEND:20261110T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Gestion des parties prenantes de projets\, programmes et portefeuille
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Gestion des parties prenantes de projets\, programmes et portefeuille\nType: Cours\nEnseignant: M. CLOVIS TOUGMA\nMoodle: https://formations.cesagonline.com/course/view.php?id=997\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261109T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w16-s2-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261110T180000Z
+DTEND:20261110T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — MBA MSCH – Recrutement et intégration (MBAGRH153)
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nModule: MBA MSCH – Recrutement et intégration (MBAGRH153)\nType: Cours\nEnseignant: MME FELICIENNE KOUESSI\nMoodle: https://formations.cesagonline.com/course/view.php?id=1264\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261109T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-gestion-entreprises-w16-s2-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261111T180000Z
+DTEND:20261111T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG232 – Administration et Gestion des ressources humaines
+DESCRIPTION:Programme: MBA AG — Gestion des entreprises\nModule: MBAAG232 – Administration et Gestion des ressources humaines\nType: Cours\nEnseignant: M. AKIM PARAISO\nMoodle: https://formations.cesagonline.com/course/view.php?id=1042\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261110T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w16-s3-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261111T180000Z
+DTEND:20261111T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Capitalisation\, gestion et dissémination des connaissances
+DESCRIPTION:Programme: MBA Gestion de Projets\nModule: Capitalisation\, gestion et dissémination des connaissances\nType: Cours\nEnseignant: M. JILDAS NOUMONZOUNDE\nMoodle: https://formations.cesagonline.com/course/view.php?id=1008\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13992
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13992
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13992
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261110T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w16-s3-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261111T180000Z
+DTEND:20261111T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Management de la qualité
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Management de la qualité\nType: Examen\nEnseignant: M. JEROME DANDJINOU\nDurée: 120 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1361\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20992\nSurveillance Teams: https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+LOCATION:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+URL:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261110T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w16-s3-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261112T100000Z
+DTEND:20261112T120000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG243 – Science administrative et droit administratif
+DESCRIPTION:Programme: MBA AG — Administration publique\nModule: MBAAG243 – Science administrative et droit administratif\nType: Cours\nEnseignant: DR MAMANE DJIBO\nMoodle: https://formations.cesagonline.com/course/view.php?id=1047\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261111T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-administration-publique-w16-s4-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261112T180000Z
+DTEND:20261112T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG
+SUMMARY:MBA AG — MBAAG243 – Science administrative et droit administratif
+DESCRIPTION:Programme: MBA AG — Administration publique\nModule: MBAAG243 – Science administrative et droit administratif\nType: Cours\nEnseignant: DR MAMANE DJIBO\nMoodle: https://formations.cesagonline.com/course/view.php?id=1047\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14718
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261111T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-w16-s1-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261112T180000Z
+DTEND:20261112T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF — MBA AG AUF Jeu d'entreprise
+DESCRIPTION:Programme: MBA AG AUF\nModule: MBA AG AUF Jeu d'entreprise\nType: Cours\nEnseignant: DR HERVE FOYANG FOYANG\nMoodle: https://formations.cesagonline.com/course/view.php?id=1279\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730\nNotes: Cours commun avec MBA AG Classique et MBA MSCH. Remise des documents finaux le 12/11 à 09h00 GMT au plus tard.
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261111T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-classique-w16-s1-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261112T180000Z
+DTEND:20261112T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG Classique
+SUMMARY:MBA AG Classique — Jeu d’entreprise 25-26
+DESCRIPTION:Programme: MBA AG Classique\nModule: Jeu d’entreprise 25-26\nType: Cours\nEnseignant: DR HERVE FOYANG FOYANG\nMoodle: https://formations.cesagonline.com/course/view.php?id=1279\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730\nNotes: Cours commun avec MBA AG AUF et MBA MSCH. Remise des documents finaux le 12/11 à 09h00 GMT au plus tard.
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261111T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w16-s3-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261112T180000Z
+DTEND:20261112T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — MBA MSCH – Simulation d'entreprises (MBAGRH243)
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nModule: MBA MSCH – Simulation d'entreprises (MBAGRH243)\nType: Cours\nEnseignant: DR HERVE FOYANG FOYANG\nMoodle: https://formations.cesagonline.com/course/view.php?id=1279\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730\nNotes: Remise des documents finaux le jeudi 12 novembre à 09h00 GMT au plus tard.
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261111T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-w16-s4-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261113T180000Z
+DTEND:20261113T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP
+SUMMARY:MBA GP — Intégration des risques transversaux
+DESCRIPTION:Programme: MBA Gestion de Projets\nModule: Intégration des risques transversaux\nType: Cours\nEnseignant: M. MALICK BABAH DAOUDA\nMoodle: https://formations.cesagonline.com/course/view.php?id=1010\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261112T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-gp-auf-w16-s4-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261113T180000Z
+DTEND:20261113T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA GP AUF
+SUMMARY:MBA GP AUF — MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes
+DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes\nType: Examen\nEnseignant: M. PAPA FELOU DIALLO\nDurée: 120 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1354\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873\nSurveillance Teams: https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+LOCATION:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+URL:https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261112T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w16-s4-2026-11@cesagonline.com
+DTSTAMP:20261106T160700Z
+DTSTART:20261113T180000Z
+DTEND:20261113T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — MBA MSCH – Recrutement et intégration (MBAGRH153)
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nModule: MBA MSCH – Recrutement et intégration (MBAGRH153)\nType: Cours\nEnseignant: MME FELICIENNE KOUESSI\nMoodle: https://formations.cesagonline.com/course/view.php?id=1264\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475
+LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475
+URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261112T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+END:VCALENDAR
