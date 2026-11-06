@@ -4,9 +4,9 @@
   "program_short": "MBA GP AUF",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "31 octobre 2026",
+  "updated_label": "6 novembre 2026",
   "is_new": true,
-  "published_at": "2026-10-31T13:20:00Z",
+  "published_at": "2026-11-06T15:48:00Z",
   "week_message": "Semaine chargée. Du courage à eux",
   "sessions": [
     {
@@ -23,50 +23,11 @@
       "notes": "Séance fortement recommandée."
     }
   ],
-  "upcoming_week_label": "2 novembre → 8 novembre 2026",
-  "upcoming_week_file_label": "02_novembre-08_novembre_2026",
-  "upcoming_published_at": "2026-10-31T13:20:00Z",
-  "upcoming_week_message": "Semaine chargée avec deux examens, du courage !",
+  "upcoming_week_label": "2 novembre → 15 novembre 2026",
+  "upcoming_week_file_label": "09_novembre-15_novembre_2026",
+  "upcoming_published_at": "2026-11-06T15:48:00Z",
+  "upcoming_week_message": "Semaine avec deux examens programmés.",
   "upcoming_sessions": [
-    {
-      "id": "w15-s1",
-      "date": "2026-11-03",
-      "title": "MBA GP AUF Gestion des parties prenantes de projets, programmes et portefeuille",
-      "type": "Cours",
-      "teacher": "M. CLOVIS TOUGMA",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=997",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805",
-      "notes": "Cours jumelé avec MBA GP CLASSIQUE"
-    },
-    {
-      "id": "w15-s2",
-      "date": "2026-11-04",
-      "title": "MBA GP AUF Méthodologie de rédaction du TFE",
-      "type": "Cours",
-      "teacher": "DR ALASSANE OUATTARA ET MME AUDRY MONI",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1331",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20482"
-    },
-    {
-      "id": "w15-s3",
-      "date": "2026-11-05",
-      "title": "MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes",
-      "type": "Examen",
-      "teacher": "M. PAPA FELOU DIALLO",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "duration": "120 min",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1354",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873",
-      "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk"
-    },
     {
       "id": "w15-s4",
       "date": "2026-11-06",
@@ -80,20 +41,72 @@
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1355",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20890",
       "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk"
+    },
+    {
+      "id": "w16-s1",
+      "date": "2026-11-09",
+      "title": "MBA GP AUF Méthodologie de recherche quantitative",
+      "type": "Cours",
+      "teacher": "M. BASSIROU DIA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1365",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21060"
+    },
+    {
+      "id": "w16-s2",
+      "date": "2026-11-10",
+      "title": "MBA GP AUF Gestion des parties prenantes de projets, programmes et portefeuille",
+      "type": "Cours",
+      "teacher": "M. CLOVIS TOUGMA",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=997",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805"
+    },
+    {
+      "id": "w16-s3",
+      "date": "2026-11-11",
+      "title": "MBA GP AUF Management de la qualité",
+      "type": "Examen",
+      "teacher": "M. JEROME DANDJINOU",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1361",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20992",
+      "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk"
+    },
+    {
+      "id": "w16-s4",
+      "date": "2026-11-13",
+      "title": "MBA GP AUF Planification opérationnelle et budgétisation des projets et programmes",
+      "type": "Examen",
+      "teacher": "M. PAPA FELOU DIALLO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "duration": "120 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1354",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20873",
+      "teams": "https://teams.microsoft.com/meet/31064298163683?p=ShgEwnqfq3hGNFYpHk"
     }
   ],
   "information_blocks": [
     {
-      "title": "Rencontre avec Madame le Chef de Département",
-      "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
+      "title": "Travail de Fin de Formation (TFF) — Documents et procédures",
+      "text": "Les auditeurs sont invités à prendre impérativement connaissance des procédures et formulaires officiels relatifs au TFF (enregistrement du thème, convention d’encadrement, non-plagiat, autorisations) disponibles dans l’onglet dédié « Documents TFF »."
+    },
+    {
+      "title": "Quiz et activités FutureLearn",
+      "text": "Pensez à finaliser à temps l’ensemble des quiz en attente dans vos différents modules sur Moodle et à poursuivre vos activités d’apprentissage sur la plateforme FutureLearn."
     },
     {
       "title": "Accès aux salles virtuelles",
       "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
-    },
-    {
-      "title": "Préparation de la semaine suivante",
-      "text": "La semaine qui suit, les examens de Planification opérationnelle et d’Intégration seront programmés. Préparez-vous."
     }
   ]
 }

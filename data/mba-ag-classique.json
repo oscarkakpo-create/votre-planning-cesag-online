@@ -4,18 +4,19 @@
   "program_short": "MBA AG Classique",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "23 octobre 2026",
+  "updated_label": "6 novembre 2026",
   "is_new": true,
-  "published_at": "2026-10-23T12:00:00Z",
+  "published_at": "2026-11-06T15:50:00Z",
+  "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
   "sessions": [],
-  "upcoming_week_label": "26 octobre → 1 novembre 2026",
-  "upcoming_week_file_label": "26_octobre-01_novembre_2026",
-  "upcoming_published_at": "2026-10-23T12:00:00Z",
+  "upcoming_week_label": "9 novembre → 15 novembre 2026",
+  "upcoming_week_file_label": "09_novembre-15_novembre_2026",
+  "upcoming_published_at": "2026-11-06T15:50:00Z",
   "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
   "upcoming_sessions": [
     {
-      "id": "w14-s1",
-      "date": "2026-10-29",
+      "id": "w16-s1",
+      "date": "2026-11-12",
       "title": "Jeu d’entreprise 25-26",
       "type": "Cours",
       "teacher": "DR HERVE FOYANG FOYANG",
@@ -24,13 +25,21 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Cours commun avec MBA AG AUF et MBA MSCH. Déposer la décision 4 dans cet espace mercredi 28 octobre 2026 : https://formations.cesagonline.com/mod/assign/view.php?id=32623"
+      "notes": "Cours commun avec MBA AG AUF et MBA MSCH. Le professeur souhaite recevoir les documents finaux comme convenu le jeudi 12 novembre à 09h00 GMT au plus tard."
     }
   ],
   "information_blocks": [
     {
-      "title": "Rencontre avec Madame le Chef de Département",
-      "text": "Préparez vos préoccupations, questions et points à soulever. Le programme détaillé sera communiqué par M. Diallo."
+      "title": "Simulation d’entreprise — Remise des documents finaux",
+      "text": "Le professeur DR HERVE FOYANG FOYANG rappelle qu’il souhaite recevoir les documents finaux comme convenu le jeudi 12 novembre 2026 à 09h00 GMT au plus tard."
+    },
+    {
+      "title": "Travail de Fin de Formation (TFF) — Documents et procédures",
+      "text": "Les auditeurs sont invités à prendre impérativement connaissance des procédures et formulaires officiels relatifs au TFF (enregistrement du thème, convention d’encadrement, non-plagiat, autorisations) disponibles dans l’onglet dédié « Documents TFF »."
+    },
+    {
+      "title": "Quiz et activités FutureLearn",
+      "text": "Pensez à finaliser à temps l’ensemble des quiz en attente dans vos différents modules sur Moodle et à poursuivre vos activités d’apprentissage sur la plateforme FutureLearn."
     },
     {
       "title": "Accès aux salles virtuelles",
