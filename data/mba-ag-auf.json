@@ -4,27 +4,14 @@
   "program_short": "MBA AG AUF",
   "week_label": "5 octobre → 11 octobre 2026",
   "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "6 novembre 2026",
+  "updated_label": "9 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-06T15:50:00Z",
+  "published_at": "2026-11-09T10:50:00Z",
   "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
-  "sessions": [
-    {
-      "id": "upcoming-s3",
-      "date": "2026-10-10",
-      "title": "MBA AG AUF Contrôle Interne",
-      "type": "Cours",
-      "teacher": "M. SEKOU NIANGUE",
-      "start": "10:00",
-      "end": "12:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1328",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=20431"
-    }
-  ],
+  "sessions": [],
   "upcoming_week_label": "9 novembre → 15 novembre 2026",
   "upcoming_week_file_label": "09_novembre-15_novembre_2026",
-  "upcoming_published_at": "2026-11-06T15:50:00Z",
+  "upcoming_published_at": "2026-11-09T10:50:00Z",
   "upcoming_week_message": "Séance de Jeu d'entreprise jeudi 12/11 et préparation aux derniers examens du tronc commun prévus la semaine suivante.",
   "upcoming_sessions": [
     {
