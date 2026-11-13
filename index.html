@@ -351,7 +351,7 @@
     .site-live{margin:22px 0 4px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:var(--shadow-sm)}
     .site-live-head{display:flex;align-items:center;gap:9px;margin-bottom:12px;color:var(--green);font-size:13px;font-weight:800}
     .live-pulse{width:9px;height:9px;border-radius:50%;background:#28A060;box-shadow:0 0 0 5px rgba(40,160,96,.12)}
-    .site-live-grid{display:grid;grid-template-columns:180px 180px 1fr;gap:10px}
+    .site-live-grid{display:grid;grid-template-columns:180px 180px 210px 1fr;gap:10px}
     .site-live-card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 14px}
     .site-live-card small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
     .site-live-card strong{display:block;margin-top:4px;color:var(--green);font-size:14px;line-height:1.4}
@@ -420,6 +420,43 @@
     .spotlight h2{margin:0 0 4px;font-size:20px;color:var(--green)}.spotlight p{margin:0;color:#5F4B20;font-size:14px;line-height:1.5;max-width:640px}
     .spotlight-btn{display:inline-flex;align-items:center;border-radius:12px;padding:11px 16px;background:var(--green);color:#fff;font-weight:800;font-size:14px;text-decoration:none}
     .spotlight-btn:hover,.spotlight-btn:focus-visible{background:var(--green-dark)}
+  
+    /* --- Panafrican Bar & QR Modal --- */
+    .panafrica-bar{
+      background:linear-gradient(90deg,var(--green-dark),#0E4028);
+      color:#fff;padding:7px 0;font-size:12px;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.1);
+    }
+    .panafrica-inner{display:flex;align-items:center;gap:18px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+    .panafrica-inner::-webkit-scrollbar{display:none}
+    .p-tag{display:inline-flex;align-items:center;gap:5px;font-weight:800;color:var(--gold);text-transform:uppercase;font-size:10.5px;letter-spacing:.6px}
+    .city-item{display:inline-flex;align-items:center;gap:5px;color:rgba(255,255,255,.9);font-weight:600}
+    .city-item strong{color:#fff;font-family:ui-monospace,"Cascadia Mono",monospace;font-size:12px}
+
+    .btn-qr-top{
+      display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.28);color:#fff;padding:5px 12px;border-radius:999px;
+      font-size:11.5px;font-weight:700;cursor:pointer;transition:all .18s;
+    }
+    .btn-qr-top:hover{background:var(--gold);border-color:var(--gold);color:#fff}
+
+    .modal-backdrop{
+      position:fixed;inset:0;background:rgba(7,48,30,.72);backdrop-filter:blur(6px);
+      display:grid;place-items:center;z-index:9999;padding:20px;opacity:0;pointer-events:none;
+      transition:opacity .25s var(--ease);
+    }
+    .modal-backdrop.is-open{opacity:1;pointer-events:auto}
+    .modal-card{
+      background:var(--white);border-radius:24px;padding:32px 28px;max-width:390px;width:100%;
+      text-align:center;box-shadow:var(--shadow-lg);border:1px solid var(--line);
+      transform:translateY(12px) scale(.98);transition:transform .25s var(--ease);
+    }
+    .modal-backdrop.is-open .modal-card{transform:translateY(0) scale(1)}
+    .btn-close-qr{
+      margin-top:16px;background:var(--paper);border:1px solid var(--line);color:var(--text);
+      font-weight:700;padding:9px 24px;border-radius:12px;cursor:pointer;transition:background .18s;
+    }
+    .btn-close-qr:hover{background:var(--green-soft);color:var(--green)}
+
   </style>
 </head>
 
@@ -431,9 +468,26 @@
       <div class="brandline"><span class="dot"></span> CESAG ONLINE · Agenda FOAD</div>
       <nav class="home-nav" aria-label="Navigation principale"><a href="#programmes">Programmes</a><a href="#recordings">Replays Teams</a><a href="./calendrier/">Calendrier</a><a href="#toolbox-title">Outils</a></nav>
       <div class="note">Un accès unique à vos plannings de cours et d’examens</div>
+      <button class="btn-qr-top" id="openQrBtn" type="button" aria-label="Scanner sur smartphone" title="Afficher le QR code pour mobile">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+        <span>Flasher sur mobile</span>
+      </button>
     </div>
   </div>
 
+    <aside class="panafrica-bar" aria-label="Horloge des capitales africaines">
+    <div class="container panafrica-inner">
+      <span class="p-tag">🌍 Capitales FOAD :</span>
+      <span class="city-item">🇸🇳 Dakar <strong id="t-sn">--:--</strong></span>
+      <span class="city-item">🇨🇮 Abidjan <strong id="t-ci">--:--</strong></span>
+      <span class="city-item">🇧🇫 Ouaga <strong id="t-bf">--:--</strong></span>
+      <span class="city-item">🇹🇬 Lomé <strong id="t-tg">--:--</strong></span>
+      <span class="city-item">🇲🇱 Bamako <strong id="t-ml">--:--</strong></span>
+      <span class="city-item">🇧🇯 Cotonou <strong id="t-bj">--:--</strong></span>
+      <span class="city-item">🇳🇪 Niamey <strong id="t-ne">--:--</strong></span>
+      <span class="city-item">🇨🇲 Yaoundé <strong id="t-cm">--:--</strong></span>
+    </div>
+  </aside>
   <header class="hero">
     <div class="container">
       <section class="hero-panel">
@@ -489,6 +543,8 @@
         <div class="site-live-head"><span class="live-pulse" aria-hidden="true"></span> Informations en temps réel · tous les espaces</div>
         <div class="site-live-grid">
           <div class="site-live-card clock"><small>Heure GMT</small><strong id="homeGmtClock">--:--:--</strong></div>
+          <div class="site-live-card" title="Météo en direct sur le Campus CESAG Dakar (Open-Meteo API)"><small>📍 Campus Dakar (Live)</small><strong id="campusWeatherText" style="color:var(--green)">Chargement…</strong></div>
+          
           <div class="site-live-card"><small>Activités aujourd’hui</small><strong id="homeTodayCount">Chargement…</strong></div>
           <div class="site-live-card" id="homeAlertBox"><small>Alerte générale</small><strong id="homeAlert">Analyse des plannings…</strong></div>
         </div>
@@ -830,6 +886,72 @@
         var b=document.getElementById('tffBadge'); if(b) b.remove();
       }
     })();
+  </script>
+  <!-- Modal QR Code -->
+  <div class="modal-backdrop" id="qrModal" aria-hidden="true">
+    <div class="modal-card">
+      <h3 style="margin:0 0 8px;color:var(--green);font-family:var(--serif);font-size:22px">Scanner sur Smartphone</h3>
+      <p style="margin:0 0 16px;color:var(--muted);font-size:13.5px">Ouvrez l’appareil photo de votre téléphone pour afficher l'agenda mobile directement.</p>
+      <div style="background:#fff;padding:12px;border-radius:16px;border:1px solid var(--line);display:inline-block;box-shadow:0 4px 16px rgba(0,0,0,.06)">
+        <img id="qrImg" src="" alt="QR Code d'accès mobile" width="200" height="200" style="display:block;border-radius:8px" />
+      </div>
+      <br>
+      <button class="btn-close-qr" id="closeQrBtn" type="button">Fermer</button>
+    </div>
+  </div>
+
+  <script>
+    // 1. Horloge Panafricaine des Capitales
+    function updatePanafricaBar(){
+      const now = new Date();
+      const fmt = (offset) => {
+        const d = new Date(now.getTime() + offset * 3600000);
+        return d.toLocaleTimeString('fr-FR', {timeZone: 'UTC', hour:'2-digit', minute:'2-digit', hour12: false});
+      };
+      const gmt0 = fmt(0);
+      const gmt1 = fmt(1);
+      ['t-sn','t-ci','t-bf','t-tg','t-ml'].forEach(id=>{ const el=document.getElementById(id); if(el) el.textContent=gmt0; });
+      ['t-bj','t-ne','t-cm'].forEach(id=>{ const el=document.getElementById(id); if(el) el.textContent=gmt1; });
+    }
+    updatePanafricaBar();
+    setInterval(updatePanafricaBar, 1000);
+
+    // 2. API Open-Meteo pour le Campus CESAG Dakar
+    async function loadCampusWeather(){
+      try{
+        const r = await fetch('https://api.open-meteo.com/v1/forecast?latitude=14.6928&longitude=-17.4467&current=temperature_2m,weather_code&timezone=GMT');
+        const data = await r.json();
+        const temp = Math.round(data.current.temperature_2m);
+        const code = data.current.weather_code;
+        const icon = code === 0 ? '☀️ Ensoleillé' : (code <= 3 ? '⛅ Éclaircies' : '☁️ Nuageux');
+        const el = document.getElementById('campusWeatherText');
+        if(el) el.textContent = `${temp}°C · ${icon}`;
+      }catch(e){
+        const el = document.getElementById('campusWeatherText');
+        if(el) el.textContent = "Dakar, Sénégal";
+      }
+    }
+    loadCampusWeather();
+
+    // 3. API QR Server pour QR Code Mobile
+    const openQrBtn = document.getElementById('openQrBtn');
+    const qrModal = document.getElementById('qrModal');
+    const closeQrBtn = document.getElementById('closeQrBtn');
+    const qrImg = document.getElementById('qrImg');
+    if(openQrBtn && qrModal && closeQrBtn && qrImg){
+      openQrBtn.addEventListener('click', ()=>{
+        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=10&data=${encodeURIComponent(window.location.href)}`;
+        qrModal.classList.add('is-open');
+        qrModal.setAttribute('aria-hidden', 'false');
+      });
+      closeQrBtn.addEventListener('click', ()=>{
+        qrModal.classList.remove('is-open');
+        qrModal.setAttribute('aria-hidden', 'true');
+      });
+      qrModal.addEventListener('click', (e)=>{
+        if(e.target === qrModal) closeQrBtn.click();
+      });
+    }
   </script>
 </body>
 </html>
