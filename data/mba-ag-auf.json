@@ -7,16 +7,16 @@
   "updated_label": "14 novembre 2026",
   "is_new": true,
   "published_at": "2026-11-13T23:34:00Z",
-  "week_message": "Semaine d’évaluation : Examen de Contrôle de gestion programmé le lundi 16 novembre de 18h00 à 20h00 GMT.",
+  "week_message": "Semaine d’évaluation : Examen de Contrôle de gestion programmé le vendredi 20 novembre de 18h00 à 20h00 GMT.",
   "sessions": [],
   "upcoming_week_label": "16 novembre → 22 novembre 2026",
   "upcoming_week_file_label": "16_novembre-22_novembre_2026",
-  "upcoming_published_at": "2026-11-13T23:34:00Z",
-  "upcoming_week_message": "Semaine d’évaluation : Examen de Contrôle de gestion programmé le lundi 16 novembre de 18h00 à 20h00 GMT.",
+  "upcoming_published_at": "2026-11-14T14:35:00Z",
+  "upcoming_week_message": "Semaine d’évaluation : Examen de Contrôle de gestion programmé le vendredi 20 novembre de 18h00 à 20h00 GMT.",
   "upcoming_sessions": [
     {
       "id": "w17-s1",
-      "date": "2026-11-16",
+      "date": "2026-11-20",
       "title": "MBA AG AUF Contrôle de gestion",
       "type": "Examen",
       "teacher": "M. SINIMBOU DUROTIMI",
@@ -32,7 +32,7 @@
   "information_blocks": [
     {
       "kicker": "Consignes d’examen",
-      "title": "Examen de Contrôle de gestion — Lundi 16 novembre (18h00 GMT)",
+      "title": "Examen de Contrôle de gestion — Vendredi 20 novembre (18h00 GMT)",
       "text": "Durée de l’épreuve : 110 minutes. Connectez-vous au moins 15 minutes avant le début sur Moodle ainsi qu’au lien Microsoft Teams de surveillance obligatoire."
     },
     {

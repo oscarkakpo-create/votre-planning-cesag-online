@@ -33,33 +33,6 @@ DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:cesag-mba-ag-auf-w17-s1-2026-11@cesagonline.com
-DTSTAMP:20261114T003200Z
-DTSTART:20261116T180000Z
-DTEND:20261116T200000Z
-STATUS:TENTATIVE
-CATEGORIES:MBA AG AUF
-SUMMARY:MBA AG AUF — MBA AG AUF Contrôle de gestion
-DESCRIPTION:Programme: MBA AG AUF\nModule: MBA AG AUF Contrôle de gestion\nType: Examen\nEnseignant: M. SINIMBOU DUROTIMI\nDurée: 110 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1329\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28952\nSurveillance Teams: https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
-LOCATION:https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
-URL:https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
-END:VALARM
-BEGIN:VALARM
-TRIGGER:-PT2H
-ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - 2 heures
-END:VALARM
-BEGIN:VALARM
-TRIGGER;VALUE=DATE-TIME:20261115T200000Z
-ACTION:DISPLAY
-DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:cesag-mba-gp-w17-s1-2026-11@cesagonline.com
 DTSTAMP:20261114T003200Z
 DTSTART:20261116T180000Z
@@ -379,6 +352,33 @@ DESCRIPTION:Rappel CESAG ONLINE - 2 heures
 END:VALARM
 BEGIN:VALARM
 TRIGGER;VALUE=DATE-TIME:20261118T200000Z
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-ag-auf-w17-s1-2026-11@cesagonline.com
+DTSTAMP:20261114T003200Z
+DTSTART:20261120T180000Z
+DTEND:20261120T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA AG AUF
+SUMMARY:MBA AG AUF — MBA AG AUF Contrôle de gestion
+DESCRIPTION:Programme: MBA AG AUF\nModule: MBA AG AUF Contrôle de gestion\nType: Examen\nEnseignant: M. SINIMBOU DUROTIMI\nDurée: 110 min\nMoodle: https://formations.cesagonline.com/course/view.php?id=1329\nSalle virtuelle BBB: https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28952\nSurveillance Teams: https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
+LOCATION:https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
+URL:https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 15 minutes
+END:VALARM
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Rappel CESAG ONLINE - 2 heures
+END:VALARM
+BEGIN:VALARM
+TRIGGER;VALUE=DATE-TIME:20261119T200000Z
 ACTION:DISPLAY
 DESCRIPTION:Rappel CESAG ONLINE - veille à 20h00 GMT
 END:VALARM
