@@ -2,33 +2,21 @@
   "slug": "mba-msch",
   "program_name": "Management Stratégique du Capital Humain",
   "program_short": "MBA MSCH",
-  "week_label": "5 octobre → 11 octobre 2026",
-  "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "9 novembre 2026",
+  "week_label": "16 novembre → 22 novembre 2026",
+  "week_file_label": "16_novembre-22_novembre_2026",
+  "updated_label": "14 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-06T15:37:00Z",
-  "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
+  "published_at": "2026-11-14T00:28:00Z",
+  "week_message": "Quatre séances de cours du mardi au vendredi. Attention : des examens sont programmés dès la semaine suivante.",
   "sessions": [],
-  "upcoming_week_label": "9 novembre → 15 novembre 2026",
-  "upcoming_week_file_label": "09_novembre-15_novembre_2026",
-  "upcoming_published_at": "2026-11-06T15:37:00Z",
-  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
+  "upcoming_week_label": "16 novembre → 22 novembre 2026",
+  "upcoming_week_file_label": "16_novembre-22_novembre_2026",
+  "upcoming_published_at": "2026-11-14T00:28:00Z",
+  "upcoming_week_message": "Quatre séances de cours du mardi au vendredi. Attention : des examens sont programmés dès la semaine suivante.",
   "upcoming_sessions": [
     {
-      "id": "w16-s1",
-      "date": "2026-11-09",
-      "title": "MBA MSCH – Audit social et audit de la RSE (MBAGRH142)",
-      "type": "Cours",
-      "teacher": "DR MAMADOU SANE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1259",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18390"
-    },
-    {
-      "id": "w16-s2",
-      "date": "2026-11-10",
+      "id": "w17-s1",
+      "date": "2026-11-17",
       "title": "MBA MSCH – Recrutement et intégration (MBAGRH153)",
       "type": "Cours",
       "teacher": "MME FELICIENNE KOUESSI",
@@ -39,21 +27,32 @@
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18475"
     },
     {
-      "id": "w16-s3",
-      "date": "2026-11-12",
-      "title": "MBA MSCH – Simulation d'entreprises (MBAGRH243)",
+      "id": "w17-s2",
+      "date": "2026-11-18",
+      "title": "MBA MSCH – Management interculturel (MBAGRH223)",
       "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
+      "teacher": "MME ICHOLA LANIBA",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Le professeur souhaite recevoir les documents finaux comme convenu le jeudi 12 novembre à 09h00 GMT au plus tard."
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1272",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18611"
     },
     {
-      "id": "w16-s4",
-      "date": "2026-11-13",
+      "id": "w17-s3",
+      "date": "2026-11-19",
+      "title": "MBA MSCH – Management de la formation (MBAGRH151)",
+      "type": "Cours",
+      "teacher": "M. DESIRE TAHO",
+      "start": "18:00",
+      "end": "20:00",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1261",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18424"
+    },
+    {
+      "id": "w17-s4",
+      "date": "2026-11-20",
       "title": "MBA MSCH – Recrutement et intégration (MBAGRH153)",
       "type": "Cours",
       "teacher": "MME FELICIENNE KOUESSI",
@@ -66,24 +65,31 @@
   ],
   "information_blocks": [
     {
-      "title": "Management interculturel — Thèmes d’exposés (Semaine du 16 novembre)",
-      "text": "Les thèmes d’exposés du module de Management interculturel (Mme ICHOLA) sont disponibles sur Moodle (https://formations.cesagonline.com/mod/assign/view.php?id=32555). Les auditeurs doivent préparer leurs travaux en équipe pour la semaine du 16 novembre 2026 et transmettre la liste des groupes."
+      "kicker": "Alerte évaluations",
+      "title": "Examens en vue la semaine suivante",
+      "text": "Des examens sont prévus dès la semaine prochaine. Les auditeurs sont invités à anticiper activement leurs révisions.",
+      "tone": "alert"
     },
     {
-      "title": "Simulation d’entreprise — Remise des documents finaux",
-      "text": "Le professeur DR HERVE FOYANG FOYANG rappelle qu’il souhaite recevoir les documents finaux comme convenu le jeudi 12 novembre 2026 à 09h00 GMT au plus tard."
+      "kicker": "Travail d’équipe — Mercredi 18/11",
+      "title": "Management interculturel — Exposés de groupe (Mme ICHOLA)",
+      "text": "Les thèmes d’exposés et consignes de travail en équipe pour la séance de cette semaine sont disponibles sur Moodle.",
+      "link": "https://formations.cesagonline.com/mod/assign/view.php?id=32555",
+      "link_label": "Voir les thèmes sur Moodle ↗"
     },
     {
-      "title": "Travail de Fin de Formation (TFF) — Documents et procédures",
-      "text": "Les auditeurs sont invités à prendre impérativement connaissance des procédures et formulaires officiels relatifs au TFF (enregistrement du thème, convention d’encadrement, non-plagiat, autorisations) disponibles dans l’onglet dédié « Documents TFF »."
+      "kicker": "Ressource académique",
+      "title": "Travail de Fin de Formation (TFF)",
+      "text": "Consultez les procédures, guides vidéos et formulaires officiels (enregistrement du thème, charte de non-plagiat, convention d’encadrement).",
+      "link": "../documents-tff/",
+      "link_label": "Consulter les documents TFF →"
     },
     {
-      "title": "Quiz et activités FutureLearn",
-      "text": "Pensez à finaliser à temps l’ensemble des quiz en attente dans vos différents modules sur Moodle et à poursuivre vos activités d’apprentissage sur la plateforme FutureLearn."
-    },
-    {
-      "title": "Accès aux salles virtuelles",
-      "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
+      "kicker": "Plateforme partenaire",
+      "title": "Parcours FutureLearn & Bilinguisme",
+      "text": "Poursuivez régulièrement vos modules d’anglais et vos cours certifiants sur FutureLearn en parallèle de vos enseignements sur Moodle.",
+      "link": "../futurelearn/",
+      "link_label": "Accéder à l’espace FutureLearn →"
     }
   ]
 }

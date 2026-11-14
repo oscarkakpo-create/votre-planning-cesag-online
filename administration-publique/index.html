@@ -7,75 +7,318 @@
   <meta name="theme-color" content="#0B4D2E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
       --green:#0B4D2E;--green2:#0E5E39;--greenDark:#07301E;--greenSoft:#E9F2ED;
       --greenLine:#CBDED3;--gold:#C9962A;--goldDark:#755513;--goldSoft:#F7EFDA;
-      --paper:#F6F8F6;--white:#fff;--text:#16241D;--muted:#586A60;--line:#E3E9E5;
-      --red:#B42318;--redSoft:#FFF0EE;--blue:#4052A8;--blueSoft:#EEF1FF;
+      --paper:#F4F7F5;--white:#fff;--text:#16241D;--muted:#586A60;--line:#E1E8E4;
+      --red:#B42318;--redSoft:#FFF1EF;--redLine:#F3C6C2;
+      --blue:#36499E;--blueSoft:#EEF1FF;--blueLine:#D4DCFF;
+      --amber:#9A4A0F;--amberSoft:#FEF6E7;--amberLine:#F3D59B;
       --shadow:0 16px 40px rgba(11,77,46,.08);
       --serif:"Spectral",Georgia,serif;--sans:"Inter","Segoe UI",Arial,sans-serif;
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:var(--sans);color:var(--text);background:var(--paper)}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;font-family:var(--sans);color:var(--text);
+      background:
+        radial-gradient(900px 420px at 100% 0%,rgba(201,150,42,.07),transparent 60%),
+        radial-gradient(800px 420px at 0% 100%,rgba(11,77,46,.05),transparent 60%),
+        var(--paper);
+      -webkit-font-smoothing:antialiased;
+    }
     a{text-decoration:none;color:inherit} button{font:inherit}
     .container{max-width:1160px;margin:auto;padding:0 20px}
-    .topbar{background:var(--green);color:#fff;border-bottom:2px solid var(--gold);padding:11px 0;font-size:13px}
+
+    /* Topbar */
+    .topbar{background:var(--greenDark);color:#fff;border-bottom:2px solid var(--gold);padding:12px 0;font-size:13px}
     .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-    .brand{font-weight:700}.back{font-weight:600;color:rgba(255,255,255,.9)}
-    .topnav{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
-    .hero{padding:34px 0 18px}
-    .hero-panel{background:linear-gradient(150deg,var(--green2),var(--green) 45%,var(--greenDark));color:#fff;border-radius:30px;padding:44px 46px 38px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+    .brand{font-weight:800;letter-spacing:.3px;display:flex;align-items:center;gap:8px}
+    .brand::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+    .back{font-weight:600;color:rgba(255,255,255,.88);padding:4px 8px;border-radius:8px;transition:background .2s,color .2s}
+    .back:hover{background:rgba(255,255,255,.1);color:#fff}
+    .topnav{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+    /* Hero */
+    .hero{padding:30px 0 16px}
+    .hero-panel{
+      background:
+        radial-gradient(120% 130% at 100% 0%,rgba(201,150,42,.22),transparent 48%),
+        linear-gradient(145deg,var(--green2),var(--green) 48%,var(--greenDark));
+      color:#fff;border-radius:28px;padding:40px 44px 34px;box-shadow:var(--shadow);position:relative;overflow:hidden
+    }
     .hero-panel:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    .hero-panel:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.1);border-radius:42% 58% 64% 36%;right:-65px;bottom:-85px;transform:rotate(18deg);pointer-events:none}
     .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:center;position:relative;z-index:1}
-    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:700;color:#F1D291;margin-bottom:12px}
-    h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(34px,5vw,56px);line-height:1.04}
-    .hero p{margin:14px 0 0;color:rgba(255,255,255,.88);line-height:1.6}
-    .weekbox{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:20px}
-    .weekbox small{display:block;color:#F1D291;font-weight:700;margin-bottom:6px}.weekbox strong{display:block;font-size:20px}.weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.74)}
-    .newflag{display:inline-block;margin-top:10px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:5px 11px;border-radius:999px}
-    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;position:relative;z-index:1}
-    .btn{border:none;border-radius:13px;padding:12px 15px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
-    .btn-gold{background:var(--gold);color:#fff}.btn-light{background:#fff;color:var(--green)}.btn-soft{background:var(--greenSoft);color:var(--green)}
-    main{padding:10px 0 48px}
-    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 0 26px}
-    .quick-card{background:#fff;border:1px solid var(--line);border-radius:17px;padding:17px}.quick-card small{display:block;color:var(--muted);margin-bottom:4px}.quick-card strong{font-size:20px;color:var(--green)}
-    .section-head{margin:8px 0 14px}.section-head h2{font-family:var(--serif);margin:0;color:var(--green);font-size:29px;font-weight:600}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13.5px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:#F5D99B;margin-bottom:10px}
+    .eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);border-radius:2px}
+    h1{font-family:var(--serif);font-weight:600;margin:0;font-size:clamp(32px,4.6vw,52px);line-height:1.05}
+    .hero p{margin:12px 0 0;color:rgba(255,255,255,.9);line-height:1.6;font-size:15px;max-width:620px}
+    .weekbox{background:rgba(255,255,255,.11);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.22);border-radius:20px;padding:20px 22px;box-shadow:0 10px 28px rgba(0,0,0,.12)}
+    .weekbox small{display:block;color:#F5D99B;font-weight:800;letter-spacing:1px;font-size:10.5px;margin-bottom:6px;text-transform:uppercase}
+    .weekbox strong{display:block;font-size:20px;line-height:1.25}
+    .weekbox span{display:block;margin-top:6px;font-size:12px;color:rgba(255,255,255,.78)}
+    .newflag{display:inline-flex;align-items:center;gap:6px;margin-top:11px;background:var(--gold);color:#fff;font-size:11px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;padding:5px 12px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+    .newflag::before{content:"";width:6px;height:6px;border-radius:50%;background:#fff}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px;position:relative;z-index:1}
+    .btn{border:none;border-radius:13px;padding:12px 16px;font-weight:700;font-size:13.5px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:transform .2s ease,box-shadow .2s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+    .btn-gold{background:var(--gold);color:#fff}.btn-light{background:#fff;color:var(--green)}.btn-soft{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.24)}
+
+    main{padding:12px 0 56px}
+
+    /* Livebar */
+    .livebar{display:grid;grid-template-columns:185px 1fr 1fr;gap:12px;margin:12px 0 16px}
+    .live-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 4px 14px rgba(11,77,46,.04)}
+    .live-icon{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:16px;font-weight:800;flex:none}
+    .live-item small{display:block;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
+    .live-item strong{display:block;margin-top:2px;color:var(--green);font-size:13.5px;line-height:1.35}
+    .live-clock strong{font-variant-numeric:tabular-nums;font-size:18px}
+    .live-item.alert-hot,.live-item.alert-live{background:var(--redSoft)!important;border-color:#E2A7A1!important;color:var(--red)!important}
+    .live-item.alert-hot .live-icon,.live-item.alert-live .live-icon{background:#F7D8D4!important;color:var(--red)!important}
+    .live-item.alert-hot strong,.live-item.alert-live strong{color:var(--red)!important}
+
+    /* Quick stats */
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 24px}
+    .quick-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;position:relative;overflow:hidden;display:flex;align-items:center;gap:15px;box-shadow:0 4px 14px rgba(11,77,46,.03);transition:transform .2s ease,box-shadow .2s ease}
+    .quick-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,77,46,.07)}
+    .quick-card:after{content:"";position:absolute;right:-18px;bottom:-22px;width:68px;height:68px;border-radius:50%;background:rgba(201,150,42,.08);pointer-events:none}
+    .quick-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:19px;flex:none}
+    .quick-card.is-exam-stat .quick-icon{background:var(--redSoft);color:var(--red)}
+    .quick-card.is-prog-stat .quick-icon{background:var(--goldSoft);color:var(--goldDark)}
+    .quick-card small{display:block;color:var(--muted);font-size:11.5px;font-weight:600;margin-bottom:3px}
+    .quick-card strong{font-size:22px;color:var(--green);font-weight:800}
+    .quick-card.is-exam-stat strong{color:var(--red)}
+
+    /* Weekly synthesis banner */
+    .week-banner{
+      display:none;align-items:center;gap:14px;
+      background:linear-gradient(90deg,#FFFBF2,#FFF);
+      border:1px solid var(--amberLine);border-left:5px solid var(--gold);
+      border-radius:18px;padding:15px 20px;margin:0 0 22px;
+      box-shadow:0 4px 16px rgba(201,150,42,.08);
+    }
+    .week-banner-badge{
+      background:var(--goldSoft);color:var(--goldDark);
+      font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;
+      padding:6px 11px;border-radius:999px;white-space:nowrap;flex:none;
+    }
+    .week-banner-text{color:#4A3915;font-size:14px;font-weight:600;line-height:1.5}
+
+    /* 7-Day Visual Strip */
+    .week-strip-wrap{margin:0 0 26px}
+    .week-strip-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:10px;flex-wrap:wrap}
+    .week-strip-title{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}
+    .week-strip-legend{display:flex;gap:14px;font-size:11.5px;color:var(--muted);font-weight:600}
+    .week-strip-legend span{display:inline-flex;align-items:center;gap:5px}
+    .dot-course{width:8px;height:8px;border-radius:50%;background:var(--green)}
+    .dot-exam{width:8px;height:8px;border-radius:50%;background:var(--red)}
+    .week-strip{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+    .day-pill{
+      background:#fff;border:1px solid var(--line);border-radius:15px;padding:11px 10px;
+      text-align:center;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
+      display:flex;flex-direction:column;align-items:center;gap:4px;
+    }
+    .day-pill.is-free{background:rgba(255,255,255,.55);border-style:dashed;opacity:.7}
+    .day-pill.has-session{cursor:pointer;border-color:var(--greenLine);box-shadow:0 4px 12px rgba(11,77,46,.05)}
+    .day-pill.has-session:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(11,77,46,.11);border-color:var(--green)}
+    .day-pill.has-exam{border-color:var(--redLine);background:linear-gradient(180deg,#fff,var(--redSoft))}
+    .day-pill.has-exam:hover{border-color:var(--red)}
+    .day-pill.is-today-pill{outline:2px solid var(--blue);outline-offset:1px}
+    .day-pill .dp-w{font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;color:var(--muted)}
+    .day-pill .dp-d{font-size:20px;font-weight:800;color:var(--text);line-height:1.1}
+    .day-pill.has-session .dp-d{color:var(--green)}
+    .day-pill.has-exam .dp-d{color:var(--red)}
+    .day-pill .dp-badge{
+      margin-top:3px;font-size:10px;font-weight:800;padding:3px 8px;border-radius:999px;
+      background:var(--paper);color:var(--muted);white-space:nowrap;
+    }
+    .day-pill.has-session .dp-badge{background:var(--greenSoft);color:var(--green)}
+    .day-pill.has-exam .dp-badge{background:var(--red);color:#fff}
+
+    /* Section Head & Legend */
+    .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin:10px 0 14px}
+    .section-head h2{font-family:var(--serif);margin:0;color:var(--green);font-size:29px;font-weight:600}
+    .section-head p{margin:4px 0 0;color:var(--muted);font-size:13.5px}
+    .status-legend{display:flex;align-items:center;gap:10px;margin:0 0 18px;color:var(--muted);font-size:12.5px;background:#fff;border:1px solid var(--line);padding:10px 14px;border-radius:13px}
+    .status-legend .status-badge{flex:none}
+
+    /* Agenda & Session Cards */
     .agenda{display:grid;gap:16px}
-    .session{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;display:grid;grid-template-columns:130px 1fr 195px;gap:20px;align-items:center;position:relative;overflow:hidden;box-shadow:0 4px 16px rgba(11,77,46,.04)}
-    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--green)}.session.exam:before{background:var(--red)}
+    .session{
+      background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;
+      display:grid;grid-template-columns:138px 1fr 220px;gap:22px;align-items:center;
+      position:relative;overflow:hidden;
+      box-shadow:0 6px 20px rgba(11,77,46,.04);
+      transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
+    }
+    .session:hover{transform:translateY(-3px);border-color:var(--greenLine);box-shadow:0 14px 32px rgba(11,77,46,.09)}
+    .session:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--green)}
+    .session.exam{background:linear-gradient(100deg,#FFFDFC 65%,#FFF5F3 100%);border-color:var(--redLine)}
+    .session.exam:before{background:var(--red)}
+    .session.exam:hover{border-color:var(--red);box-shadow:0 14px 32px rgba(180,35,24,.10)}
     .session.is-cancelled{opacity:.72}.session.is-cancelled:before{background:var(--red)}.session.is-cancelled h3{text-decoration:line-through;text-decoration-color:rgba(180,35,24,.6)}
     .session.is-rescheduled:before{background:#D9822B}.session.is-advanced:before{background:var(--blue)}.session.is-confirmed:before{background:var(--green)}
-    .datebox{background:var(--paper);border-radius:15px;padding:14px;text-align:center}.datebox .day{font-size:32px;font-weight:800;color:var(--green);line-height:1}.exam .datebox .day{color:var(--red)}.datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:6px}.datebox .weekday{font-size:12px;color:var(--muted);margin-top:3px}
-    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}.tag{padding:5px 9px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.tag-course{background:var(--greenSoft);color:var(--green)}.tag-exam{background:var(--redSoft);color:var(--red)}.tag-program{background:var(--goldSoft);color:var(--goldDark)}
+    .session.is-today{border-color:#9BBCE0;box-shadow:0 10px 26px rgba(36,91,158,.11)}.session.is-today:before{background:#315B8A}
+
+    /* Datebox */
+    .datebox{
+      background:var(--paper);border:1px solid #E2EBE5;border-radius:17px;overflow:hidden;
+      text-align:center;box-shadow:inset 0 1px 0 #fff;
+    }
+    .datebox .weekday{
+      background:var(--green);color:#fff;font-size:10.5px;font-weight:800;
+      text-transform:uppercase;letter-spacing:1px;padding:6px 8px;
+    }
+    .exam .datebox{background:linear-gradient(180deg,#FFF8F6,#FFF0ED);border-color:var(--redLine)}
+    .exam .datebox .weekday{background:var(--red)}
+    .datebox-body{padding:12px 10px 10px}
+    .datebox .day{font-size:34px;font-weight:800;color:var(--green);line-height:1}
+    .exam .datebox .day{color:var(--red)}
+    .datebox .month{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:800;color:var(--muted);margin-top:4px}
+    .datebox .time-pill{
+      display:inline-block;margin-top:8px;padding:3px 8px;border-radius:999px;
+      background:#fff;border:1px solid var(--line);font-size:10.5px;font-weight:800;color:var(--text);
+    }
+
+    /* Tags & Status */
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:9px;align-items:center}
+    .tag{padding:5px 10px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:5px}
+    .tag-course{background:var(--greenSoft);color:var(--green)}
+    .tag-exam{background:var(--red);color:#fff;box-shadow:0 2px 8px rgba(180,35,24,.22)}
+    .tag-program{background:var(--goldSoft);color:var(--goldDark)}
+    .today-badge{padding:5px 9px;border-radius:999px;background:#E8F1FF;color:#245B9E;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
+
     .status-badge{padding:5px 10px;border-radius:999px;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}
     .status-badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
-    .st-pending{background:#102A43;color:#EAF7EF;border:1px solid #294E68;border-radius:5px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;letter-spacing:1.15px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 2px 5px rgba(16,42,67,.18)}
-    .st-pending::before{color:#58D68D;box-shadow:0 0 0 3px rgba(88,214,141,.13)}
-    .status-legend{display:flex;align-items:center;gap:10px;margin:10px 0 18px;color:var(--muted);font-size:12.5px}.status-legend .status-badge{flex:none}
+    .st-pending{background:#102A43;color:#EAF7EF;border:1px solid #294E68;border-radius:6px;font-family:ui-monospace,"Cascadia Mono",Consolas,monospace;letter-spacing:1px;box-shadow:0 2px 5px rgba(16,42,67,.15)}
+    .st-pending::before{color:#58D68D;box-shadow:0 0 0 3px rgba(88,214,141,.15)}
     .st-confirmed{background:#E4F3EA;color:#166534}
     .st-advanced{background:var(--blueSoft);color:var(--blue)}
     .st-rescheduled{background:#FCEDDD;color:#9A4A0F}
     .st-cancelled{background:var(--redSoft);color:var(--red)}
-    .session h3{margin:0;font-size:18px;line-height:1.35;overflow-wrap:break-word}.meta{display:flex;gap:14px;flex-wrap:wrap;margin-top:9px;color:var(--muted);font-size:13px}.meta b{color:var(--text)}
-    .updated-line{margin-top:7px;color:var(--muted);font-size:11.5px;display:flex;align-items:center;gap:6px}.updated-line::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--greenLine);flex:none}
-    .actions{display:flex;flex-direction:column;gap:8px}.action{display:block;text-align:center;padding:10px 12px;border-radius:11px;font-size:12.5px;font-weight:700;border:1px solid transparent;cursor:pointer}.moodle{background:var(--green);color:#fff}.room{background:#F3F7F4;color:var(--green);border-color:#D9E5DD}.teams{background:var(--blueSoft);color:var(--blue);border-color:#DDE2FF}.ics{background:#FFF8E7;color:#765815;border-color:#ECDCB0}
-    .action{transition:transform .2s ease,box-shadow .2s ease}
+
+    .session h3{margin:0;font-size:19px;line-height:1.35;color:var(--text);font-weight:700;overflow-wrap:break-word}
+
+    /* Meta chips */
+    .meta-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+    .meta-chip{
+      display:inline-flex;align-items:center;gap:6px;
+      background:var(--paper);border:1px solid var(--line);
+      padding:6px 11px;border-radius:10px;font-size:12.5px;color:var(--muted);font-weight:500;
+    }
+    .meta-chip b{color:var(--text);font-weight:700}
+    .meta-chip.chip-duration{background:var(--redSoft);border-color:var(--redLine);color:var(--red);font-weight:700}
+
+    /* Specific Session Note Callout */
+    .session-note{
+      margin-top:11px;padding:9px 13px;border-radius:11px;
+      background:var(--amberSoft);border:1px solid var(--amberLine);border-left:4px solid var(--gold);
+      color:var(--amber);font-size:12.5px;font-weight:700;
+      display:flex;align-items:center;gap:8px;line-height:1.45;
+    }
+    .exam .session-note{background:var(--redSoft);border-color:var(--redLine);border-left-color:var(--red);color:var(--red)}
+
+    .updated-line{margin-top:8px;color:var(--muted);font-size:11.5px;display:flex;align-items:center;gap:6px}
+    .updated-line::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--greenLine);flex:none}
+
+    /* Actions */
+    .actions{display:flex;flex-direction:column;gap:8px}
+    .action{
+      display:flex;align-items:center;justify-content:center;gap:7px;
+      text-align:center;padding:10px 13px;border-radius:11px;font-size:12.5px;font-weight:700;
+      border:1px solid transparent;cursor:pointer;
+      transition:transform .2s ease,box-shadow .2s ease;
+    }
     .action:hover{transform:translateY(-1px);box-shadow:0 6px 15px rgba(11,77,46,.12)}
     .action:focus-visible{outline:2px solid var(--green);outline-offset:2px}
-    @media(prefers-reduced-motion:reduce){.action{transition:none}.action:hover{transform:none}}
-    .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px}
-    .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:18px 20px;color:#5F4B20;font-size:13.5px;line-height:1.6}
-    .livebar{display:grid;grid-template-columns:180px 1fr 1fr;gap:12px;margin:14px 0 4px}.live-item{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 3px 12px rgba(11,77,46,.04)}.live-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--greenSoft);color:var(--green);font-size:16px;flex:none}.live-item small{display:block;color:var(--muted);font-size:9.5px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.live-item strong{display:block;margin-top:2px;color:var(--green);font-size:13.5px}.live-clock strong{font-variant-numeric:tabular-nums;font-size:18px}.today-badge{padding:5px 9px;border-radius:999px;background:#E8F1FF;color:#245B9E;font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px}.session.is-today{border-color:#9BBCE0;box-shadow:0 8px 24px rgba(36,91,158,.10)}.session.is-today:before{background:#315B8A}.live-item.alert-hot{background:#FFF7E8;border-color:#E9C66F}.live-item.alert-hot .live-icon{background:#FBE8B8;color:#805D0B}.live-item.alert-live{background:#EAF6EF;border-color:#9BC6AA}.live-item.alert-live .live-icon{background:#CFE9D9;color:#166534}
-    .live-item.alert-hot,.live-item.alert-live{background:var(--redSoft)!important;border-color:#E2A7A1!important;color:var(--red)!important}.live-item.alert-hot .live-icon,.live-item.alert-live .live-icon{background:#F7D8D4!important;color:var(--red)!important}.live-item.alert-hot strong,.live-item.alert-live strong{color:var(--red)!important}
-    .recordings-panel{margin-top:24px;background:linear-gradient(145deg,#0B4D2E 0%,#0E5E39 65%,#174F37 100%);border-radius:24px;padding:24px;color:#fff;position:relative;overflow:hidden;box-shadow:0 16px 34px rgba(11,77,46,.16)}.recordings-panel:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-80px;top:-110px;pointer-events:none}.recordings-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;position:relative;z-index:1}.recordings-kicker{display:inline-flex;align-items:center;gap:7px;color:#F7D98D;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}.recordings-kicker:before{content:"";width:7px;height:7px;background:#F7D98D;border-radius:50%;box-shadow:0 0 0 4px rgba(247,217,141,.13)}.recordings-title{font-family:var(--serif);font-size:26px;line-height:1.15;margin:8px 0 5px;color:#fff}.recordings-subtitle{margin:0;color:rgba(255,255,255,.78);font-size:13px;line-height:1.55;max-width:680px}.recordings-count{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:8px 11px;color:#fff;font-size:11px;font-weight:800;white-space:nowrap}.recordings-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:20px;position:relative;z-index:1}.recording-card{display:flex;flex-direction:column;gap:11px;min-height:150px;background:#fff;color:var(--text);border:1px solid rgba(255,255,255,.8);border-radius:17px;padding:16px;box-shadow:0 8px 18px rgba(0,0,0,.08);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.recording-card:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,0,0,.16);border-color:#F1D291}.recording-card:focus-visible{outline:3px solid #F7D98D;outline-offset:3px}.recording-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.recording-icon{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#E9F2ED;color:var(--green);font-size:13px}.recording-date{font-size:10.5px;color:var(--muted);font-weight:700;text-align:right}.recording-card h3{font-size:14px;line-height:1.4;margin:0;color:var(--green);overflow-wrap:anywhere}.recording-cta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;color:var(--green);font-size:11.5px;font-weight:800}.recording-cta span{font-size:17px;line-height:1}.recordings-empty{margin-top:18px;background:rgba(255,255,255,.1);border:1px dashed rgba(255,255,255,.35);border-radius:15px;padding:16px;color:rgba(255,255,255,.82);font-size:13px;position:relative;z-index:1}
-    .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:28px;text-align:center;color:var(--muted)}
-    footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}footer b{color:#fff}
-    @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.session{grid-template-columns:105px 1fr}.actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:620px){.container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:30px 22px}.livebar{grid-template-columns:1fr}.session{grid-template-columns:1fr}.datebox{text-align:left;display:flex;gap:8px;align-items:baseline}.datebox .day{font-size:26px}.actions{grid-template-columns:1fr}.toolbar .btn{width:100%}.topnav{gap:12px}}
-    @media print{body{background:#fff}.topbar,.toolbar,.actions,.notice,footer{display:none!important}.container{max-width:none;padding:0}.hero{padding:0 0 16px}.hero-panel{box-shadow:none;border-radius:0;padding:18px 0;background:#fff!important;color:#000;border-bottom:2px solid var(--green)}.hero p,.weekbox span,.weekbox small{color:#555}.weekbox{border:1px solid #ddd;background:#fff}.quick{grid-template-columns:repeat(3,1fr)}.session{box-shadow:none;break-inside:avoid}}
-    .notice:has(.recordings-list){margin-top:24px;background:linear-gradient(145deg,#0B4D2E 0%,#0E5E39 65%,#174F37 100%);border:0;border-radius:24px;padding:24px;color:#fff;position:relative;overflow:hidden;box-shadow:0 16px 34px rgba(11,77,46,.16)}.notice:has(.recordings-list):before{content:"REPLAYS TEAMS";display:inline-flex;color:#F7D98D;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:8px}.notice:has(.recordings-list) b{display:block;font-family:var(--serif);font-size:26px;line-height:1.15;color:#fff;margin-bottom:5px}.notice:has(.recordings-list)>span{display:block;color:rgba(255,255,255,.78);font-size:13px}.notice:has(.recordings-list) .recordings-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:20px}.notice:has(.recordings-list) .recording-link{display:flex;flex-direction:column;justify-content:flex-end;gap:10px;min-height:122px;background:#fff;color:var(--green);border:1px solid rgba(255,255,255,.8);border-radius:17px;padding:16px;box-shadow:0 8px 18px rgba(0,0,0,.08);font-size:13px;line-height:1.4;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}.notice:has(.recordings-list) .recording-link:before{content:"▶";display:grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#E9F2ED;color:var(--green);font-size:13px}.notice:has(.recordings-list) .recording-link:after{content:"Ouvrir l’enregistrement  ↗";font-size:11.5px;font-weight:800;color:var(--green);margin-top:auto}.notice:has(.recordings-list) .recording-link:hover{background:#fff;border-color:#F1D291;transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,0,0,.16)}
+    .moodle{background:var(--green);color:#fff}
+    .exam .moodle{background:var(--red);color:#fff}
+    .room{background:#F3F7F4;color:var(--green);border-color:#D2E2D8}
+    .teams{background:var(--blueSoft);color:var(--blue);border-color:var(--blueLine)}
+    .ics{background:#FFF9EB;color:#765815;border-color:#EBD9A8}
+    .cancel-note{font-size:12px;color:var(--red);font-weight:700;text-align:center;padding:8px;background:var(--redSoft);border-radius:10px}
+
+    /* Information Blocks Grid */
+    .info-section{margin-top:34px}
+    .info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:14px}
+    .info-card{
+      background:#fff;border:1px solid var(--line);border-top:4px solid var(--green);
+      border-radius:18px;padding:20px;box-shadow:0 6px 18px rgba(11,77,46,.04);
+      display:flex;flex-direction:column;justify-content:space-between;gap:12px;
+    }
+    .info-card.is-alert{background:linear-gradient(180deg,#FFFDF9,#FFF8EB);border-color:var(--amberLine);border-top-color:var(--gold)}
+    .info-kicker{
+      display:inline-flex;align-items:center;gap:6px;width:max-content;
+      padding:4px 10px;border-radius:999px;background:var(--greenSoft);color:var(--green);
+      font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:8px;
+    }
+    .info-card.is-alert .info-kicker{background:var(--goldSoft);color:var(--goldDark)}
+    .info-card h3{margin:0 0 6px;font-size:16.5px;color:var(--text);font-weight:700;line-height:1.3}
+    .info-card p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.58;white-space:pre-line}
+    .info-link{
+      display:inline-flex;align-items:center;gap:6px;width:max-content;
+      font-size:12.5px;font-weight:800;color:var(--green);
+      padding:8px 12px;border-radius:10px;background:var(--greenSoft);
+      transition:transform .2s ease,background .2s ease;
+    }
+    .info-link:hover{transform:translateX(2px);background:#DCEBE3}
+
+    .notice{margin-top:24px;background:#FFF9EC;border:1px solid #EBDCB4;border-left:5px solid var(--gold);border-radius:18px;padding:16px 20px;color:#5F4B20;font-size:13px;line-height:1.6}
+
+    /* Recordings Panel */
+    .recordings-panel{margin-top:28px;background:linear-gradient(145deg,#0B4D2E 0%,#0E5E39 65%,#174F37 100%);border-radius:24px;padding:26px;color:#fff;position:relative;overflow:hidden;box-shadow:0 16px 34px rgba(11,77,46,.16)}
+    .recordings-panel:after{content:"";position:absolute;width:220px;height:220px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-80px;top:-110px;pointer-events:none}
+    .recordings-head{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;position:relative;z-index:1}
+    .recordings-kicker{display:inline-flex;align-items:center;gap:7px;color:#F7D98D;font-size:10px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase}
+    .recordings-kicker:before{content:"";width:7px;height:7px;background:#F7D98D;border-radius:50%;box-shadow:0 0 0 4px rgba(247,217,141,.13)}
+    .recordings-title{font-family:var(--serif);font-size:26px;line-height:1.15;margin:8px 0 5px;color:#fff}
+    .recordings-subtitle{margin:0;color:rgba(255,255,255,.8);font-size:13px;line-height:1.55;max-width:680px}
+    .recordings-count{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:8px 12px;color:#fff;font-size:11px;font-weight:800;white-space:nowrap}
+    .recordings-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:20px;position:relative;z-index:1}
+    .recording-card{display:flex;flex-direction:column;gap:11px;min-height:142px;background:#fff;color:var(--text);border:1px solid rgba(255,255,255,.8);border-radius:17px;padding:16px;box-shadow:0 8px 18px rgba(0,0,0,.08);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+    .recording-card:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,0,0,.16);border-color:#F1D291}
+    .recording-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .recording-icon{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;background:#E9F2ED;color:var(--green);font-size:13px}
+    .recording-date{font-size:10.5px;color:var(--muted);font-weight:700;text-align:right}
+    .recording-card h3{font-size:14px;line-height:1.4;margin:0;color:var(--green);overflow-wrap:anywhere}
+    .recording-cta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;color:var(--green);font-size:11.5px;font-weight:800}
+    .recordings-empty{margin-top:18px;background:rgba(255,255,255,.1);border:1px dashed rgba(255,255,255,.35);border-radius:15px;padding:16px;color:rgba(255,255,255,.84);font-size:13px;position:relative;z-index:1}
+
+    .empty{display:none;background:#fff;border:1px dashed #CBD5CF;border-radius:18px;padding:32px;text-align:center;color:var(--muted);font-weight:600}
+    footer{background:var(--greenDark);color:rgba(255,255,255,.78);padding:28px 0;font-size:12.5px}
+    footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    footer b{color:#fff}
+
+    @media(max-width:920px){
+      .hero-grid{grid-template-columns:1fr}
+      .quick{grid-template-columns:1fr}
+      .week-strip{grid-template-columns:repeat(4,1fr)}
+      .session{grid-template-columns:120px 1fr}
+      .actions{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:620px){
+      .container{padding:0 16px}.hero{padding-top:20px}.hero-panel{border-radius:24px;padding:28px 20px}
+      .livebar{grid-template-columns:1fr}
+      .week-strip{grid-template-columns:repeat(2,1fr)}
+      .session{grid-template-columns:1fr}
+      .datebox{display:flex;align-items:center;justify-content:space-between;padding:10px 14px}
+      .datebox .weekday{border-radius:8px;padding:5px 10px}
+      .datebox-body{display:flex;align-items:baseline;gap:8px;padding:0}
+      .datebox .day{font-size:26px}
+      .datebox .time-pill{margin-top:0}
+      .actions{grid-template-columns:1fr}
+      .toolbar .btn{width:100%}
+    }
+    @media print{
+      body{background:#fff}.topbar,.toolbar,.actions,.notice,.week-strip-wrap,.recordings-panel,footer{display:none!important}
+      .container{max-width:none;padding:0}.hero{padding:0 0 16px}
+      .hero-panel{box-shadow:none;border-radius:0;padding:18px 0;background:#fff!important;color:#000;border-bottom:2px solid var(--green)}
+      .hero p,.weekbox span,.weekbox small{color:#555}.weekbox{border:1px solid #ddd;background:#fff}
+      .quick{grid-template-columns:repeat(3,1fr)}.session{box-shadow:none;break-inside:avoid}
+    }
   </style>
 </head>
 <body>
@@ -84,8 +327,10 @@
       <div class="brand">CESAG ONLINE · Agenda FOAD</div>
       <nav class="topnav" aria-label="Navigation principale">
         <a class="back" href="../">← Accueil</a>
-        <a class="back" href="../">Retour aux programmes</a>
-        <a class="back" href="../calendrier/">Calendrier</a><a class="back" href="../#recordings">Replays Teams</a><a class="back" href="../#toolbox-title">Boîte à outils</a>
+        <a class="back" href="../">Tous les programmes</a>
+        <a class="back" href="../calendrier/">Calendrier ICS</a>
+        <a class="back" href="../documents-tff/">Documents TFF</a>
+        <a class="back" href="../futurelearn/">FutureLearn</a>
       </nav>
     </div>
   </div>
@@ -97,19 +342,19 @@
           <div>
             <div class="eyebrow" id="programEyebrow"></div>
             <h1>Agenda de la semaine</h1>
-            <p>Consultez vos cours et examens, rejoignez directement vos espaces de formation et ajoutez la semaine à votre calendrier.</p>
+            <p>Retrouvez vos cours synchrones et évaluations, accédez en un clic à Moodle et BigBlueButton, et synchronisez votre calendrier.</p>
           </div>
           <div class="weekbox">
-            <small>SEMAINE AFFICHÉE</small>
+            <small>PÉRIODE ACTIVE</small>
             <strong id="weekLabel">—</strong>
             <span id="updatedLabel">Horaires en GMT</span>
-            <span id="newFlag" class="newflag" style="display:none">Nouveau planning</span>
+            <span id="newFlag" class="newflag" style="display:none">Planning à jour</span>
           </div>
         </div>
         <div class="toolbar">
-          <button class="btn btn-gold" id="downloadWeek">Télécharger l’ICS de la semaine</button>
-          <button class="btn btn-light" onclick="window.print()">Exporter le planning en PDF</button>
-          <a class="btn btn-soft" id="moodleHome" href="https://formations.cesagonline.com/" target="_blank" rel="noopener">Ouvrir Moodle</a>
+          <button class="btn btn-gold" id="downloadWeek">📅 Télécharger l’ICS de la semaine</button>
+          <button class="btn btn-light" onclick="window.print()">🖨️ Exporter en PDF</button>
+          <a class="btn btn-soft" id="moodleHome" href="https://formations.cesagonline.com/" target="_blank" rel="noopener">📘 Plateforme Moodle ↗</a>
         </div>
       </section>
     </div>
@@ -118,36 +363,64 @@
   <main>
     <div class="container">
       <section class="livebar" aria-label="Informations en temps réel">
-        <div class="live-item live-clock"><span class="live-icon" aria-hidden="true">◷</span><div><small>Heure GMT</small><strong id="gmtClock">--:--:--</strong></div></div>
-        <div class="live-item"><span class="live-icon" aria-hidden="true">→</span><div><small>Prochaine activité</small><strong id="nextSession">Chargement du planning…</strong></div></div>
-        <div class="live-item" id="classAlertBox"><span class="live-icon" aria-hidden="true">!</span><div><small>Alerte de la classe</small><strong id="classAlert">Analyse en cours…</strong></div></div>
+        <div class="live-item live-clock"><span class="live-icon" aria-hidden="true">◷</span><div><small>Heure universelle (GMT)</small><strong id="gmtClock">--:--:--</strong></div></div>
+        <div class="live-item"><span class="live-icon" aria-hidden="true">→</span><div><small>Prochaine séance</small><strong id="nextSession">Chargement du planning…</strong></div></div>
+        <div class="live-item" id="classAlertBox"><span class="live-icon" aria-hidden="true">!</span><div><small>Statut en direct</small><strong id="classAlert">Analyse en cours…</strong></div></div>
       </section>
 
       <section class="quick">
-        <div class="quick-card"><small>Séances cette semaine</small><strong id="countSessions">0</strong></div>
-        <div class="quick-card"><small>Examens</small><strong id="countExams">0</strong></div>
-        <div class="quick-card"><small>Programme</small><strong id="programShort" style="font-size:16px">—</strong></div>
+        <div class="quick-card"><div class="quick-icon" aria-hidden="true">📚</div><div><small>Séances cette semaine</small><strong id="countSessions">0</strong></div></div>
+        <div class="quick-card is-exam-stat"><div class="quick-icon" aria-hidden="true">🎓</div><div><small>Examens programmés</small><strong id="countExams">0</strong></div></div>
+        <div class="quick-card is-prog-stat"><div class="quick-icon" aria-hidden="true">🏛️</div><div><small>Programme & Cohorte</small><strong id="programShort" style="font-size:17px">—</strong></div></div>
+      </section>
+
+      <div class="week-banner" id="weekBanner">
+        <span class="week-banner-badge">Synthèse de la semaine</span>
+        <div class="week-banner-text" id="weekBannerText"></div>
+      </div>
+
+      <section class="week-strip-wrap" id="weekStripWrap" style="display:none" aria-label="Vue synoptique de la semaine">
+        <div class="week-strip-head">
+          <span class="week-strip-title">Vue synoptique de la semaine (Lundi → Dimanche)</span>
+          <div class="week-strip-legend">
+            <span><i class="dot-course"></i> Cours synchrone</span>
+            <span><i class="dot-exam"></i> Examen</span>
+          </div>
+        </div>
+        <div class="week-strip" id="weekStrip"></div>
       </section>
 
       <div class="section-head">
-        <h2>Planning hebdomadaire</h2>
-        <p>Les séances sont présentées par ordre chronologique.</p>
+        <div>
+          <h2>Détail des séances</h2>
+          <p>Les séances sont classées par ordre chronologique (horaires en GMT / UTC).</p>
+        </div>
       </div>
       <div class="status-legend" aria-label="Signification du statut programmé">
         <span class="status-badge st-pending">Programmé</span>
-        <span>La séance figure au planning et passe automatiquement à « Confirmée » à 15h00 GMT le jour J, sauf action manuelle.</span>
+        <span>La séance figure au planning hebdomadaire et passe automatiquement à « Confirmée » à 15h00 GMT le jour J, sauf indication particulière.</span>
       </div>
 
       <section class="agenda" id="agenda"></section>
-      <section id="upcomingBlock" style="display:none;margin-top:28px"><div class="section-head"><h2>Semaine à venir</h2><p id="upcomingLabel"></p></div><div class="agenda" id="upcomingAgenda"></div></section>
-      <section id="pastBlock" style="display:none;margin-top:28px;opacity:.72"><div class="section-head"><h2>Séances passées</h2><p>Les séances de la semaine précédente restent consultables à titre de rappel.</p></div><div class="agenda" id="pastAgenda"></div></section>
+      <section id="upcomingBlock" style="display:none;margin-top:28px"><div class="section-head"><div><h2>Semaine à venir</h2><p id="upcomingLabel"></p></div></div><div class="agenda" id="upcomingAgenda"></div></section>
+      <section id="pastBlock" style="display:none;margin-top:28px;opacity:.75"><div class="section-head"><div><h2>Séances passées</h2><p>Les séances de la semaine précédente restent consultables à titre de rappel.</p></div></div><div class="agenda" id="pastAgenda"></div></section>
       <div class="empty" id="empty">Aucune séance n’est programmée pour cette semaine.</div>
 
-      <div id="informationBlocks"></div><div id="recordingsBlock"></div>
+      <section class="info-section" id="infoSection" style="display:none" aria-label="Informations et consignes">
+        <div class="section-head">
+          <div>
+            <h2>Informations & Ressources utiles</h2>
+            <p>Consignes de la semaine, évaluations à venir et accès rapides aux espaces pédagogiques.</p>
+          </div>
+        </div>
+        <div class="info-grid" id="informationBlocks"></div>
+      </section>
+
+      <div id="recordingsBlock"></div>
+
       <div class="notice">
-        <b>À retenir :</b> l’ICS global contient uniquement les séances maintenues cette semaine
-        (les séances annulées, reportées ou avancées sont exclues du calendrier).
-        Chaque événement comprend trois rappels : la veille à 20h00 GMT, deux heures avant et quinze minutes avant.
+        <b>Rappels automatiques (.ics) :</b> le fichier calendrier global ou individuel intègre uniquement les séances maintenues
+        et configure automatiquement trois alertes : la veille à 20h00 GMT, 2 heures avant le début et 15 minutes avant.
       </div>
     </div>
   </main>
@@ -165,6 +438,7 @@ let pageData = null;
 
 const months = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 const weekdays = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+const shortWeekdays = ["Dim","Lun","Mar","Mer","Jeu","Ven","Sam"];
 
 const STATUS_LABELS={pending:"Programmé",confirmed:"Confirmée",advanced:"Avancée",rescheduled:"Reportée",cancelled:"Annulée"};
 const STATUS_CLASS={pending:"st-pending",confirmed:"st-confirmed",advanced:"st-advanced",rescheduled:"st-rescheduled",cancelled:"st-cancelled"};
@@ -182,12 +456,10 @@ function fmtUpdated(v){
   if(/^\d{4}-\d{2}-\d{2}T/.test(v)){ const d=new Date(v);
     if(!isNaN(d)) return `${d.getUTCDate()} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()} à ${String(d.getUTCHours()).padStart(2,"0")}h${String(d.getUTCMinutes()).padStart(2,"0")} GMT`;
   }
-  return String(v); // chaîne déjà lisible (ex. « 21 août 2026 à 09h30 »)
+  return String(v);
 }
 
 function simplifyTitle(title){
-  // Le badge programme affiche déjà "MBA GP AUF" etc. : on retire ce préfixe redondant à l'affichage,
-  // sans toucher aux données JSON (utile pour export ICS et cockpit).
   if(!title) return title;
   const label=(pageData&&pageData.program_short)||"";
   if(!label) return title;
@@ -274,10 +546,58 @@ function updateLiveStatus(){
     const minutes=Math.ceil((soon.at-now)/60000);
     document.getElementById("classAlert").textContent=`Début dans ${minutes} min — préparez vos accès`;
   }else{
-    document.getElementById("classAlert").textContent="Aucune alerte urgente";
+    document.getElementById("classAlert").textContent="Aucune alerte imminente";
   }
 }
 setInterval(updateLiveStatus,1000);
+
+function renderWeekStrip(sessions){
+  const wrap=document.getElementById("weekStripWrap");
+  const strip=document.getElementById("weekStrip");
+  if(!sessions || !sessions.length){
+    wrap.style.display="none";
+    return;
+  }
+  const firstDate=new Date(sessions[0].date+"T00:00:00Z");
+  const dow=firstDate.getUTCDay(); // 0=Sun..6=Sat
+  const diffToMon=(dow===0?-6:1-dow);
+  const monday=new Date(firstDate);
+  monday.setUTCDate(monday.getUTCDate()+diffToMon);
+
+  const byDate={};
+  sessions.forEach(s=>{
+    if(!byDate[s.date]) byDate[s.date]=[];
+    byDate[s.date].push(s);
+  });
+
+  const todayKey=gmtDateKey();
+  const pills=[];
+  for(let i=0;i<7;i++){
+    const cur=new Date(monday);
+    cur.setUTCDate(monday.getUTCDate()+i);
+    const iso=cur.toISOString().slice(0,10);
+    const daySessions=byDate[iso]||[];
+    const hasExam=daySessions.some(x=>String(x.type).toLowerCase()==="examen");
+    const count=daySessions.length;
+    let cls="day-pill";
+    if(!count) cls+=" is-free";
+    else cls+=" has-session";
+    if(hasExam) cls+=" has-exam";
+    if(iso===todayKey) cls+=" is-today-pill";
+
+    const badgeText=!count ? "Libre" : (hasExam ? "Examen" : `${count} cours`);
+    const clickAttr=count ? `onclick="document.getElementById('session-${iso}')?.scrollIntoView({behavior:'smooth',block:'center'})"` : "";
+    pills.push(`
+      <div class="${cls}" ${clickAttr} title="${count?`${count} séance(s) le ${weekdays[cur.getUTCDay()]} ${cur.getUTCDate()} ${months[cur.getUTCMonth()]}`:'Aucune séance programmée'}">
+        <span class="dp-w">${shortWeekdays[cur.getUTCDay()]}</span>
+        <span class="dp-d">${String(cur.getUTCDate()).padStart(2,"0")}</span>
+        <span class="dp-badge">${badgeText}</span>
+      </div>
+    `);
+  }
+  strip.innerHTML=pills.join("");
+  wrap.style.display="block";
+}
 
 function card(s, index){
   const d = new Date(s.date+"T00:00:00Z");
@@ -289,34 +609,37 @@ function card(s, index){
   const showLinks = !cancelled;
   const inIcs = icsIncluded(s);
   return `
-    <article class="session ${exam?"exam":""} is-${st} ${s.date===gmtDateKey()?"is-today":""}">
+    <article id="session-${escHtml(s.date)}" class="session ${exam?"exam":""} is-${st} ${s.date===gmtDateKey()?"is-today":""}">
       <div class="datebox">
-        <div class="day">${String(d.getUTCDate()).padStart(2,"0")}</div>
-        <div class="month">${months[d.getUTCMonth()]}</div>
         <div class="weekday">${weekdays[d.getUTCDay()]}</div>
+        <div class="datebox-body">
+          <div class="day">${String(d.getUTCDate()).padStart(2,"0")}</div>
+          <div class="month">${months[d.getUTCMonth()]}</div>
+          <span class="time-pill">${escHtml(s.start)} GMT</span>
+        </div>
       </div>
       <div>
         <div class="tags">
-          <span class="tag ${exam?"tag-exam":"tag-course"}">${escHtml(s.type)}</span>
+          <span class="tag ${exam?"tag-exam":"tag-course"}">${exam?"🎓 Examen":"📘 Cours"}</span>
           <span class="tag tag-program">${escHtml(pageData.program_short)}</span>
           <span class="status-badge ${STATUS_CLASS[st]}">${STATUS_LABELS[st]}</span>
           ${s.date===gmtDateKey()?'<span class="today-badge">Aujourd’hui</span>':""}
         </div>
         <h3>${escHtml(simplifyTitle(s.title))}</h3>
-        <div class="meta">
-          <span><b>Horaire :</b> ${escHtml(s.start)}–${escHtml(s.end)} GMT</span>
-          ${s.duration?`<span><b>Durée :</b> ${escHtml(s.duration)}</span>`:""}
-          <span><b>Enseignant :</b> ${escHtml(s.teacher)}</span>
+        <div class="meta-chips">
+          <span class="meta-chip">🕒 <b>Horaire :</b> ${escHtml(s.start)}–${escHtml(s.end)} GMT</span>
+          <span class="meta-chip">👤 <b>Enseignant :</b> ${escHtml(s.teacher)}</span>
+          ${s.duration?`<span class="meta-chip chip-duration">⏱ <b>Durée :</b> ${escHtml(s.duration)}</span>`:""}
         </div>
-        ${s.notes?`<div class="meta"><span><b>Information :</b> ${escHtml(s.notes)}</span></div>`:""}
+        ${s.notes?`<div class="session-note"><span>⚠️</span><span><b>Note importante :</b> ${escHtml(s.notes)}</span></div>`:""}
         ${s.updated_at?`<div class="updated-line">Dernière mise à jour : ${escHtml(fmtUpdated(s.updated_at))}</div>`:""}
-        ${autoConfirmed?'<div class="updated-line">Confirmation automatique à 15h00 GMT le jour du cours</div>':""}
+        ${autoConfirmed?'<div class="updated-line">Confirmation automatique à 15h00 GMT le jour de la séance</div>':""}
       </div>
       <div class="actions">
-        ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">Rejoindre le cours sur Teams</a>`:""}
-        ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"Accéder à l’examen":"Accéder à Moodle"}</a>`:""}
-        ${showLinks && s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">Rejoindre la salle BigBlueButton</a>`:""}
-        ${inIcs?`<button class="action ics" onclick="downloadSingle(${index})">Ajouter cette séance</button>`:""}
+        ${showLinks && s.teams?`<a class="action teams" href="${escHtml(s.teams)}" target="_blank" rel="noopener">🎥 ${exam?"Surveillance Teams":"Rejoindre sur Teams"}</a>`:""}
+        ${showLinks && s.moodle?`<a class="action moodle" href="${escHtml(s.moodle)}" target="_blank" rel="noopener">${exam?"📝 Accéder à l’examen":"📘 Ouvrir le cours Moodle"}</a>`:""}
+        ${showLinks && s.room?`<a class="action room" href="${escHtml(s.room)}" target="_blank" rel="noopener">🎙️ Salle BigBlueButton</a>`:""}
+        ${inIcs?`<button class="action ics" onclick="downloadSingle(${index})">📅 + Ajouter à mon agenda</button>`:""}
         ${cancelled?`<div class="cancel-note">Séance annulée</div>`:""}
       </div>
     </article>`;
@@ -336,19 +659,48 @@ async function load(){
   const switchDate = "2026-10-12";
   const showUpcoming = gmtDateKey() >= switchDate && pageData.upcoming_sessions.length > 0;
   pageData.displaySessions = showUpcoming ? pageData.upcoming_sessions : pageData.sessions;
+
   document.title = `${pageData.program_name} — Agenda FOAD CESAG ONLINE`;
   document.getElementById("programEyebrow").textContent=pageData.program_name;
   document.getElementById("programShort").textContent=pageData.program_short;
   document.getElementById("footerProgram").textContent=pageData.program_name;
   document.getElementById("weekLabel").textContent=(showUpcoming ? pageData.upcoming_week_label : pageData.week_label) || "—";
   document.getElementById("updatedLabel").textContent=`Horaires en GMT · Mise à jour : ${pageData.updated_label || "—"}`;
-  document.getElementById("newFlag").style.display=pageData.is_new?"inline-block":"none";
-  document.getElementById("informationBlocks").innerHTML=(pageData.information_blocks||[]).map(info=>`<div class="notice"><b>${escHtml(info.title)}</b><br>${escHtml(info.text)}</div>`).join("");
-  const recordingCount=pageData.recordings.length;
-  document.getElementById("recordingsBlock").innerHTML=`<section class="recordings-panel" aria-labelledby="recordings-title"><div class="recordings-head"><div><span class="recordings-kicker">Replays Teams</span><h2 class="recordings-title" id="recordings-title">Retrouvez vos séances enregistrées</h2><p class="recordings-subtitle">Les replays des séances réalisées sur Teams restent accessibles pendant un mois.</p></div><span class="recordings-count">${recordingCount} replay${recordingCount>1?"s":""}</span></div>${recordingCount?`<div class="recordings-list">${pageData.recordings.map(r=>`<a class="recording-card" href="${escHtml(r.url)}" target="_blank" rel="noopener"><span class="recording-card-top"><span class="recording-icon" aria-hidden="true">▶</span><span class="recording-date">${escHtml(r.label)}</span></span><h3>${escHtml(r.module)}</h3><span class="recording-cta">Ouvrir l’enregistrement <span aria-hidden="true">↗</span></span></a>`).join("")}</div>`:`<div class="recordings-empty">Aucun enregistrement référencé pour le moment.</div>`}</section>`;
+  document.getElementById("newFlag").style.display=pageData.is_new?"inline-flex":"none";
+
+  const weekMsg = (showUpcoming ? pageData.upcoming_week_message : pageData.week_message) || "";
+  if(weekMsg){
+    document.getElementById("weekBannerText").textContent = weekMsg;
+    document.getElementById("weekBanner").style.display = "flex";
+  }
+
   document.getElementById("countSessions").textContent=pageData.displaySessions.length;
   document.getElementById("countExams").textContent=pageData.displaySessions.filter(s=>String(s.type).toLowerCase()==="examen").length;
+
+  renderWeekStrip(pageData.displaySessions);
   document.getElementById("agenda").innerHTML=pageData.displaySessions.map(card).join("");
+
+  const infoItems = pageData.information_blocks || [];
+  if(infoItems.length){
+    document.getElementById("infoSection").style.display = "block";
+    document.getElementById("informationBlocks").innerHTML = infoItems.map(info=>{
+      const isAlert = info.tone==="alert" || /examen|alerte|attention|arbitrage|confirmer/i.test((info.title||"")+" "+(info.kicker||""));
+      const kicker = info.kicker || (isAlert ? "Point d’attention" : "Information");
+      return `
+        <article class="info-card ${isAlert?"is-alert":""}">
+          <div>
+            <span class="info-kicker">${escHtml(kicker)}</span>
+            <h3>${escHtml(info.title)}</h3>
+            <p>${escHtml(info.text)}</p>
+          </div>
+          ${info.link?`<a class="info-link" href="${escHtml(info.link)}" ${info.link.startsWith("http")?'target="_blank" rel="noopener"':""}>${escHtml(info.link_label||"Consulter →")}</a>`:""}
+        </article>`;
+    }).join("");
+  }
+
+  const recordingCount=pageData.recordings.length;
+  document.getElementById("recordingsBlock").innerHTML=`<section class="recordings-panel" aria-labelledby="recordings-title"><div class="recordings-head"><div><span class="recordings-kicker">Replays Teams</span><h2 class="recordings-title" id="recordings-title">Retrouvez vos séances enregistrées</h2><p class="recordings-subtitle">Les replays des séances réalisées restent accessibles pendant un mois.</p></div><span class="recordings-count">${recordingCount} replay${recordingCount>1?"s":""}</span></div>${recordingCount?`<div class="recordings-list">${pageData.recordings.map(r=>`<a class="recording-card" href="${escHtml(r.url)}" target="_blank" rel="noopener"><span class="recording-card-top"><span class="recording-icon" aria-hidden="true">▶</span><span class="recording-date">${escHtml(r.label)}</span></span><h3>${escHtml(r.module)}</h3><span class="recording-cta">Ouvrir l’enregistrement <span aria-hidden="true">↗</span></span></a>`).join("")}</div>`:`<div class="recordings-empty">Aucun enregistrement référencé pour le moment.</div>`}</section>`;
+
   const upcomingBlock=document.getElementById("upcomingBlock");
   const pastBlock=document.getElementById("pastBlock");
   if(showUpcoming){

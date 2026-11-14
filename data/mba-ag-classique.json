@@ -30,20 +30,18 @@
   ],
   "information_blocks": [
     {
-      "title": "Simulation d’entreprise — Remise des documents finaux",
-      "text": "Le professeur DR HERVE FOYANG FOYANG rappelle qu’il souhaite recevoir les documents finaux comme convenu le jeudi 12 novembre 2026 à 09h00 GMT au plus tard."
+      "kicker": "Ressource académique",
+      "title": "Travail de Fin de Formation (TFF)",
+      "text": "Consultez les procédures, guides vidéos et formulaires officiels (enregistrement du thème, charte de non-plagiat, convention d’encadrement).",
+      "link": "../documents-tff/",
+      "link_label": "Consulter les documents TFF →"
     },
     {
-      "title": "Travail de Fin de Formation (TFF) — Documents et procédures",
-      "text": "Les auditeurs sont invités à prendre impérativement connaissance des procédures et formulaires officiels relatifs au TFF (enregistrement du thème, convention d’encadrement, non-plagiat, autorisations) disponibles dans l’onglet dédié « Documents TFF »."
-    },
-    {
-      "title": "Quiz et activités FutureLearn",
-      "text": "Pensez à finaliser à temps l’ensemble des quiz en attente dans vos différents modules sur Moodle et à poursuivre vos activités d’apprentissage sur la plateforme FutureLearn."
-    },
-    {
-      "title": "Accès aux salles virtuelles",
-      "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
+      "kicker": "Plateforme partenaire",
+      "title": "Parcours FutureLearn & Bilinguisme",
+      "text": "Poursuivez régulièrement vos modules d’anglais et vos cours certifiants sur FutureLearn en parallèle de vos enseignements sur Moodle.",
+      "link": "../futurelearn/",
+      "link_label": "Accéder à l’espace FutureLearn →"
     }
   ]
 }

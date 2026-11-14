@@ -2,33 +2,33 @@
   "slug": "mba-gp",
   "program_name": "MBA Gestion de Projets",
   "program_short": "MBA GP",
-  "week_label": "5 octobre → 11 octobre 2026",
-  "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "9 novembre 2026",
+  "week_label": "16 novembre → 22 novembre 2026",
+  "week_file_label": "16_novembre-22_novembre_2026",
+  "updated_label": "14 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-09T10:50:00Z",
-  "week_message": "L’agenda FOAD en ligne est actuellement en phase expérimentale. Les communications officielles transmises par courriel et sur Moodle restent à consulter régulièrement.",
+  "published_at": "2026-11-13T23:41:00Z",
+  "week_message": "Semaine allégée avec deux séances de cours (lundi et mercredi). Préparez-vous pour l’examen de Méthodologie de recherche qualitative prévu la semaine suivante.",
   "sessions": [],
-  "upcoming_week_label": "9 novembre → 15 novembre 2026",
-  "upcoming_week_file_label": "09_novembre-15_novembre_2026",
-  "upcoming_published_at": "2026-11-09T10:50:00Z",
-  "upcoming_week_message": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés.",
+  "upcoming_week_label": "16 novembre → 22 novembre 2026",
+  "upcoming_week_file_label": "16_novembre-22_novembre_2026",
+  "upcoming_published_at": "2026-11-13T23:41:00Z",
+  "upcoming_week_message": "Semaine allégée avec deux séances de cours (lundi et mercredi). Préparez-vous pour l’examen de Méthodologie de recherche qualitative prévu la semaine suivante.",
   "upcoming_sessions": [
     {
-      "id": "w16-s1",
-      "date": "2026-11-09",
+      "id": "w17-s1",
+      "date": "2026-11-16",
       "title": "Méthodologie de recherche quantitative",
       "type": "Cours",
-      "teacher": "M. NASSIBOU BASSONGUI",
+      "teacher": "DR NASSIBOU BASSONGUI",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1005",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=39645"
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1004",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13924"
     },
     {
-      "id": "w16-s2",
-      "date": "2026-11-10",
+      "id": "w17-s2",
+      "date": "2026-11-18",
       "title": "Gestion des parties prenantes de projets, programmes et portefeuille",
       "type": "Cours",
       "teacher": "M. CLOVIS TOUGMA",
@@ -37,44 +37,28 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=997",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13805"
-    },
-    {
-      "id": "w16-s3",
-      "date": "2026-11-11",
-      "title": "Capitalisation, gestion et dissémination des connaissances",
-      "type": "Cours",
-      "teacher": "M. JILDAS NOUMONZOUNDE",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1008",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=13992"
-    },
-    {
-      "id": "w16-s4",
-      "date": "2026-11-13",
-      "title": "Intégration des risques transversaux",
-      "type": "Cours",
-      "teacher": "M. MALICK BABAH DAOUDA",
-      "start": "18:00",
-      "end": "20:00",
-      "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1010",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14026"
     }
   ],
   "information_blocks": [
     {
-      "title": "Travail de Fin de Formation (TFF) — Documents et procédures",
-      "text": "Les auditeurs sont invités à prendre impérativement connaissance des procédures et formulaires officiels relatifs au TFF (enregistrement du thème, convention d’encadrement, non-plagiat, autorisations) disponibles dans l’onglet dédié « Documents TFF »."
+      "kicker": "Alerte évaluation",
+      "title": "Examen de Méthodologie de recherche qualitative la semaine prochaine",
+      "text": "Profitez de cette semaine allégée (2 séances) pour consolider vos révisions : l’examen de Méthodologie de recherche qualitative est programmé la semaine suivante.",
+      "tone": "alert"
     },
     {
-      "title": "Quiz et activités FutureLearn",
-      "text": "Pensez à finaliser à temps l’ensemble des quiz en attente dans vos différents modules sur Moodle et à poursuivre vos activités d’apprentissage sur la plateforme FutureLearn."
+      "kicker": "Ressource académique",
+      "title": "Travail de Fin de Formation (TFF)",
+      "text": "Consultez les procédures, guides vidéos et formulaires officiels (enregistrement du thème, charte de non-plagiat, convention d’encadrement).",
+      "link": "../documents-tff/",
+      "link_label": "Consulter les documents TFF →"
     },
     {
-      "title": "Accès aux salles virtuelles",
-      "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
+      "kicker": "Plateforme partenaire",
+      "title": "Parcours FutureLearn & Bilinguisme",
+      "text": "Poursuivez régulièrement vos modules d’anglais et vos cours certifiants sur FutureLearn en parallèle de vos enseignements sur Moodle.",
+      "link": "../futurelearn/",
+      "link_label": "Accéder à l’espace FutureLearn →"
     }
   ]
 }

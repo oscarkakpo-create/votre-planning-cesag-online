@@ -2,52 +2,52 @@
   "slug": "mba-ag-auf",
   "program_name": "MBA AG AUF",
   "program_short": "MBA AG AUF",
-  "week_label": "5 octobre → 11 octobre 2026",
-  "week_file_label": "05_octobre-11_octobre_2026",
-  "updated_label": "9 novembre 2026",
+  "week_label": "16 novembre → 22 novembre 2026",
+  "week_file_label": "16_novembre-22_novembre_2026",
+  "updated_label": "14 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-09T10:50:00Z",
-  "week_message": "Semaine particulièrement chargée avec les enseignements de spécialisation. Souhaiter bon courage aux étudiants.",
+  "published_at": "2026-11-13T23:34:00Z",
+  "week_message": "Semaine d’évaluation : Examen de Contrôle de gestion programmé le lundi 16 novembre de 18h00 à 20h00 GMT.",
   "sessions": [],
-  "upcoming_week_label": "9 novembre → 15 novembre 2026",
-  "upcoming_week_file_label": "09_novembre-15_novembre_2026",
-  "upcoming_published_at": "2026-11-09T10:50:00Z",
-  "upcoming_week_message": "Séance de Jeu d'entreprise jeudi 12/11 et préparation aux derniers examens du tronc commun prévus la semaine suivante.",
+  "upcoming_week_label": "16 novembre → 22 novembre 2026",
+  "upcoming_week_file_label": "16_novembre-22_novembre_2026",
+  "upcoming_published_at": "2026-11-13T23:34:00Z",
+  "upcoming_week_message": "Semaine d’évaluation : Examen de Contrôle de gestion programmé le lundi 16 novembre de 18h00 à 20h00 GMT.",
   "upcoming_sessions": [
     {
-      "id": "w16-s1",
-      "date": "2026-11-12",
-      "title": "MBA AG AUF Jeu d'entreprise",
-      "type": "Cours",
-      "teacher": "DR HERVE FOYANG FOYANG",
+      "id": "w17-s1",
+      "date": "2026-11-16",
+      "title": "MBA AG AUF Contrôle de gestion",
+      "type": "Examen",
+      "teacher": "M. SINIMBOU DUROTIMI",
       "start": "18:00",
       "end": "20:00",
       "status": "pending",
-      "moodle": "https://formations.cesagonline.com/course/view.php?id=1279",
-      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18730",
-      "notes": "Cours commun avec MBA AG Classique et MBA MSCH. Le professeur souhaite recevoir les documents finaux comme convenu le jeudi 12 novembre à 09h00 GMT au plus tard."
+      "duration": "110 min",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1329",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=28952",
+      "teams": "https://teams.microsoft.com/meet/37585599321691?p=P2bfgxd8lrMVzrHtUp"
     }
   ],
   "information_blocks": [
     {
-      "title": "Simulation d’entreprise — Remise des documents finaux",
-      "text": "Le professeur DR HERVE FOYANG FOYANG rappelle qu’il souhaite recevoir les documents finaux comme convenu le jeudi 12 novembre 2026 à 09h00 GMT au plus tard."
+      "kicker": "Consignes d’examen",
+      "title": "Examen de Contrôle de gestion — Lundi 16 novembre (18h00 GMT)",
+      "text": "Durée de l’épreuve : 110 minutes. Connectez-vous au moins 15 minutes avant le début sur Moodle ainsi qu’au lien Microsoft Teams de surveillance obligatoire."
     },
     {
-      "title": "Préparation aux derniers examens du tronc commun",
-      "text": "Les auditeurs du MBA AG AUF sont invités à se préparer activement : les derniers examens du tronc commun seront programmés la semaine suivante."
+      "kicker": "Ressource académique",
+      "title": "Travail de Fin de Formation (TFF)",
+      "text": "Consultez les procédures, guides vidéos et formulaires officiels (enregistrement du thème, charte de non-plagiat, convention d’encadrement).",
+      "link": "../documents-tff/",
+      "link_label": "Consulter les documents TFF →"
     },
     {
-      "title": "Travail de Fin de Formation (TFF) — Documents et procédures",
-      "text": "Les auditeurs sont invités à prendre impérativement connaissance des procédures et formulaires officiels relatifs au TFF (enregistrement du thème, convention d’encadrement, non-plagiat, autorisations) disponibles dans l’onglet dédié « Documents TFF »."
-    },
-    {
-      "title": "Quiz et activités FutureLearn",
-      "text": "Pensez à finaliser à temps l’ensemble des quiz en attente dans vos différents modules sur Moodle et à poursuivre vos activités d’apprentissage sur la plateforme FutureLearn."
-    },
-    {
-      "title": "Accès aux salles virtuelles",
-      "text": "Les salles virtuelles BigBlueButton sont disponibles. Utilisez le lien BBB indiqué sur chaque carte de séance. Les accès Moodle restent inchangés."
+      "kicker": "Plateforme partenaire",
+      "title": "Parcours FutureLearn & Bilinguisme",
+      "text": "Poursuivez régulièrement vos modules d’anglais et vos cours certifiants sur FutureLearn en parallèle de vos enseignements sur Moodle.",
+      "link": "../futurelearn/",
+      "link_label": "Accéder à l’espace FutureLearn →"
     }
   ]
 }
