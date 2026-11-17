@@ -57,12 +57,12 @@
       "type": "Cours",
       "teacher": "DR STEPHANE FRANCISCO",
       "start": "09:00",
-      "end": "11:00",
-      "duration": "120 min",
+      "end": "12:00",
+      "duration": "180 min",
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1041",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14616",
-      "notes": "Séance du samedi matin à 09h00 GMT en salle virtuelle BigBlueButton."
+      "notes": "Séance du samedi matin de 09h00 à 12h00 GMT en salle virtuelle BigBlueButton."
     }
   ],
   "information_blocks": [
