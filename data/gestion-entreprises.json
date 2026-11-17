@@ -4,15 +4,15 @@
   "program_short": "MBA AG",
   "week_label": "16 novembre → 22 novembre 2026",
   "week_file_label": "16_novembre-22_novembre_2026",
-  "updated_label": "14 novembre 2026",
+  "updated_label": "17 novembre 2026",
   "is_new": true,
-  "published_at": "2026-11-13T23:12:00Z",
-  "week_message": "Trois séances de cours au programme cette semaine (Gestion financière et Administration & GRH).",
+  "published_at": "2026-11-17T08:15:00Z",
+  "week_message": "Quatre séances de cours au programme cette semaine (Gestion financière, Administration & GRH et Organisation & stratégie).",
   "sessions": [],
   "upcoming_week_label": "16 novembre → 22 novembre 2026",
   "upcoming_week_file_label": "16_novembre-22_novembre_2026",
   "upcoming_published_at": "2026-11-13T23:12:00Z",
-  "upcoming_week_message": "Trois séances de cours au programme cette semaine (Gestion financière et Administration & GRH).",
+  "upcoming_week_message": "Quatre séances de cours au programme cette semaine (Gestion financière, Administration & GRH et Organisation & stratégie).",
   "upcoming_sessions": [
     {
       "id": "w17-s1",
@@ -49,6 +49,20 @@
       "status": "pending",
       "moodle": "https://formations.cesagonline.com/course/view.php?id=1042",
       "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14633"
+    },
+    {
+      "id": "w17-s4",
+      "date": "2026-11-21",
+      "title": "Organisation et stratégie 25-26",
+      "type": "Cours",
+      "teacher": "DR STEPHANE FRANCISCO",
+      "start": "09:00",
+      "end": "11:00",
+      "duration": "120 min",
+      "status": "pending",
+      "moodle": "https://formations.cesagonline.com/course/view.php?id=1041",
+      "room": "https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=14616",
+      "notes": "Séance du samedi matin à 09h00 GMT en salle virtuelle BigBlueButton."
     }
   ],
   "information_blocks": [
