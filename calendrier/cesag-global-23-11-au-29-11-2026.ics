@@ -233,4 +233,14 @@ DESCRIPTION:Programme: MBA GP AUF\nModule: MBA GP AUF Méthodologie de recherche
 LOCATION:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21043
 URL:https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=21043
 END:VEVENT
+BEGIN:VEVENT
+UID:cesag-mba-msch-w18-s4-2026-11@cesagonline.com
+DTSTAMP:20261120T120000Z
+DTSTART:20261126T180000Z
+DTEND:20261126T200000Z
+STATUS:TENTATIVE
+CATEGORIES:MBA MSCH
+SUMMARY:MBA MSCH — Management de la formation
+DESCRIPTION:Programme: Management Stratégique du Capital Humain\nModule: MBA MSCH – Management de la formation\nType: Cours
+END:VEVENT
 END:VCALENDAR

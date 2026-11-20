@@ -7,16 +7,17 @@
   "updated_label": "20 novembre 2026",
   "is_new": true,
   "published_at": "2026-11-20T12:00:00Z",
-  "week_message": "Trois séances fournies pour cette semaine. La séance de Bilan social du 20 novembre est antérieure à la période annoncée.",
+  "week_message": "Quatre séances au programme cette semaine, dont deux examens.",
   "sessions": [],
   "upcoming_week_label": "23 novembre → 29 novembre 2026",
   "upcoming_week_file_label": "23_novembre-29_novembre_2026",
   "upcoming_published_at": "2026-11-20T12:00:00Z",
-  "upcoming_week_message": "Trois séances fournies pour cette semaine. La séance de Bilan social du 20 novembre est antérieure à la période annoncée.",
+  "upcoming_week_message": "Quatre séances au programme cette semaine, dont deux examens.",
   "upcoming_sessions": [
     {"id":"w18-s1","date":"2026-11-20","title":"MBA MSCH – Bilan social (MBAGRH143)","type":"Examen","teacher":"DR MAMADOU SANE","start":"18:00","end":"20:00","status":"pending","duration":"120 min","moodle":"https://formations.cesagonline.com/course/view.php?id=1260","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18407","teams":"https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h"},
     {"id":"w18-s2","date":"2026-11-23","title":"MBA MSCH – Théorie des organisations (MBAGRH152)","type":"Examen","teacher":"M. Souleymane BOUSSO","start":"18:00","end":"20:00","status":"pending","duration":"60 min","moodle":"https://formations.cesagonline.com/course/view.php?id=1262","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=29063","teams":"https://teams.microsoft.com/meet/39522730137539?p=FFH9jv85x6Vg85qh4h"},
-    {"id":"w18-s3","date":"2026-11-24","title":"MBA MSCH – E-GRH : e-recrutement, e-formation, e-communication (MBAGRH224)","type":"Cours","teacher":"M. JILDAS NOUMONZOUNDE","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1273","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18628"}
+    {"id":"w18-s3","date":"2026-11-24","title":"MBA MSCH – E-GRH : e-recrutement, e-formation, e-communication (MBAGRH224)","type":"Cours","teacher":"M. JILDAS NOUMONZOUNDE","start":"18:00","end":"20:00","status":"pending","moodle":"https://formations.cesagonline.com/course/view.php?id=1273","room":"https://formations.cesagonline.com/mod/bigbluebuttonbn/view.php?id=18628"},
+    {"id":"w18-s4","date":"2026-11-26","title":"MBA MSCH – Management de la formation","type":"Cours","start":"18:00","end":"20:00","status":"pending"}
   ],
   "information_blocks": [
     {
